@@ -136,5 +136,6 @@ if __name__== "__main__":
         results.append([f"Test Set (Seed {seed})", test_results['eval_accuracy']])
 
     
-    print(tabulate(results, headers=["Dataset", "Accuracy"], tablefmt="pipe"))
+    table = tabulate(results, headers=["Dataset", "Accuracy"], tablefmt="pipe")
+    print(table)
     pyperclip.copy(table)
