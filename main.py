@@ -134,10 +134,9 @@ if __name__== "__main__":
         print(test_results)
         print('---------------------------------')
         
-        results.append([f"Train Set (Seed {seed})", train_results['eval_accuracy']])
-        results.append([f"Test Set (Seed {seed})", test_results['eval_accuracy']])
+        results.append([f"Seed {seed}", train_results['eval_accuracy'], test_results['eval_accuracy']])
 
     
-    table = tabulate(results, headers=["Dataset", "Accuracy"], tablefmt="pipe")
+    table = tabulate(results, headers=["Seed", "Train_Accuracy", "Test_Accuracy"], tablefmt="pipe")
     print(table)
     pyperclip.copy(table)
