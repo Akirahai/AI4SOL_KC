@@ -44,6 +44,9 @@ if __name__== "__main__":
     
     
     results = []
+    train_acc = 0
+    test_acc = 0
+    seed_num = len(args.seeds)
     for seed in args.seeds:
         # Load model
         model_name=args.model
@@ -135,8 +138,11 @@ if __name__== "__main__":
         print('---------------------------------')
         
         results.append([f"Seed {seed}", train_results['eval_accuracy'], test_results['eval_accuracy']])
+        train_acc += train_results['eval_accuracy']
+        test_acc += test_results['eval_accuracy']
 
     
+    results.append(["Average", train_acc/seed_num, test_acc/seed_num])
     table = tabulate(results, headers=["Seed", "Train_Accuracy", "Test_Accuracy"], tablefmt="pipe")
     print(table)
     pyperclip.copy(table)
