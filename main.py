@@ -40,21 +40,23 @@ if __name__== "__main__":
         from huggingface_hub import login
         login()
     
-    # Load model
-    model_name=args.model
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    # tokenizer.add_special_tokens({'pad_token': '[PAD]'})
-    
-    model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=10)
-    model.resize_token_embeddings(len(tokenizer))
-    data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
-    
-    def preprocess_function(examples):
-        return tokenizer(examples["Question"], truncation=True)   
+
     
     
     results = []
     for seed in args.seeds:
+        # Load model
+        model_name=args.model
+        tokenizer = AutoTokenizer.from_pretrained(model_name)
+        # tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+        
+        model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=10)
+        model.resize_token_embeddings(len(tokenizer))
+        data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
+        
+        def preprocess_function(examples):
+            return tokenizer(examples["Question"], truncation=True)   
+        
         
         print(f"Training and evaluating for seed: {seed}")
         
