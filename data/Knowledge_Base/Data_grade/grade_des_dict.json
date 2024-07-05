@@ -1,0 +1,135 @@
+{
+    "1": {
+        "Operations and Algebraic Thinking": [
+            "Represent and solve problems involving addition and subtraction",
+            "Understand and apply properties of operations and the relationship between addition and subtraction",
+            "Add and subtract within 20",
+            "Work with addition and subtraction equations"
+        ],
+        "Number and Operations in Base Ten": [
+            "Extend the counting sequence",
+            "Understand place value",
+            "Use place value understanding and properties of operations to add and subtract"
+        ],
+        "Measurement and Data": [
+            "Measure lengths indirectly and by iterating length units",
+            "Tell and write time",
+            "Represent and interpret data"
+        ],
+        "Geometry": [
+            "Reason with shapes and their attributes"
+        ]
+    },
+    "2": {
+        "Operations and Algebraic Thinking": [
+            "Represent and solve problems involving addition and subtraction",
+            "Add and subtract within 20",
+            "Work with equal groups of objects to gain foundations for multiplication"
+        ],
+        "Number and Operations in Base Ten": [
+            "Understand place value",
+            "Use place value understanding and properties of operations to add and subtract"
+        ],
+        "Measurement and Data": [
+            "Measure and estimate lengths in standard units",
+            "Relate addition and subtraction to length",
+            "Work with time and money",
+            "Represent and interpret data"
+        ],
+        "Geometry": [
+            "Reason with shapes and their attributes"
+        ]
+    },
+    "3": {
+        "Operations and Algebraic Thinking": [
+            "Represent and solve problems involving multiplication and division",
+            "Understand properties of multiplication and the relationship between multiplication and division",
+            "Multiply and divide within 100",
+            "Solve problems involving the four operations, and identify and explain patterns in arithmetic"
+        ],
+        "Number and Operations in Base Ten": [
+            "Use place value understanding and properties of operations to perform multi-digit arithmetic"
+        ],
+        "Number and Operations\u2014Fractions": [
+            "Develop understanding of fractions as numbers"
+        ],
+        "Measurement and Data": [
+            "Solve problems involving measurement and estimation of intervals of time, liquid volumes, and masses of objects",
+            "Represent and interpret data",
+            "Geometric measurement: understand concepts of area and relate area to multiplication and to addition",
+            "Geometric measurement: recognize perimeter as an attribute of plane figures and distinguish between linear and area measures"
+        ],
+        "Geometry": [
+            "Reason with shapes and their attributes"
+        ]
+    },
+    "4": {
+        "Operations and Algebraic Thinking": [
+            "Use the four operations with whole numbers to solve problems",
+            "Gain familiarity with factors and multiples",
+            "Generate and analyze patterns"
+        ],
+        "Number and Operations in Base Ten": [
+            "Generalize place value understanding for multi-digit whole numbers",
+            "Use place value understanding and properties of operations to perform multi-digit arithmetic"
+        ],
+        "Number and Operations\u2014Fractions": [
+            "Extend understanding of fraction equivalence and ordering",
+            "Build fractions from unit fractions by applying and extending previous understandings of operations on whole numbers",
+            "Understand decimal notation for fractions, and compare decimal fractions"
+        ],
+        "Measurement and Data": [
+            "Solve problems involving measurement and conversion of measurements from a larger unit to a smaller unit",
+            "Represent and interpret data",
+            "Geometric measurement: understand concepts of angle and measure angles"
+        ],
+        "Geometry": [
+            "Draw and identify lines and angles, and classify shapes by properties of their lines and angles"
+        ]
+    },
+    "5": {
+        "Operations and Algebraic Thinking": [
+            "Write and interpret numerical expressions",
+            "Analyze patterns and relationships"
+        ],
+        "Number and Operations in Base Ten": [
+            "Understand the place value system",
+            "Perform operations with multi-digit whole numbers and with decimals to hundredths"
+        ],
+        "Number and Operations\u2014Fractions": [
+            "Use equivalent fractions as a strategy to add and subtract fractions",
+            "Apply and extend previous understandings of multiplication and division to multiply and divide fractions"
+        ],
+        "Measurement and Data": [
+            "Convert like measurement units within a given measurement system",
+            "Represent and interpret data",
+            "Geometric measurement: understand concepts of volume and relate volume to multiplication and to addition"
+        ],
+        "Geometry": [
+            "Graph points on the coordinate plane to solve real-world and mathematical problems",
+            "Classify two-dimensional figures into categories based on their properties"
+        ]
+    },
+    "6": {
+        "Ratios and Proportional Relationships": [
+            "Understand ratio concepts and use ratio reasoning to solve problems"
+        ],
+        "The Number System": [
+            "Apply and extend previous understandings of multiplication and division to divide fractions by fractions",
+            "Compute fluently with multi-digit numbers and find common factors and multiples",
+            "Apply and extend previous understandings of numbers to the system of rational numbers"
+        ],
+        "Expressions and Equations": [
+            "Apply and extend previous understandings of arithmetic to algebraic expressions",
+            "Reason about and solve one-variable equations and inequalities",
+            "Represent and analyze quantitative relationships between dependent and independent variables"
+        ],
+        "Geometry": [
+            "Solve real-world and mathematical problems involving area, surface area, and volume"
+        ],
+        "Statistics and Probability": [
+            "Develop understanding of statistical variability",
+            "Summarize and describe distributions"
+        ]
+    }
+}

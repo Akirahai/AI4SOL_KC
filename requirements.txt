@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+torch
+transformers
+datasets
+seaborn
+evaluate
+tqdm
+tabulate
+argparse
+sci-kit-learn
+accelerate -U
