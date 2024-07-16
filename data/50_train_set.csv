@@ -157,3 +157,443 @@ I have 28 cents in my pocket. How coins could I have on minimization?,12
 A company donates 935 pencils to a school. The pencils are divided evenly among 9 classrooms. The rest of the pencils are given to the library. How many pencils were donated to the library?,6
 "The friends then proceeded to the rest of the houses in their village. However, Sam had to go home earlier. She got her share of candies which are composed of 10 chewing gums, 15 chocolate bars, and 20 assorted fruit candies. How many candies did she get in total?",2
 "If Tom plans to fix 158 watches at the rate of 12 watches per day, how many days does he need to fix the watches?",7
+"Mr. Jones put 162 books on the library shelves. There are 6 shelves. He put the same number of books on each shelf. How many books did Mr. Jones put on each shelf? 
+ A 22 
+ B 26 
+ C 27 
+ D 28 
+
+",6
+"Cement is shipped in bags. Each bag weighs 80 pounds. A construction worker needs 1,250 pounds of cement to complete a job. 
+What is the total number of bags of cement that should be shipped for the construction worker to complete the job? 
+ A 14 
+ B 15 
+ C 16 
+ D 17 
+
+",7
+"Leigh wants to find the number of ounces of pretzels in a 4-pound container. She knows the ratio of ounces to pounds is 16 : 1. 
+Which of the following equations can Leigh use to find x, the number of ounces of pretzels in the 4-pound container? 
+ A $$\frac{x ounces}{4 pounds} = \frac{16 ounces}{1 pound}$$ 
+ B $$\frac{x ounces}{4 pounds} = \frac{1 pound}{16 ounces}$$ 
+ C $$\frac{4 ounces}{x ounces} = \frac{16 pounds}{1 pound}$$ 
+ D $$\frac{4 pounds}{x ounces} = \frac{16 pounds}{1 ounce}$$ 
+
+",11
+"Each meal at a school cafeteria is served with 2 portions of vegetables. What is the ratio of meals served to portions of vegetables served at the school cafeteria? 
+ A 1 : 2 
+ B 1 : 3 
+ C 2 : 1 
+ D 3 : 1 
+
+",10
+"Madison finished \frac{4}{5}$$ of her homework before dinner. What percent of Madison’s homework is left to finish? 
+ A 15% 
+ B 20% 
+ C 45% 
+ D 80% 
+
+",11
+"All of the benches in a park are red or blue. The ratio of red benches to blue benches in the park is 3 : 4. 
+Based on this information, which of the following statements is true? 
+ A For every 4 benches in the park, 3 are red. 
+ B For every 7 benches in the park, 4 are red. 
+ C For every 3 red benches in the park, there are 4 blue benches. 
+ D For every 3 red benches in the park, there are 7 blue benches. 
+
+",10
+"Sean’s height is 1.8 meters. What is Sean’s height in centimeters? 
+ A 0.018 centimeter 
+ B 0.18 centimeter 
+ C 18 centimeters 
+ D 180 centimeters 
+
+",11
+"Two bands are marching in a parade. 
+ 2_1 There are 32 people marching in the first band. 
+ 2_2 There are 40 people marching in the second band. 
+ 2_3 The same number of people are marching in each row in both bands. 
+
+What is the greatest number of people that could be marching in each row? 
+ A 2 
+ B 4 
+ C 8 
+ D 10 
+
+",9
+"Christopher planted 24 bean plants in his garden. He placed the bean plants in 4 rows. Each row had the same number of plants. 
+a. {'element_type': 'text-plain', 'element_value': 'Draw an array to show how Christopher placed all the bean plants in his garden.'} 
+b. {'element_type': 'text-plain', 'element_value': 'How many bean plants did Christopher place in each row?'} 
+",3
+"The diagram below shows some model airplanes and some model ships. 
+y2016_grade6_q1_img_1.png 
+What is the ratio of the number of model airplanes to the number of model ships? 
+ A 8 : 3 
+ B 5 : 3 
+ C 3 : 8 
+ D 3 : 5 
+
+",10
+"The table below shows the amount, in pounds, of snow that Andy can remove over time using a shovel. 
+Snow Removal Using a Shovel y2016_grade6_q8_img_1.png 
+a. {'element_type': 'number+text', 'element_value': 'Based on the table, what is the amount, in pounds, of snow that Andy can remove in 5 minutes using a shovel? Show or explain how you got your answer.'} 
+On the grid in your Student Answer Booklet, copy the x-axis, the y-axis, and the labels exactly as shown below. 
+y2016_grade6_q8_img_2.png 
+b. {'element_type': 'text-plain', 'element_value': 'On your grid, plot the data from the table to show the amount of snow that Andy can remove over time.'} 
+c. {'element_type': 'number+text', 'element_value': 'Based on your graph, what is the amount, in pounds, of snow that Andy can remove in 10 minutes? Show or explain how you got your answer.'} 
+",11
+"A radio station manager has $1000 in prize money to give away. She will give away $50 in prize money each hour. 
+Which of the following expressions represents the amount of prize money the radio station manager will have left to give away after h hours, where h is any number of hours? 
+ A $$1000 + 50h$$ 
+ B $$1000h + 50$$ 
+ C $$1000 - 50h$$ 
+ D $$1000h - 50$$ 
+
+",8
+"Elijah wrote two numbers that follow the rules in the box below. 
+ 2_1 Both numbers are less than 10. 
+ 2_2 Both numbers are whole numbers. 
+ 2_3 The least common multiple of the numbers is 18. 
+ 2_4 The greatest common factor of the numbers is 3. 
+
+What two numbers did Elijah write? 
+",9
+"There are 720 students at a school. All the students at the school are going on a field trip to a science museum. The students will ride school buses to the museum. Each bus holds 60 students when completely full. 
+Part A 
+What is the least number of buses needed to take all the students from the school to the science museum? Show or explain how you got your answer. 
+Enter your answer and your work or explanation in the space provided. 
+Part B 
+Write an equation to represent the problem you solved in Part A. 
+Enter your equation in the space provided. Enter only your equation. 
+Part C 
+The school can also use smaller buses to take the students to the museum. Each smaller bus holds 50 students when completely full. 
+What is the least number of smaller buses needed to take all the students from the school to the science museum? Show or explain how you got your answer. 
+Enter your answer and your work or explanation in the space provided. 
+",7
+"Mr. Johnson’s class has 24 students. 
+ 2_1 There are 18 students in the class who study Spanish. 
+ 2_2 The other students in the class study French. 
+
+In Mr. Johnson’s class, which of the following is the ratio of students who study French to students who study Spanish? 
+ A $$ 1:3 $$ 
+ B $$ 1:4 $$ 
+ C $$ 2:3 $$ 
+ D $$ 3:4 $$ 
+
+",10
+"What value of p makes this equation true? 
+$$ 3,032 \div p = 8 $$ 
+ A 354 
+ B 375 
+ C 379 
+ D 382 
+
+",6
+"The owner of a new store is printing 7,520 coupons. The coupons will be sent to 32 locations. Each location will receive the same number of coupons. What is the total number of coupons each location will receive? 
+Enter your answer in the answer boxes at the top of the answer grid and completely fill the matching circles. 
+",7
+"A pumpkin patch has a width of 432 inches. What is the width of the pumpkin patch in yards? 
+Enter your answer in the answer boxes at the top of the answer grid and completely fill the matching circles. 
+",11
+"Victoria scored a total of 9 points in the first basketball game of the season. She scored 5 points per game in each of the other x basketball games she played that season. 
+Which of the following expressions represents the total number of points Victoria scored in the basketball games for the whole season? 
+ A $$ 5x $$ 
+ B $$ 14x $$ 
+ C $$ 5 + 9x $$ 
+ D $$ 9 + 5x $$ 
+
+",8
+"Sophia mixed paint in a bucket. For every three cups of yellow paint she put in the bucket, she mixed in one cup of white paint. 
+What is the ratio of yellow paint to white paint in Sophia’s mixture? 
+ A 3:1 
+ B 1:3 
+ C 3:4 
+ D 4:3 
+
+",10
+"This question has three parts. 
+At the grand opening of a store, the owner gave away stickers and T-shirts to some of the customers. 
+ 3_1 A total of 180 customers visited the store at the grand opening. 
+ 3_2 Every 10th customer received a free sticker. 
+ 3_3 Every 25th customer received a free T-shirt. 
+
+Part A 
+What is the total number of customers who received a free sticker? Show or explain how you got your answer. 
+Enter your answer and your work or explanation in the space provided. 
+Part B 
+What is the total number of customers who received a free T-shirt? Show or explain how you got your answer. 
+Enter your answer and your work or explanation in the space provided. 
+Part C 
+What is the total number of customers who received both a free sticker and a free T-shirt? Show or explain how you got your answer. 
+Enter your answer and your work or explanation in the space provided. 
+",9
+"Ethan’s car can travel 30 miles per gallon of gasoline. Gasoline costs $4 per gallon, including tax. Ethan drove his car 180 miles on a trip. 
+What was the total cost, in dollars, of the gasoline that the car used for Ethan’s trip? 
+Enter your answer in the answer boxes at the top of the answer grid and completely fill the matching circles. 
+",11
+"A bowl of punch is made by mixing 3 parts juice to 1 part soda. Which of the following statements about the punch is not true? 
+ A Soda makes up $$ \frac{1}{4} $$ of the punch. 
+ B Juice makes up $$ \frac{3}{4} $$ of the punch. 
+ C The amount of soda in the punch is $$ \frac{1}{2} $$ the amount of juice in the punch. 
+ D The amount of juice in the punch is 3 times the amount of soda in the punch. 
+
+",10
+"The scale on a map shows that 1 inch represents 18 miles. The distance on the map between Olivia’s town and her grandmother’s town is 4.5 inches. 
+What is the actual distance between the two towns? 
+ A 4 miles 
+ B 22.5 miles 
+ C 72.5 miles 
+ D 81 miles 
+
+",11
+"There are 144 pages in a book. Conner will read 16 pages of the book each night. Which equation can be used to find t, the total number of nights it will take Conner to read the entire book? 
+ A $$ 144 \div 16 = t $$ 
+ B $$ 144 \times t = 16 $$ 
+ C $$ 16 \times 144 = t $$ 
+ D $$ t \div 16 = 144 $$ 
+
+",7
+"A farmer picked oranges and put them all into 9 boxes. Each box had the same number of oranges. 
+Which of the following could be the number of oranges the farmer picked? 
+ A 299 
+ B 281 
+ C 273 
+ D 261 
+
+",9
+"Robin reads 5 pages of a book in 4 minutes. Based on this rate, what is the total number of minutes it will take Robin to read 200 pages? 
+ A 100 minutes 
+ B 160 minutes 
+ C 200 minutes 
+ D 250 minutes 
+
+",11
+"A basket of fruit contains 6 apples, 5 oranges, 3 bananas, and 2 limes. 
+Which of the following statements about the fruits in the basket are true? 
+Select the two correct statements. 
+ A The ratio of oranges to limes is $$ 5:2 $$. 
+ B The ratio of apples to bananas is $$ 3:6 $$. 
+ C The ratio of bananas to the total number of fruits in the basket is $$ 3:16 $$. 
+ D The ratio of limes to apples is $$ 1:4 $$ because there are 4 more apples than limes. 
+ E The ratio of bananas to limes is $$ 2:3 $$ because $$ \frac{2}{3} $$ of the fruits in the basket are bananas. 
+
+",10
+"On Saturday, a gymnast walked a distance of x miles. On Sunday, the gymnast walked half the distance that he walked on Saturday. 
+Which expression represents the total number of miles the gymnast walked on Saturday and Sunday? 
+ A $$ x - \frac{x}{2} $$ 
+ B $$ x + \frac{x}{2} $$ 
+ C $$ \frac{x-x}{2} $$ 
+ D $$ \frac{x+x}{2} $$ 
+
+",8
+"A book club has 36 members. There are 24 boys and 12 girls in the club. What is the ratio of the number of boys in the club to the number of girls in the club? 
+ A $$ 12:24 $$ 
+ B $$ 24:12 $$ 
+ C $$ 24:36 $$ 
+ D $$ 36:24 $$ 
+
+",10
+"The ratio of mass to volume for a type of metal is 27 grams to 10 cubic centimeters. A sample of the metal has a mass of 81 grams. 
+What is the volume, in cubic centimeters, of the sample of metal? 
+ A 30 
+ B 64 
+ C 118 
+ D 810 
+
+",11
+"Janette had 32 pencils to share with 4 friends. She gave each friend the same number of pencils. 
+What is the total number of pencils Janette gave each friend? 
+ A 36 
+ B 28 
+ C 8 
+ D 7 
+
+",3
+"This question has four parts. Be sure to label each part of your response. 
+This clock shows the time that Cary woke up this morning. 
+y2021_grade4_q14_img_1.png 
+A. {'element_type': 'text-plain', 'element_value': 'At what time did Cary wake up? Be sure to label your answer with a.m. or p.m.'} 
+B. {'element_type': 'number+text', 'element_value': 'Cary left for school 1 hour and 15 minutes after he woke up. At what time did Cary leave for school? Show or explain how you got your answer.'} 
+C. {'element_type': 'number+text', 'element_value': 'Cary left school at 3:40. He ate lunch 4 hours before he left school. At what time did Cary eat lunch? Show or explain how you got your answer.'} 
+D. {'element_type': 'number+text', 'element_value': 'Cary has 45 minutes of homework. His favorite TV show is at 5:30. What is the latest time Cary can start his homework to be finished at 5:30? Show or explain how you got your answer.'} 
+",5
+"An electrician will use the following wires for a project: 
+ 2_1 4 red wires that are each 36 inches in length 
+ 2_2 2 blue wires that are each 84 inches in length 
+
+The electrician wants to cut all the wires into equal-sized pieces of the greatest possible length. 
+Which of the following is true? 
+ A The greatest length the electrician can cut the wires into is 6 inches. The total number of pieces the electrician will have after the wires are cut is 26. 
+ B The greatest length the electrician can cut the wires into is 6 inches. The total number of pieces the electrician will have after the wires are cut is 51. 
+ C The greatest length the electrician can cut the wires into is 12 inches. The total number of pieces the electrician will have after the wires are cut is 26. 
+ D The greatest length the electrician can cut the wires into is 12 inches. The total number of pieces the electrician will have after the wires are cut is 51. 
+
+",9
+"A new office building will have 640 workers. A construction code requires that new buildings have 2 restrooms for every 80 workers in the building. 
+Based on the construction code, what is the total number of restrooms the new office building must have? 
+ A 4 
+ B 8 
+ C 12 
+ D 16 
+
+",11
+"This question has four parts. Be sure to label each part of your response. 
+On Monday, there were 18 chickens and 12 sheep in a field. There were no other animals in the field. 
+A. {'element_type': 'text-plain', 'element_value': 'What was the ratio of chickens to sheep in the field on Monday?'} 
+B. {'element_type': 'number+text', 'element_value': 'For every 2 sheep in the field on Monday, how many chickens were in the field? Show or explain how you got your answer.'} 
+C. {'element_type': 'text+math_expression', 'element_value': 'The ratio $$ 3:5 $$ can also be used to describe a relationship between the animals in the field on Monday. What relationship could this ratio describe? Show or explain how you got your answer.'} 
+D. {'element_type': 'number+text', 'element_value': 'On Tuesday, there were 4 more sheep in the field. Write a ratio to show the relationship between the number of sheep and the total number of animals in the field on Tuesday. Show or explain how you got your answer.'} 
+",10
+"A plumber charges a rate of $45 for each hour of work. 
+Which of the following is true? 
+ A An expression that represents the amount, in dollars, that the plumber will charge for x hours of work is $$ 45x $$ . At this rate, for 2 hours of work the plumber will charge $47. 
+ B An expression that represents the amount, in dollars, that the plumber will charge for x hours of work is $$ 45x $$ . At this rate, for 2 hours of work the plumber will charge $90. 
+ C An expression that represents the amount, in dollars, that the plumber will charge for x hours of work is $$ 45 + x $$ . At this rate, for 2 hours of work the plumber will charge $47. 
+ D An expression that represents the amount, in dollars, that the plumber will charge for x hours of work is $$ 45 + x $$ . At this rate, for 2 hours of work the plumber will charge $90. 
+
+",8
+"There are 48 students in a library. The students are working in groups. Each group has 6 students. 
+Which equation can be used to find n, the number of groups of students working in the library? 
+ A $$ 48 \div 6 = n $$ 
+ B $$ n \div 6 = 48 $$ 
+ C $$ 48 \times 6 = n $$ 
+ D $$ n \times 48 = 6 $$ 
+
+",3
+"Which of these statements are correct? 
+Select the three correct answers. 
+ A $$ 36 \div p = 4 $$ has a related multiplication fact of $$ p \times 4 = 36 $$. 
+ B $$ 36 \div p = 4 $$ has a related multiplication fact of $$ 36 \times p = 4 $$. 
+ C $$ s \div 7 = 5 $$ has a related multiplication fact of $$ s \times 5 = 7 $$. 
+ D $$ s \div 7 = 5 $$ has a related multiplication fact of $$ 7 \times 5 = s $$. 
+ E $$ 72 \div 12 $$ = a has a related multiplication fact of $$ a \times 12 = 72 $$. 
+ F $$ 72 \div 12 = a $$ has a related multiplication fact of $$ a \times 72 = 12 $$. 
+
+",6
+"A factory worker packed 1,576 cans of corn into boxes. The worker put 8 cans of corn into each box. 
+What is the total number of boxes the worker packed? 
+ A 160 
+ B 176 
+ C 192 
+ D 197 
+
+",7
+"Members of a club are selling boxes of cookies. Each box of cookies costs the same amount. This table shows the total cost for different numbers of boxes of cookies. 
+Costs of Cookie Boxes y2022_grade6_q1_img_1.png 
+Based on the data in the table, what would be the total cost, in dollars, of 10 boxes of cookies? 
+Enter your answer in the answer boxes at the top of the answer grid and completely fill the matching circles. 
+y2022_grade6_q1_img_2.png 
+",11
+"This picture shows a display of model cars and model airplanes at a store. 
+y2022_grade6_q3_img_1.png 
+Which ratios show the relationship of the number of model cars to the number of model airplanes in the picture? 
+Select the two correct answers. 
+ A $$ 1:1 $$ 
+ B $$ 1:2 $$ 
+ C $$ 1:5 $$ 
+ D $$ 5:5 $$ 
+ E $$ 5:10 $$ 
+
+",10
+"A box has a mass of 50 grams. Marbles will be added to the box. Each marble has a mass of 3 grams. 
+If n represents any number of marbles in the box, which expression can be used to find the total mass, in grams, of the box and the marbles? 
+ A $$ 50n − 3 $$ 
+ B $$ 50 − 3n $$ 
+ C $$ 50n + 3 $$ 
+ D $$ 50 + 3n $$ 
+
+",8
+"A farmer is planting carrot seeds and pepper seeds in his garden. For every 60 carrot seeds the farmer plants, he plants 12 pepper seeds. 
+Based on this information, which of the following statements is true? 
+ A The ratio of pepper seeds to carrot seeds is 60:12 because 60 pepper seeds are planted for every 12 carrot seeds. 
+ B The ratio of pepper seeds to carrot seeds is 60:12 because there are always 48 fewer carrot seeds planted than pepper seeds. 
+ C The ratio of pepper seeds to carrot seeds is 12:60 because 12 pepper seeds are planted for every 60 carrot seeds. 
+ D The ratio of pepper seeds to carrot seeds is 12:60 because there are always 48 fewer pepper seeds planted than carrot seeds. 
+
+",10
+"This question has two parts. 
+A piece of wire has a length of 110 inches. 
+Part A 
+Which of the following measures is equivalent to the length of the wire? 
+ A 9 feet 
+ B 9 feet 2 inches 
+ C 9 feet 10 inches 
+ D 10 feet 
+
+Part B 
+The wire is cut into two pieces. The first piece of wire has a length of 64 centimeters. Which of the following is the approximate length of the second piece of wire? 
+ A 46 inches 
+ B 116.8 centimeters 
+ C 215.4 centimeters 
+ D 266 inches 
+
+",11
+"Kevin has 54 toy cars. He put all of them into rows of 6 cars each. 
+How many rows of toy cars does Kevin have? 
+ A 6 
+ B 7 
+ C 8 
+ D 9 
+
+",3
+"Find the quotient. 
+$$ 6,880 \div 32 $$ 
+Enter your answer in the answer boxes at the top of the answer grid and completely fill the matching circles. 
+y2023_grade5_q19_img_1.png 
+",7
+"A zookeeper counted the birds at a zoo. He recorded the following number of birds for each type of bird: 
+ 2_1 21 flamingos 
+ 2_2 24 penguins 
+ 2_3 6 storks 
+
+Which relationship between the different types of birds at the zoo can be represented by the ratio $$ 7:8 $$? 
+ A flamingos to storks 
+ B flamingos to penguins 
+ C storks to all birds at the zoo 
+ D penguins to all birds at the zoo 
+
+",10
+"At a middle school, the sixth-grade students and seventh-grade students collected cans for recycling. 
+ 2_1 Of the 2000 cans the sixth-grade students collected, $$ 65 \% $$ were soda cans. 
+ 2_2 Of the 1500 cans the seventh-grade students collected, $$ 80 \% $$ were soda cans. 
+
+Which of the following statements about the numbers of soda cans the students collected are true? 
+Select the two correct answers. 
+ A The sixth-grade students collected 1200 soda cans. 
+ B The sixth-grade students collected 1875 soda cans. 
+ C The sixth-grade students collected 1300 soda cans. 
+ D The seventh-grade students collected 1200 soda cans. 
+ E The seventh-grade students collected 1875 soda cans. 
+ F The seventh-grade students collected 1300 soda cans. 
+
+",11
+"Diego writes 6 poems per week. 
+Which of the following expressions can be used to show the number of poems Diego writes in w weeks? 
+ A $$ 6 \div w $$ 
+ B $$ 6 \times w $$ 
+ C $$ 6 + w $$ 
+ D $$ 6 - w $$ 
+
+",8
+"This question has two parts. 
+A cookie recipe requires the following ingredients: 
+ 3_1 $$ \frac{1}{2} cup of butter 
+ 3_2 3 cups of flour 
+ 3_3 2 cups of sugar 
+
+A chef will make several batches of cookies using the recipe. 
+Part A 
+Which of the following statements about the ratios of the ingredients in the recipe is true? 
+ A There are 4 cups of butter for every 1 cup of sugar. 
+ B There are 4 cups of sugar for every 1 cup of butter. 
+ C There are 4 cups of flour for every 1 cup of sugar. 
+ D There are 4 cups of sugar for every 1 cup of flour. 
+
+Part B 
+Which of the following statements about the ratios of the ingredients in the recipe is true? 
+ A There are $$ \frac{3}{2} $$ cups of flour for every 1 cup of sugar. 
+ B There are $$ \frac{3}{2} $$ cups of sugar for every 1 cup of flour. 
+ C There are $$ \frac{3}{2} $$ cups of butter for every 1 cup of sugar. 
+ D There are $$ \frac{3}{2} $$ cups of sugar for every 1 cup of butter. 
+
+",11
