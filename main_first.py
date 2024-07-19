@@ -32,9 +32,14 @@ def parse_args():
 if __name__== "__main__":
     args = parse_args()
     args.best_metric = 0
+    # if args.use_gpu and torch.cuda.is_available():
+    #     device = torch.device(f'cuda:{args.gpu}') # Change to your suitable GPU device
+    
     if args.use_gpu and torch.cuda.is_available():
-        device = torch.device(f'cuda:{args.gpu}') # Change to your suitable GPU device
-        
+        os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
+        device = torch.device('cuda:0')
+    else:
+        device = torch.device('cpu')
     #Login
     if args.model in ['meta-llama/Llama-2-7b-hf', 'meta-llama/Meta-Llama-3-8B-Instruct']:
         from huggingface_hub import login
