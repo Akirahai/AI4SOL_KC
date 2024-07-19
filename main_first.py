@@ -32,32 +32,12 @@ def parse_args():
     
     return parser.parse_args()
 
-class LoggingCallback(TrainerCallback):
-    def __init__(self):
-        self.train_acc = []
-        self.eval_acc_asdiv = []
-        self.eval_acc_mcas = []
-
-    def on_evaluate(self, args, state, control, metrics=None, **kwargs):
-        if 'eval_accuracy' in metrics:
-            if state.is_world_process_zero:
-                if 'eval_dataset' in kwargs and kwargs['eval_dataset'] == 'tokenized_dataset_test_asdiv':
-                    self.eval_acc_asdiv.append(metrics['eval_accuracy'])
-                elif 'eval_dataset' in kwargs and kwargs['eval_dataset'] == 'tokenized_dataset_test_mcas':
-                    self.eval_acc_mcas.append(metrics['eval_accuracy'])
-
-    def on_epoch_end(self, args, state, control, **kwargs):
-        # Ensure log_history is not empty before accessing
-        if state.log_history:
-            last_log = state.log_history[-1]
-            if 'train_accuracy' in last_log:
-                self.train_acc.append(last_log['train_accuracy'])
 
 
 def preprocess_function(examples):
     return tokenizer(examples["Question"], truncation=True, padding='max_length', max_length=512)
 
-if __name__== "__main__":
+if __name__ == "__main__":
     args = parse_args()
     args.best_metric = 0
     if args.use_gpu and torch.cuda.is_available():
@@ -80,7 +60,7 @@ if __name__== "__main__":
     seed_num = len(args.seeds)
     for seed in args.seeds:
         # Load model
-        model_name=args.model
+        model_name = args.model
         tokenizer = AutoTokenizer.from_pretrained(model_name)
         model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=19) # Remember to change number of labels
         model.resize_token_embeddings(len(tokenizer))
@@ -137,8 +117,8 @@ if __name__== "__main__":
             print(f"Model saved to {model_output_dir}")
             
             print("Evaluation on test set...")
-            eval_results_asdiv = trainer.evaluate(eval_dataset=tokenized_dataset_test_asdiv)
-            eval_results_mcas = trainer.evaluate(eval_dataset=tokenized_dataset_test_mcas)
+            eval_results_asdiv = trainer.evaluate(eval_dataset=tokenized_dataset_test_asdiv, eval_dataset_name='tokenized_dataset_test_asdiv')
+            eval_results_mcas = trainer.evaluate(eval_dataset=tokenized_dataset_test_mcas, eval_dataset_name='tokenized_dataset_test_mcas')
             print('ASDIV:')
             print(eval_results_asdiv)
             print('MCAS:')
@@ -151,8 +131,8 @@ if __name__== "__main__":
         train_results = trainer.evaluate(eval_dataset=tokenized_dataset_train)
         
         print(f"Evaluation on test set for seed {seed}...")
-        test_results_asdiv = trainer.evaluate(eval_dataset=tokenized_dataset_test_asdiv)
-        test_results_mcas = trainer.evaluate(eval_dataset=tokenized_dataset_test_mcas)
+        test_results_asdiv = trainer.evaluate(eval_dataset=tokenized_dataset_test_asdiv, eval_dataset_name='tokenized_dataset_test_asdiv')
+        test_results_mcas = trainer.evaluate(eval_dataset=tokenized_dataset_test_mcas, eval_dataset_name='tokenized_dataset_test_mcas')
         
         results.append([f"Seed {seed}", train_results['eval_accuracy'], test_results_asdiv['eval_accuracy'], test_results_mcas['eval_accuracy']])
         train_acc += train_results['eval_accuracy']
@@ -181,3 +161,4 @@ if __name__== "__main__":
     table = tabulate(results, headers=["Seed", "Train_Accuracy", "Test_Accuracy_ASDIV", "Test_Accuracy_MCAS"], tablefmt="pipe")
     print(table)
     pyperclip.copy(table)
+

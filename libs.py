@@ -62,3 +62,30 @@ def compute_metrics(eval_pred):
 
     accuracy = (predictions == labels).mean()
     return {'accuracy': accuracy}
+
+
+
+
+class LoggingCallback(TrainerCallback):
+    def __init__(self):
+        self.train_acc = []
+        self.eval_acc_asdiv = []
+        self.eval_acc_mcas = []
+
+    def on_evaluate(self, args, state, control, metrics=None, **kwargs):
+        if 'eval_accuracy' in metrics:
+            if state.is_world_process_zero:
+                if kwargs.get('eval_dataset_name') == 'tokenized_dataset_test_asdiv':
+                    self.eval_acc_asdiv.append(metrics['eval_accuracy'])
+                elif kwargs.get('eval_dataset_name') == 'tokenized_dataset_test_mcas':
+                    self.eval_acc_mcas.append(metrics['eval_accuracy'])
+
+    def on_log(self, args, state, control, **kwargs):
+        if 'train_accuracy' in state.log_history[-1]:
+            self.train_acc.append(state.log_history[-1]['train_accuracy'])
+
+    def on_epoch_end(self, args, state, control, **kwargs):
+        if state.log_history:
+            last_log = state.log_history[-1]
+            if 'train_accuracy' in last_log:
+                self.train_acc.append(last_log['train_accuracy'])
