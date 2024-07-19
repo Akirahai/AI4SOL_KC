@@ -74,6 +74,7 @@ class LoggingCallback(TrainerCallback):
     def on_log(self, args, state, control, logs=None, **kwargs):
         if 'eval_accuracy' in logs:
             self.eval_acc_asdiv.append(logs['eval_accuracy'])
+            print(f"Epoch: {state.epoch}")
             print(f"Eval accuracy: {logs['eval_accuracy']}")
         if 'train_accuracy' in logs:
             self.train_acc.append(logs['train_accuracy'])
