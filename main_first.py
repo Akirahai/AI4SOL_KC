@@ -45,7 +45,8 @@ if __name__== "__main__":
     
     results = []
     train_acc = 0
-    test_acc = 0
+    test_acc_asdiv = 0
+    test_acc_mcas = 0
     seed_num = len(args.seeds)
     for seed in args.seeds:
         # Load model
@@ -63,16 +64,20 @@ if __name__== "__main__":
         
         print(f"Training and evaluating for seed: {seed}")
         
-        df_train =pd.read_csv(f'data/{seed}_train_set.csv')
-        df_test =pd.read_csv(f'data/{seed}_test_set.csv')
+        df_train =pd.read_csv(f'data_first_ver/{seed}_train_set.csv')
+        df_test_asdiv =pd.read_csv(f'data_first_ver/{seed}_test_set_asdiv.csv')
+        df_test_mcas = pd.read_csv(f'data_first_ver/{seed}_test_set_mcas.csv')
+        
         # df_valid =pd.read_csv('data/Grade_data_valid_set.csv')
         
         dataset_train = Dataset.from_pandas(df_train)
-        dataset_test = Dataset.from_pandas(df_test)
+        dataset_test_asdiv = Dataset.from_pandas(df_test_asdiv)
+        dataset_test_mcas = Dataset.from_pandas(df_test_mcas)
         # dataset_valid = Dataset.from_pandas(df_valid)
         
         tokenized_dataset_train = dataset_train.map(preprocess_function, batched=True)
-        tokenized_dataset_test = dataset_test.map(preprocess_function, batched=True)
+        tokenized_dataset_test_asdiv = dataset_test_asdiv.map(preprocess_function, batched=True)
+        tokenized_dataset_test_mcas = dataset_test_mcas.map(preprocess_function, batched=True)
     
         # Training setup
         training_args = TrainingArguments(
@@ -88,7 +93,7 @@ if __name__== "__main__":
             model=model,
             args=training_args,
             train_dataset=tokenized_dataset_train,
-            eval_dataset=tokenized_dataset_test,
+            eval_dataset=tokenized_dataset_test_asdiv,
             tokenizer=tokenizer,
             data_collator=data_collator,
             compute_metrics=compute_metrics,
@@ -110,8 +115,12 @@ if __name__== "__main__":
             print(f"Model saved to {model_output_dir}")
             
             print("Evaluation on test set...")
-            eval_results = trainer.evaluate(eval_dataset=tokenized_dataset_test)
-            print(eval_results)
+            eval_results_asdiv = trainer.evaluate(eval_dataset=tokenized_dataset_test_asdiv)
+            eval_results_mcas = trainer.evaluate(eval_dataset=tokenized_dataset_test_mcas)
+            print('ASDIV:')
+            print(eval_results_asdiv)
+            print('MCAS:')
+            print(eval_results_mcas)
 
         elif args.phase == 'test':   
             # if args.eval == 'test':
@@ -128,21 +137,19 @@ if __name__== "__main__":
     
         print(f"Evaluation on train set for seed {seed}...")
         train_results = trainer.evaluate(eval_dataset=tokenized_dataset_train)
-        print(train_results)
-        print('---------------------------------')  
         
         
         print(f"Evaluation on test set for seed {seed}...")
-        test_results = trainer.evaluate(eval_dataset=tokenized_dataset_test)
-        print(test_results)
-        print('---------------------------------')
+        test_results_asdiv = trainer.evaluate(eval_dataset=tokenized_dataset_test_asdiv)
+        test_results_mcas = trainer.evaluate(eval_dataset=tokenized_dataset_test_mcas)
         
-        results.append([f"Seed {seed}", train_results['eval_accuracy'], test_results['eval_accuracy']])
+        results.append([f"Seed {seed}", train_results['eval_accuracy'], test_results_asdiv['eval_accuracy'], test_results_mcas['eval_accuracy']])
         train_acc += train_results['eval_accuracy']
-        test_acc += test_results['eval_accuracy']
+        test_acc_asdiv += test_results_asdiv['eval_accuracy']
+        test_acc_mcas += test_results_mcas['eval_accuracy']
 
     
-    results.append(["Average", train_acc/seed_num, test_acc/seed_num])
-    table = tabulate(results, headers=["Seed", "Train_Accuracy", "Test_Accuracy"], tablefmt="pipe")
+    results.append(["Average", train_acc/seed_num, test_acc_asdiv/seed_num , test_acc_mcas/seed_num])
+    table = tabulate(results, headers=["Seed", "Train_Accuracy", "Test_Accuracy_ASDIV", "Test_Accuracy_MCAS"], tablefmt="pipe")
     print(table)
     pyperclip.copy(table)
