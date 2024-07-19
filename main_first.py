@@ -23,6 +23,8 @@ def parse_args():
     parser.add_argument('--gpu', type=int, default=1, help='GPU device')
     parser.add_argument('--eval', type=str, default='test', help='Evaluation on test or valid set')
     
+    
+    
     return parser.parse_args()
 
 
@@ -32,23 +34,15 @@ if __name__== "__main__":
     args.best_metric = 0
     if args.use_gpu and torch.cuda.is_available():
         device = torch.device(f'cuda:{args.gpu}') # Change to your suitable GPU device
-    
-    # if args.use_gpu and torch.cuda.is_available():
-    #     os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu) 
-    #     device = torch.device('cuda:0')  
-    #     print('I Love  You')
-    # else:
-    #     device = torch.device('cpu') 
-    
+        
     #Login
     if args.model in ['meta-llama/Llama-2-7b-hf', 'meta-llama/Meta-Llama-3-8B-Instruct']:
         from huggingface_hub import login
         login()
-        
+    
     results = []
     train_acc = 0
-    test_acc_asdiv = 0
-    test_acc_mcas = 0
+    test_acc = 0
     seed_num = len(args.seeds)
     for seed in args.seeds:
         # Load model
@@ -56,7 +50,7 @@ if __name__== "__main__":
         tokenizer = AutoTokenizer.from_pretrained(model_name)
         # tokenizer.add_special_tokens({'pad_token': '[PAD]'})
         
-        model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=13)
+        model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=19) # Remember to change number of labels
         model.resize_token_embeddings(len(tokenizer))
         data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
         
@@ -68,8 +62,7 @@ if __name__== "__main__":
         
         df_train =pd.read_csv(f'data_first_ver/{seed}_train_set.csv')
         df_test_asdiv =pd.read_csv(f'data_first_ver/{seed}_test_set_asdiv.csv')
-        df_test_mcas = pd.read_csv(f'data_first_ver/{seed}_test_set_mcas.csv')
-        
+        df_test_mcas =pd.read_csv(f'data_first_ver/{seed}_test_set_asdiv.csv')
         # df_valid =pd.read_csv('data/Grade_data_valid_set.csv')
         
         dataset_train = Dataset.from_pandas(df_train)
@@ -125,15 +118,6 @@ if __name__== "__main__":
             print(eval_results_mcas)
 
         elif args.phase == 'test':   
-            # if args.eval == 'test':
-            #     print("Evaluation on test set...")
-            #     eval_results = trainer.evaluate(eval_dataset=tokenized_dataset_test)
-            #     print(eval_results)
-                
-            # elif args.eval == 'train':
-            #     print("Evaluation on train set...")
-            #     eval_results = trainer.evaluate(eval_dataset=tokenized_dataset_train)
-            #     print(eval_results)
             pass
     
     
