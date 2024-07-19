@@ -38,11 +38,7 @@ if __name__== "__main__":
         device = torch.device('cuda:0')  
         print('I Love  You')
     else:
-        device = torch.device('cpu')  
-
-    # Set environment variables to prevent automatic data parallelism
-    os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
-    
+        device = torch.device('cpu') 
     
     #Login
     if args.model in ['meta-llama/Llama-2-7b-hf', 'meta-llama/Meta-Llama-3-8B-Instruct']:

@@ -1,11 +1,33 @@
 Question,label
+"A pet store needs to put 23 birds into birdcages. Each birdcage can hold 4 birds. 
+What is the least number of cages the pet store needs to hold all the birds? 
+ A 7 
+ B 6 
+ C 5 
+ D 4 
+
+",11
+"Which model shows a way to multiply 3 by 14? 
+ A y2015_grade4_q5_img_1.png 
+ B y2015_grade4_q5_img_2.png 
+ C y2015_grade4_q5_img_3.png 
+ D y2015_grade4_q5_img_4.png 
+
+",9
 "Mr. Jones put 162 books on the library shelves. There are 6 shelves. He put the same number of books on each shelf. How many books did Mr. Jones put on each shelf? 
  A 22 
  B 26 
  C 27 
  D 28 
 
-",6
+",10
+"The length and width of a field are shown in the diagram below. 
+y2015_grade4_q21_img_1.png 
+a. {'element_type': 'text-plain', 'element_value': 'What is the perimeter, in feet, of the field? Show or explain how you got your answer.'} 
+b. {'element_type': 'text-plain', 'element_value': 'What is the area, in square feet, of the field? Show or explain how you got your answer.'} 
+Both the length and the width of the field will be increased by 10 feet. 
+c. {'element_type': 'text-plain', 'element_value': 'What will be the new area, in square feet, of the field? Show or explain how you got your answer.'} 
+",8
 "Cement is shipped in bags. Each bag weighs 80 pounds. A construction worker needs 1,250 pounds of cement to complete a job. 
 What is the total number of bags of cement that should be shipped for the construction worker to complete the job? 
  A 14 
@@ -13,7 +35,7 @@ What is the total number of bags of cement that should be shipped for the constr
  C 16 
  D 17 
 
-",7
+",12
 "Leigh wants to find the number of ounces of pretzels in a 4-pound container. She knows the ratio of ounces to pounds is 16 : 1. 
 Which of the following equations can Leigh use to find x, the number of ounces of pretzels in the 4-pound container? 
  A $$\frac{x ounces}{4 pounds} = \frac{16 ounces}{1 pound}$$ 
@@ -21,21 +43,21 @@ Which of the following equations can Leigh use to find x, the number of ounces o
  C $$\frac{4 ounces}{x ounces} = \frac{16 pounds}{1 pound}$$ 
  D $$\frac{4 pounds}{x ounces} = \frac{16 pounds}{1 ounce}$$ 
 
-",11
+",16
 "Each meal at a school cafeteria is served with 2 portions of vegetables. What is the ratio of meals served to portions of vegetables served at the school cafeteria? 
  A 1 : 2 
  B 1 : 3 
  C 2 : 1 
  D 3 : 1 
 
-",10
+",15
 "Madison finished \frac{4}{5}$$ of her homework before dinner. What percent of Madison’s homework is left to finish? 
  A 15% 
  B 20% 
  C 45% 
  D 80% 
 
-",11
+",16
 "All of the benches in a park are red or blue. The ratio of red benches to blue benches in the park is 3 : 4. 
 Based on this information, which of the following statements is true? 
  A For every 4 benches in the park, 3 are red. 
@@ -43,14 +65,14 @@ Based on this information, which of the following statements is true?
  C For every 3 red benches in the park, there are 4 blue benches. 
  D For every 3 red benches in the park, there are 7 blue benches. 
 
-",10
+",15
 "Sean’s height is 1.8 meters. What is Sean’s height in centimeters? 
  A 0.018 centimeter 
  B 0.18 centimeter 
  C 18 centimeters 
  D 180 centimeters 
 
-",11
+",16
 "Two bands are marching in a parade. 
  2_1 There are 32 people marching in the first band. 
  2_2 There are 40 people marching in the second band. 
@@ -62,11 +84,55 @@ What is the greatest number of people that could be marching in each row?
  C 8 
  D 10 
 
-",9
+",14
+"A pet store has 5 fish tanks with 10 fish in each tank. A shopper buys 8 fish and takes them home. 
+After the shopper leaves the store, what is the total number of fish left in the pet store’s tanks? 
+ A 23 
+ B 42 
+ C 50 
+ D 58 
+
+",6
 "Christopher planted 24 bean plants in his garden. He placed the bean plants in 4 rows. Each row had the same number of plants. 
 a. {'element_type': 'text-plain', 'element_value': 'Draw an array to show how Christopher placed all the bean plants in his garden.'} 
 b. {'element_type': 'text-plain', 'element_value': 'How many bean plants did Christopher place in each row?'} 
-",3
+",4
+"Carl sold cookies and pies at a bake sale to earn money. 
+ 2_1 A bag of cookies sells for $3. 
+ 2_2 A pie sells for $8. 
+
+a. {'element_type': 'number+text', 'element_value': 'Carl sold 4 bags of cookies and 2 pies during the first hour of the bake sale. What is the total amount of money, in dollars, Carl earned during the first hour of the bake sale? Show or explain how you got your answer.'} 
+b. {'element_type': 'number+text', 'element_value': 'Ms. O’Hara bought 2 bags of cookies and 1 pie from Carl. She paid with a $20 bill. What is the total amount of change, in dollars, Ms. O’Hara should receive? Show or explain how you got your answer.'} 
+Vanessa sold cakes at the same bake sale. 
+c. {'element_type': 'number+text', 'element_value': 'Mr. Stanley bought 1 bag of cookies and 2 pies from Carl. Mr. Stanley also spent $11 to buy a cake from Vanessa at the bake sale. Write an equation to show m, the total amount of money, in dollars, Mr. Stanley spent at the bake sale.'} 
+d. {'element_type': 'text-plain', 'element_value': 'Solve the equation you wrote in part (c) to find the total amount of money, in dollars, Mr. Stanley spent at the bake sale. Show your work.'} 
+",11
+"Nathan is using the area model below to solve a problem. 
+y2016_grade4_q8_img_1.png 
+Which problem is represented by the whole area model? 
+ A $$12 \times 6 = \square$$ 
+ B $$16 \times 13 = \square$$ 
+ C $$20 \times 9 = \square$$ 
+ D $$60 \times 90 = \square$$ 
+
+",9
+"A class of 29 students is taking a field trip to the zoo. Each ticket to the zoo costs $15. 
+Which of these expressions can be used to find the total cost, in dollars, of the tickets to the zoo? 
+ A $$\left(29 + 10\right) + \left(29 + 5\right)$$ 
+ B $$\left(29 \times 10\right) + \left(29 \times 5\right)$$ 
+ C $$\left(29 + 10\right) \times \left(29 + 5\right)$$ 
+ D $$\left(29 \times 10\right) \times \left(29 \times 5\right)$$ 
+
+",9
+"A diagram of Parvati’s garden and the lengths of all its sides are shown below. 
+Parvati’s Garden y2016_grade4_q20_img_1.png 
+Parvati wants to put a fence around her whole garden. What is the least number of yards of fence she will need? 
+ A 24 yards 
+ B 28 yards 
+ C 36 yards 
+ D 48 yards 
+
+",8
 "The diagram below shows some model airplanes and some model ships. 
 y2016_grade6_q1_img_1.png 
 What is the ratio of the number of model airplanes to the number of model ships? 
@@ -75,7 +141,7 @@ What is the ratio of the number of model airplanes to the number of model ships?
  C 3 : 8 
  D 3 : 5 
 
-",10
+",15
 "The table below shows the amount, in pounds, of snow that Andy can remove over time using a shovel. 
 Snow Removal Using a Shovel y2016_grade6_q8_img_1.png 
 a. {'element_type': 'number+text', 'element_value': 'Based on the table, what is the amount, in pounds, of snow that Andy can remove in 5 minutes using a shovel? Show or explain how you got your answer.'} 
@@ -83,7 +149,7 @@ On the grid in your Student Answer Booklet, copy the x-axis, the y-axis, and the
 y2016_grade6_q8_img_2.png 
 b. {'element_type': 'text-plain', 'element_value': 'On your grid, plot the data from the table to show the amount of snow that Andy can remove over time.'} 
 c. {'element_type': 'number+text', 'element_value': 'Based on your graph, what is the amount, in pounds, of snow that Andy can remove in 10 minutes? Show or explain how you got your answer.'} 
-",11
+",16
 "A radio station manager has $1000 in prize money to give away. She will give away $50 in prize money each hour. 
 Which of the following expressions represents the amount of prize money the radio station manager will have left to give away after h hours, where h is any number of hours? 
  A $$1000 + 50h$$ 
@@ -91,7 +157,7 @@ Which of the following expressions represents the amount of prize money the radi
  C $$1000 - 50h$$ 
  D $$1000h - 50$$ 
 
-",8
+",13
 "Elijah wrote two numbers that follow the rules in the box below. 
  2_1 Both numbers are less than 10. 
  2_2 Both numbers are whole numbers. 
@@ -99,7 +165,12 @@ Which of the following expressions represents the amount of prize money the radi
  2_4 The greatest common factor of the numbers is 3. 
 
 What two numbers did Elijah write? 
-",9
+",14
+"Mr. Felton will use exactly 42 feet of fencing to surround a garden that is in the shape of a rectangle. His garden has a length of 12 feet. The equation below represents the perimeter of Mr. Felton’s garden. 
+$$ w + w + 12 + 12 = 42 $$ 
+What is $$w$$, the width, in feet, of Mr. Felton’s garden? 
+Enter your answer in the box. 
+",8
 "There are 720 students at a school. All the students at the school are going on a field trip to a science museum. The students will ride school buses to the museum. Each bus holds 60 students when completely full. 
 Part A 
 What is the least number of buses needed to take all the students from the school to the science museum? Show or explain how you got your answer. 
@@ -111,7 +182,7 @@ Part C
 The school can also use smaller buses to take the students to the museum. Each smaller bus holds 50 students when completely full. 
 What is the least number of smaller buses needed to take all the students from the school to the science museum? Show or explain how you got your answer. 
 Enter your answer and your work or explanation in the space provided. 
-",7
+",12
 "Mr. Johnson’s class has 24 students. 
  2_1 There are 18 students in the class who study Spanish. 
  2_2 The other students in the class study French. 
@@ -122,7 +193,12 @@ In Mr. Johnson’s class, which of the following is the ratio of students who st
  C $$ 2:3 $$ 
  D $$ 3:4 $$ 
 
-",10
+",15
+"Nathan had 24 balloons. He gave some of his balloons to 3 friends. He gave each friend 5 balloons. 
+How many balloons does Nathan have now? 
+Enter your answer in the answer boxes at the top of the answer grid and completely fill the matching circles. 
+y2018_grade3_q30_img_1.png 
+",6
 "What value of p makes this equation true? 
 $$ 3,032 \div p = 8 $$ 
  A 354 
@@ -130,13 +206,13 @@ $$ 3,032 \div p = 8 $$
  C 379 
  D 382 
 
-",6
+",10
 "The owner of a new store is printing 7,520 coupons. The coupons will be sent to 32 locations. Each location will receive the same number of coupons. What is the total number of coupons each location will receive? 
 Enter your answer in the answer boxes at the top of the answer grid and completely fill the matching circles. 
-",7
+",12
 "A pumpkin patch has a width of 432 inches. What is the width of the pumpkin patch in yards? 
 Enter your answer in the answer boxes at the top of the answer grid and completely fill the matching circles. 
-",11
+",16
 "Victoria scored a total of 9 points in the first basketball game of the season. She scored 5 points per game in each of the other x basketball games she played that season. 
 Which of the following expressions represents the total number of points Victoria scored in the basketball games for the whole season? 
  A $$ 5x $$ 
@@ -144,7 +220,7 @@ Which of the following expressions represents the total number of points Victori
  C $$ 5 + 9x $$ 
  D $$ 9 + 5x $$ 
 
-",8
+",13
 "Sophia mixed paint in a bucket. For every three cups of yellow paint she put in the bucket, she mixed in one cup of white paint. 
 What is the ratio of yellow paint to white paint in Sophia’s mixture? 
  A 3:1 
@@ -152,7 +228,7 @@ What is the ratio of yellow paint to white paint in Sophia’s mixture?
  C 3:4 
  D 4:3 
 
-",10
+",15
 "This question has three parts. 
 At the grand opening of a store, the owner gave away stickers and T-shirts to some of the customers. 
  3_1 A total of 180 customers visited the store at the grand opening. 
@@ -168,18 +244,18 @@ Enter your answer and your work or explanation in the space provided.
 Part C 
 What is the total number of customers who received both a free sticker and a free T-shirt? Show or explain how you got your answer. 
 Enter your answer and your work or explanation in the space provided. 
-",9
+",14
 "Ethan’s car can travel 30 miles per gallon of gasoline. Gasoline costs $4 per gallon, including tax. Ethan drove his car 180 miles on a trip. 
 What was the total cost, in dollars, of the gasoline that the car used for Ethan’s trip? 
 Enter your answer in the answer boxes at the top of the answer grid and completely fill the matching circles. 
-",11
+",16
 "A bowl of punch is made by mixing 3 parts juice to 1 part soda. Which of the following statements about the punch is not true? 
  A Soda makes up $$ \frac{1}{4} $$ of the punch. 
  B Juice makes up $$ \frac{3}{4} $$ of the punch. 
  C The amount of soda in the punch is $$ \frac{1}{2} $$ the amount of juice in the punch. 
  D The amount of juice in the punch is 3 times the amount of soda in the punch. 
 
-",10
+",15
 "The scale on a map shows that 1 inch represents 18 miles. The distance on the map between Olivia’s town and her grandmother’s town is 4.5 inches. 
 What is the actual distance between the two towns? 
  A 4 miles 
@@ -187,14 +263,39 @@ What is the actual distance between the two towns?
  C 72.5 miles 
  D 81 miles 
 
+",16
+"Harry bought 2 books. Each book cost $4. He paid with a $20 bill. 
+How much change should Harry get back? 
+ A $6 
+ B $8 
+ C $12 
+ D $14 
+
+",6
+"Abe has 16 pins in one box and 17 pins in another box. He is hanging posters with the pins. Abe uses 4 pins to hang each poster. 
+What is the total number of posters Abe can hang with the pins? 
+ A $$ \frac{23}{4} $$ posters 
+ B $$ \frac{33}{4} $$ posters 
+ C 8 posters 
+ D 9 posters 
+
 ",11
+"Anna made a diagram of her room and labeled the length and width, as shown. 
+y2019_grade4_q20_img_1.png 
+What is the area of Anna’s room? 
+ A 44 square feet 
+ B 100 square feet 
+ C 120 square feet 
+ D 144 square feet 
+
+",8
 "There are 144 pages in a book. Conner will read 16 pages of the book each night. Which equation can be used to find t, the total number of nights it will take Conner to read the entire book? 
  A $$ 144 \div 16 = t $$ 
  B $$ 144 \times t = 16 $$ 
  C $$ 16 \times 144 = t $$ 
  D $$ t \div 16 = 144 $$ 
 
-",7
+",12
 "A farmer picked oranges and put them all into 9 boxes. Each box had the same number of oranges. 
 Which of the following could be the number of oranges the farmer picked? 
  A 299 
@@ -202,14 +303,14 @@ Which of the following could be the number of oranges the farmer picked?
  C 273 
  D 261 
 
-",9
+",14
 "Robin reads 5 pages of a book in 4 minutes. Based on this rate, what is the total number of minutes it will take Robin to read 200 pages? 
  A 100 minutes 
  B 160 minutes 
  C 200 minutes 
  D 250 minutes 
 
-",11
+",16
 "A basket of fruit contains 6 apples, 5 oranges, 3 bananas, and 2 limes. 
 Which of the following statements about the fruits in the basket are true? 
 Select the two correct statements. 
@@ -219,7 +320,7 @@ Select the two correct statements.
  D The ratio of limes to apples is $$ 1:4 $$ because there are 4 more apples than limes. 
  E The ratio of bananas to limes is $$ 2:3 $$ because $$ \frac{2}{3} $$ of the fruits in the basket are bananas. 
 
-",10
+",15
 "On Saturday, a gymnast walked a distance of x miles. On Sunday, the gymnast walked half the distance that he walked on Saturday. 
 Which expression represents the total number of miles the gymnast walked on Saturday and Sunday? 
  A $$ x - \frac{x}{2} $$ 
@@ -227,14 +328,14 @@ Which expression represents the total number of miles the gymnast walked on Satu
  C $$ \frac{x-x}{2} $$ 
  D $$ \frac{x+x}{2} $$ 
 
-",8
+",13
 "A book club has 36 members. There are 24 boys and 12 girls in the club. What is the ratio of the number of boys in the club to the number of girls in the club? 
  A $$ 12:24 $$ 
  B $$ 24:12 $$ 
  C $$ 24:36 $$ 
  D $$ 36:24 $$ 
 
-",10
+",15
 "The ratio of mass to volume for a type of metal is 27 grams to 10 cubic centimeters. A sample of the metal has a mass of 81 grams. 
 What is the volume, in cubic centimeters, of the sample of metal? 
  A 30 
@@ -242,7 +343,7 @@ What is the volume, in cubic centimeters, of the sample of metal?
  C 118 
  D 810 
 
-",11
+",16
 "Janette had 32 pencils to share with 4 friends. She gave each friend the same number of pencils. 
 What is the total number of pencils Janette gave each friend? 
  A 36 
@@ -250,7 +351,26 @@ What is the total number of pencils Janette gave each friend?
  C 8 
  D 7 
 
-",3
+",4
+"A group of 12 friends are going skating. Some of the friends will rent skates. 
+ 2_1 5 of the friends will not rent skates. 
+ 2_2 The remaining friends will each rent skates for $3.00. 
+
+Which of these number lines shows a point that represents the total amount, in dollars, the group will pay to rent skates? 
+ A Total Amount (dollars) y2021_grade3_q13_img_1.png 
+ B Total Amount (dollars) y2021_grade3_q13_img_2.png 
+ C Total Amount (dollars) y2021_grade3_q13_img_3.png 
+ D Total Amount (dollars) y2021_grade3_q13_img_4.png 
+
+",6
+"A sign is in the shape of a square. Each side of the sign has a length of 6 inches. 
+What is the area of the sign? 
+ A 12 square inches 
+ B 24 square inches 
+ C 36 square inches 
+ D 48 square inches 
+
+",8
 "This question has four parts. Be sure to label each part of your response. 
 This clock shows the time that Cary woke up this morning. 
 y2021_grade4_q14_img_1.png 
@@ -258,7 +378,22 @@ A. {'element_type': 'text-plain', 'element_value': 'At what time did Cary wake u
 B. {'element_type': 'number+text', 'element_value': 'Cary left for school 1 hour and 15 minutes after he woke up. At what time did Cary leave for school? Show or explain how you got your answer.'} 
 C. {'element_type': 'number+text', 'element_value': 'Cary left school at 3:40. He ate lunch 4 hours before he left school. At what time did Cary eat lunch? Show or explain how you got your answer.'} 
 D. {'element_type': 'number+text', 'element_value': 'Cary has 45 minutes of homework. His favorite TV show is at 5:30. What is the latest time Cary can start his homework to be finished at 5:30? Show or explain how you got your answer.'} 
-",5
+",7
+"Alonzo and Mindy are buying pretzels to share with their class. They will put all the pretzels into bags. 
+ 2_1 Alonzo buys 8 pretzels. 
+ 2_2 Mindy buys 3 times as many pretzels as Alonzo. 
+ 2_3 Each bag will hold up to 5 pretzels. 
+
+Alonzo and Mindy want to know the least number of bags they need to hold all the pretzels. 
+Which of these statements are true? 
+Select the two correct answers. 
+ A Alonzo and Mindy have a total of 24 pretzels. 
+ B Alonzo and Mindy have a total of 32 pretzels. 
+ C Alonzo and Mindy need 5 bags to hold all the pretzels. 
+ D Alonzo and Mindy need 6 bags to hold all the pretzels. 
+ E Alonzo and Mindy need 7 bags to hold all the pretzels. 
+
+",11
 "An electrician will use the following wires for a project: 
  2_1 4 red wires that are each 36 inches in length 
  2_2 2 blue wires that are each 84 inches in length 
@@ -270,7 +405,7 @@ Which of the following is true?
  C The greatest length the electrician can cut the wires into is 12 inches. The total number of pieces the electrician will have after the wires are cut is 26. 
  D The greatest length the electrician can cut the wires into is 12 inches. The total number of pieces the electrician will have after the wires are cut is 51. 
 
-",9
+",14
 "A new office building will have 640 workers. A construction code requires that new buildings have 2 restrooms for every 80 workers in the building. 
 Based on the construction code, what is the total number of restrooms the new office building must have? 
  A 4 
@@ -278,14 +413,14 @@ Based on the construction code, what is the total number of restrooms the new of
  C 12 
  D 16 
 
-",11
+",16
 "This question has four parts. Be sure to label each part of your response. 
 On Monday, there were 18 chickens and 12 sheep in a field. There were no other animals in the field. 
 A. {'element_type': 'text-plain', 'element_value': 'What was the ratio of chickens to sheep in the field on Monday?'} 
 B. {'element_type': 'number+text', 'element_value': 'For every 2 sheep in the field on Monday, how many chickens were in the field? Show or explain how you got your answer.'} 
 C. {'element_type': 'text+math_expression', 'element_value': 'The ratio $$ 3:5 $$ can also be used to describe a relationship between the animals in the field on Monday. What relationship could this ratio describe? Show or explain how you got your answer.'} 
 D. {'element_type': 'number+text', 'element_value': 'On Tuesday, there were 4 more sheep in the field. Write a ratio to show the relationship between the number of sheep and the total number of animals in the field on Tuesday. Show or explain how you got your answer.'} 
-",10
+",15
 "A plumber charges a rate of $45 for each hour of work. 
 Which of the following is true? 
  A An expression that represents the amount, in dollars, that the plumber will charge for x hours of work is $$ 45x $$ . At this rate, for 2 hours of work the plumber will charge $47. 
@@ -293,7 +428,19 @@ Which of the following is true?
  C An expression that represents the amount, in dollars, that the plumber will charge for x hours of work is $$ 45 + x $$ . At this rate, for 2 hours of work the plumber will charge $47. 
  D An expression that represents the amount, in dollars, that the plumber will charge for x hours of work is $$ 45 + x $$ . At this rate, for 2 hours of work the plumber will charge $90. 
 
-",8
+",13
+"A student sold candy bars on Monday, Tuesday, and Wednesday. 
+ 2_1 She sold a total of 125 candy bars over the three days. 
+ 2_2 She sold 67 candy bars on Monday. 
+ 2_3 She sold 19 candy bars on Tuesday. 
+
+What is the total number of candy bars the student sold on Wednesday? 
+ A 39 
+ B 58 
+ C 86 
+ D 211 
+
+",6
 "There are 48 students in a library. The students are working in groups. Each group has 6 students. 
 Which equation can be used to find n, the number of groups of students working in the library? 
  A $$ 48 \div 6 = n $$ 
@@ -301,7 +448,7 @@ Which equation can be used to find n, the number of groups of students working i
  C $$ 48 \times 6 = n $$ 
  D $$ n \times 48 = 6 $$ 
 
-",3
+",4
 "Which of these statements are correct? 
 Select the three correct answers. 
  A $$ 36 \div p = 4 $$ has a related multiplication fact of $$ p \times 4 = 36 $$. 
@@ -311,7 +458,32 @@ Select the three correct answers.
  E $$ 72 \div 12 $$ = a has a related multiplication fact of $$ a \times 12 = 72 $$. 
  F $$ 72 \div 12 = a $$ has a related multiplication fact of $$ a \times 72 = 12 $$. 
 
-",6
+",10
+"This question has four parts. Be sure to label each part of your response. 
+There is a garden, a patio, and a flower bed in the backyard of a house. The garden, the patio, and the flower bed are each in the shape of a rectangle. 
+A. [{'element_id': 'A_1', 'element_type': 'number+text', 'element_value': 'The garden has a length of 4 feet and a width of 8 feet, as shown in this diagram.'}, {'element_id': 'A_2', 'element_type': 'image-2d_geometry', 'image_filename': 'y2022_grade4_q8_img_1.png'}, {'element_id': 'A_3', 'element_type': 'text-plain', 'element_value': 'What is the area, in square feet, of the garden?'}] 
+B. [{'element_id': 'B_1', 'element_type': 'number+text', 'element_value': 'The patio has a length of 5 feet and an area of 35 square feet.'}, {'element_id': 'B_2', 'element_type': 'text-plain', 'element_value': 'What is the width, in feet, of the patio? Show or explain how you got your answer.'}] 
+C. [{'element_id': 'C_1', 'element_type': 'text-plain', 'element_value': 'The owner of the house thinks the garden and the patio have the same perimeter.'}, {'element_id': 'C_2', 'element_type': 'text-plain', 'element_value': 'Is the owner correct? Explain your reasoning.'}] 
+D. [{'element_id': 'D_1', 'element_type': 'text-plain', 'element_value': 'The area of the flower bed is less than the area of the garden. The perimeter of the flower bed is equal to the perimeter of the patio.'}, {'element_id': 'D_2', 'element_type': 'text-plain', 'element_value': 'What could be the length and the width of the flower bed? Explain how you know your answer is correct.'}] 
+",8
+"A teacher has 8 sheets of stickers for decorating posters. 
+ 2_1 Each sheet has 10 stickers. 
+ 2_2 Each poster will have exactly 3 stickers. 
+
+What is the greatest number of posters the teacher can decorate? 
+ A 25 posters 
+ B 26 posters 
+ C 27 posters 
+ D 28 posters 
+
+",11
+"Lashawn knows this number sentence is true. 
+$$ 4 \times 7 = 28 $$ 
+What is the value of $$ \boxed{?} $$ that makes this number sentence true? 
+$$ 4 \times 700 = \boxed{?} $$ 
+Enter your answer in the answer boxes at the top of the answer grid and completely fill the matching circles. 
+y2022_grade4_q12_img_1.png 
+",9
 "A factory worker packed 1,576 cans of corn into boxes. The worker put 8 cans of corn into each box. 
 What is the total number of boxes the worker packed? 
  A 160 
@@ -319,13 +491,13 @@ What is the total number of boxes the worker packed?
  C 192 
  D 197 
 
-",7
+",12
 "Members of a club are selling boxes of cookies. Each box of cookies costs the same amount. This table shows the total cost for different numbers of boxes of cookies. 
 Costs of Cookie Boxes y2022_grade6_q1_img_1.png 
 Based on the data in the table, what would be the total cost, in dollars, of 10 boxes of cookies? 
 Enter your answer in the answer boxes at the top of the answer grid and completely fill the matching circles. 
 y2022_grade6_q1_img_2.png 
-",11
+",16
 "This picture shows a display of model cars and model airplanes at a store. 
 y2022_grade6_q3_img_1.png 
 Which ratios show the relationship of the number of model cars to the number of model airplanes in the picture? 
@@ -336,7 +508,7 @@ Select the two correct answers.
  D $$ 5:5 $$ 
  E $$ 5:10 $$ 
 
-",10
+",15
 "A box has a mass of 50 grams. Marbles will be added to the box. Each marble has a mass of 3 grams. 
 If n represents any number of marbles in the box, which expression can be used to find the total mass, in grams, of the box and the marbles? 
  A $$ 50n − 3 $$ 
@@ -344,7 +516,7 @@ If n represents any number of marbles in the box, which expression can be used t
  C $$ 50n + 3 $$ 
  D $$ 50 + 3n $$ 
 
-",8
+",13
 "A farmer is planting carrot seeds and pepper seeds in his garden. For every 60 carrot seeds the farmer plants, he plants 12 pepper seeds. 
 Based on this information, which of the following statements is true? 
  A The ratio of pepper seeds to carrot seeds is 60:12 because 60 pepper seeds are planted for every 12 carrot seeds. 
@@ -352,7 +524,7 @@ Based on this information, which of the following statements is true?
  C The ratio of pepper seeds to carrot seeds is 12:60 because 12 pepper seeds are planted for every 60 carrot seeds. 
  D The ratio of pepper seeds to carrot seeds is 12:60 because there are always 48 fewer pepper seeds planted than carrot seeds. 
 
-",10
+",15
 "This question has two parts. 
 A piece of wire has a length of 110 inches. 
 Part A 
@@ -369,7 +541,7 @@ The wire is cut into two pieces. The first piece of wire has a length of 64 cent
  C 215.4 centimeters 
  D 266 inches 
 
-",11
+",16
 "Kevin has 54 toy cars. He put all of them into rows of 6 cars each. 
 How many rows of toy cars does Kevin have? 
  A 6 
@@ -377,12 +549,26 @@ How many rows of toy cars does Kevin have?
  C 8 
  D 9 
 
-",3
+",4
+"This question has three parts. Be sure to label each part of your response. 
+A doctor works in her office 5 days each week. Each day she works, she drives a total of 19 miles to and from her office. 
+A. {'element_type': 'text-plain', 'element_value': 'What is the total distance, in miles, the doctor drives to and from her office each week? Show or explain how you got your answer.'} 
+B. [{'element_id': 'B_1', 'element_type': 'number+text', 'element_value': 'The doctor worked 48 weeks last year.'}, {'element_id': 'B_2', 'element_type': 'text-plain', 'element_value': 'What is the total distance, in miles, she drove to and from her office last year? Show or explain how you got your answer.'}] 
+C. [{'element_id': 'C_1', 'element_type': 'number+text', 'element_value': 'The doctor worked the same number of weeks each year for the last 7 years.'}, {'element_id': 'C_2', 'element_type': 'number+text', 'element_value': 'What is the total distance, in miles, the doctor drove to and from her office over the last 7 years? Show or explain how you got your answer.'}] 
+",9
+"A rectangle has a width of 5 inches and a length of 4 inches. 
+Which of these equations shows the perimeter, in inches, of the rectangle? 
+ A $$ 5 + 4 = 9 $$ 
+ B $$ 5 \times 4 = 20 $$ 
+ C $$ 2 + 5 \times 2 + 4 = 16 $$ 
+ D $$ 2 \times 5 + 2 \times 4 = 18 $$ 
+
+",8
 "Find the quotient. 
 $$ 6,880 \div 32 $$ 
 Enter your answer in the answer boxes at the top of the answer grid and completely fill the matching circles. 
 y2023_grade5_q19_img_1.png 
-",7
+",12
 "A zookeeper counted the birds at a zoo. He recorded the following number of birds for each type of bird: 
  2_1 21 flamingos 
  2_2 24 penguins 
@@ -394,7 +580,7 @@ Which relationship between the different types of birds at the zoo can be repres
  C storks to all birds at the zoo 
  D penguins to all birds at the zoo 
 
-",10
+",15
 "At a middle school, the sixth-grade students and seventh-grade students collected cans for recycling. 
  2_1 Of the 2000 cans the sixth-grade students collected, $$ 65 \% $$ were soda cans. 
  2_2 Of the 1500 cans the seventh-grade students collected, $$ 80 \% $$ were soda cans. 
@@ -408,7 +594,7 @@ Select the two correct answers.
  E The seventh-grade students collected 1875 soda cans. 
  F The seventh-grade students collected 1300 soda cans. 
 
-",11
+",16
 "Diego writes 6 poems per week. 
 Which of the following expressions can be used to show the number of poems Diego writes in w weeks? 
  A $$ 6 \div w $$ 
@@ -416,7 +602,7 @@ Which of the following expressions can be used to show the number of poems Diego
  C $$ 6 + w $$ 
  D $$ 6 - w $$ 
 
-",8
+",13
 "This question has two parts. 
 A cookie recipe requires the following ingredients: 
  3_1 $$ \frac{1}{2} cup of butter 
@@ -438,4 +624,4 @@ Which of the following statements about the ratios of the ingredients in the rec
  C There are $$ \frac{3}{2} $$ cups of butter for every 1 cup of sugar. 
  D There are $$ \frac{3}{2} $$ cups of sugar for every 1 cup of butter. 
 
-",11
+",16
