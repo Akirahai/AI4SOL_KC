@@ -1,16 +1,29 @@
 from libs import *
 import matplotlib.pyplot as plt
-from transformers import TrainerCallback
+from transformers import TrainerCallback, TrainingArguments, Trainer
 import argparse
 import torch
 import pandas as pd
 from datasets import Dataset
-from transformers import AutoTokenizer, AutoModelForSequenceClassification, DataCollatorWithPadding, Trainer, TrainingArguments
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, DataCollatorWithPadding
 from transformers.trainer_utils import EvalPrediction
 import datetime
 import os
 from tabulate import tabulate
 import pyperclip
+import numpy as np
+
+class LoggingCallback(TrainerCallback):
+    def __init__(self):
+        self.train_acc = []
+        self.eval_acc_asdiv = []
+        self.eval_acc_mcas = []
+
+    def on_log(self, args, state, control, logs=None, **kwargs):
+        if 'eval_accuracy' in logs:
+            self.eval_acc_asdiv.append(logs['eval_accuracy'])
+        if 'train_accuracy' in logs:
+            self.train_acc.append(logs['train_accuracy'])
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -32,10 +45,22 @@ def parse_args():
     
     return parser.parse_args()
 
-
-
 def preprocess_function(examples):
     return tokenizer(examples["Question"], truncation=True, padding='max_length', max_length=512)
+
+def compute_metrics(eval_pred: EvalPrediction):
+    predictions, labels = eval_pred
+    predictions = np.argmax(predictions, axis=1)
+    accuracy = (predictions == labels).astype(np.float32).mean().item()
+    return {'accuracy': accuracy}
+
+class CustomTrainer(Trainer):
+    def log(self, logs: dict):
+        if 'eval_loss' in logs:  # If this is an evaluation log
+            # Compute training accuracy
+            train_accuracy = self.evaluate(eval_dataset=self.train_dataset)['eval_accuracy']
+            logs['train_accuracy'] = train_accuracy
+        super().log(logs)
 
 if __name__ == "__main__":
     args = parse_args()
@@ -91,11 +116,13 @@ if __name__ == "__main__":
             num_train_epochs=args.epochs,
             weight_decay=0.01,
             evaluation_strategy='epoch',
+            logging_dir='./logs',
+            logging_steps=10,
         )
 
         logging_callback = LoggingCallback()
 
-        trainer = Trainer(
+        trainer = CustomTrainer(
             model=model,
             args=training_args,
             train_dataset=tokenized_dataset_train,
@@ -159,5 +186,3 @@ if __name__ == "__main__":
     results.append(["Average", train_acc/seed_num, test_acc_asdiv/seed_num , test_acc_mcas/seed_num])
     table = tabulate(results, headers=["Seed", "Train_Accuracy", "Test_Accuracy_ASDIV", "Test_Accuracy_MCAS"], tablefmt="pipe")
     print(table)
-    pyperclip.copy(table)
-
