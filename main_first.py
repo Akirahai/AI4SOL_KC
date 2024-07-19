@@ -23,8 +23,6 @@ def parse_args():
     parser.add_argument('--gpu', type=int, default=1, help='GPU device')
     parser.add_argument('--eval', type=str, default='test', help='Evaluation on test or valid set')
     
-    
-    
     return parser.parse_args()
 
 
@@ -37,7 +35,7 @@ if __name__== "__main__":
     
     if args.use_gpu and torch.cuda.is_available():
         os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
-        device = torch.device('cuda:0')
+        device = torch.device('cuda:1')
     else:
         device = torch.device('cpu')
     #Login
