@@ -117,8 +117,8 @@ if __name__ == "__main__":
             print(f"Model saved to {model_output_dir}")
             
             print("Evaluation on test set...")
-            eval_results_asdiv = trainer.evaluate(eval_dataset=tokenized_dataset_test_asdiv, eval_dataset_name='tokenized_dataset_test_asdiv')
-            eval_results_mcas = trainer.evaluate(eval_dataset=tokenized_dataset_test_mcas, eval_dataset_name='tokenized_dataset_test_mcas')
+            eval_results_asdiv = trainer.evaluate(eval_dataset=tokenized_dataset_test_asdiv)
+            eval_results_mcas = trainer.evaluate(eval_dataset=tokenized_dataset_test_mcas)
             print('ASDIV:')
             print(eval_results_asdiv)
             print('MCAS:')
