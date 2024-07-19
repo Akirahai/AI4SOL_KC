@@ -17,7 +17,6 @@ def parse_args():
     parser.add_argument('--phase', type=str, default='train', help='Phase: train or test')
     parser.add_argument('--epochs', type=int, default=50, help='Training epochs')
     parser.add_argument('--resume', default=False, action='store_true', help='Resume')
-    parser.add_argument('--use-gpu', action='store_true', help='Use GPU')
     parser.add_argument('--model', type=str, help='Model name or path')
     parser.add_argument('--path', type=str, default= f"/home/leviethai/AI4SOL_KC/result") #Fix to your path to save model
     parser.add_argument('--gpu', type=int, default=1, help='GPU device')
@@ -33,9 +32,9 @@ if __name__== "__main__":
     # if args.use_gpu and torch.cuda.is_available():
     #     device = torch.device(f'cuda:{args.gpu}') # Change to your suitable GPU device
     
-    if args.use_gpu and torch.cuda.is_available():
+    if torch.cuda.is_available():
         os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
-        device = torch.device('cuda:1')
+        device = torch.device('cuda:0')
     else:
         device = torch.device('cpu')
     #Login
