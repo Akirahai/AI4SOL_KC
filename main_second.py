@@ -79,10 +79,9 @@ if __name__== "__main__":
         per_device_eval_batch_size=args.batch_size,
         num_train_epochs=args.epochs,
         weight_decay=0.01,
-        evaluation_strategy = 'epoch',
-        logging_strategy = 'epoch',
-        save_strategy="epoch",
-        
+        # evaluation_strategy = 'epoch',
+        # logging_strategy = 'epoch',
+        # save_strategy="epoch",
         )
 
         trainer = Trainer(
