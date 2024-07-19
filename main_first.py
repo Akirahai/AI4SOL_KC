@@ -42,7 +42,8 @@ if __name__== "__main__":
     
     results = []
     train_acc = 0
-    test_acc = 0
+    test_acc_asdiv = 0
+    test_acc_mcas = 0
     seed_num = len(args.seeds)
     for seed in args.seeds:
         # Load model
