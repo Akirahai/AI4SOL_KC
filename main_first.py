@@ -40,6 +40,13 @@ if __name__== "__main__":
         from huggingface_hub import login
         login()
     
+    
+    if torch.cuda.is_bf16_supported():
+        compute_dtype = torch.bfloat16
+    else:
+        compute_dtype = torch.float16
+        
+        
     results = []
     train_acc = 0
     test_acc_asdiv = 0
@@ -81,6 +88,8 @@ if __name__== "__main__":
         learning_rate = args.lr,
         per_device_train_batch_size=args.batch_size,
         per_device_eval_batch_size=args.batch_size,
+        fp16 = not torch.cuda.is_bf16_supported(),
+        bf16 = torch.cuda.is_bf16_supported(),
         num_train_epochs=args.epochs,
         weight_decay=0.01,
         )
