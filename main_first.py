@@ -18,6 +18,7 @@ def parse_args():
     parser.add_argument('--epochs', type=int, default=50, help='Training epochs')
     parser.add_argument('--resume', default=False, action='store_true', help='Resume')
     parser.add_argument('--model', type=str, help='Model name or path')
+    parser.add_argument('--use-gpu', action='store_true', help='Use GPU')
     parser.add_argument('--path', type=str, default= f"/home/leviethai/AI4SOL_KC/result") #Fix to your path to save model
     parser.add_argument('--gpu', type=int, default=1, help='GPU device')
     parser.add_argument('--eval', type=str, default='test', help='Evaluation on test or valid set')
@@ -32,11 +33,18 @@ if __name__== "__main__":
     # if args.use_gpu and torch.cuda.is_available():
     #     device = torch.device(f'cuda:{args.gpu}') # Change to your suitable GPU device
     
-    if torch.cuda.is_available():
-        os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
-        device = torch.device('cuda:0')
+    if args.use_gpu and torch.cuda.is_available():
+        os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu) 
+        device = torch.device('cuda:0')  
+        print('I Love  You')
     else:
-        device = torch.device('cpu')
+        device = torch.device('cpu')  
+
+    # Set environment variables to prevent automatic data parallelism
+    os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
+    os.environ["NCCL_DEBUG"] = "INFO"
+    
+    
     #Login
     if args.model in ['meta-llama/Llama-2-7b-hf', 'meta-llama/Meta-Llama-3-8B-Instruct']:
         from huggingface_hub import login
