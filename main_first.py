@@ -41,15 +41,18 @@ class LoggingCallback(TrainerCallback):
     def on_evaluate(self, args, state, control, metrics=None, **kwargs):
         if 'eval_accuracy' in metrics:
             if state.is_world_process_zero:
-                if state.args.eval_dataset == 'tokenized_dataset_test_asdiv':
+                if 'eval_dataset' in kwargs and kwargs['eval_dataset'] == 'tokenized_dataset_test_asdiv':
                     self.eval_acc_asdiv.append(metrics['eval_accuracy'])
-                else:
+                elif 'eval_dataset' in kwargs and kwargs['eval_dataset'] == 'tokenized_dataset_test_mcas':
                     self.eval_acc_mcas.append(metrics['eval_accuracy'])
 
     def on_epoch_end(self, args, state, control, **kwargs):
-        # Assuming you compute and log train accuracy at the end of each epoch
-        if 'train_accuracy' in state.log_history[-1]:
-            self.train_acc.append(state.log_history[-1]['train_accuracy'])
+        # Ensure log_history is not empty before accessing
+        if state.log_history:
+            last_log = state.log_history[-1]
+            if 'train_accuracy' in last_log:
+                self.train_acc.append(last_log['train_accuracy'])
+
 
 def preprocess_function(examples):
     return tokenizer(examples["Question"], truncation=True, padding='max_length', max_length=512)
