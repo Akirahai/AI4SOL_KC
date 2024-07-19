@@ -131,8 +131,8 @@ if __name__ == "__main__":
         train_results = trainer.evaluate(eval_dataset=tokenized_dataset_train)
         
         print(f"Evaluation on test set for seed {seed}...")
-        test_results_asdiv = trainer.evaluate(eval_dataset=tokenized_dataset_test_asdiv, eval_dataset_name='tokenized_dataset_test_asdiv')
-        test_results_mcas = trainer.evaluate(eval_dataset=tokenized_dataset_test_mcas, eval_dataset_name='tokenized_dataset_test_mcas')
+        test_results_asdiv = trainer.evaluate(eval_dataset=tokenized_dataset_test_asdiv)
+        test_results_mcas = trainer.evaluate(eval_dataset=tokenized_dataset_test_mcas)
         
         results.append([f"Seed {seed}", train_results['eval_accuracy'], test_results_asdiv['eval_accuracy'], test_results_mcas['eval_accuracy']])
         train_acc += train_results['eval_accuracy']
