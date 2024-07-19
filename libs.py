@@ -65,12 +65,12 @@ def compute_metrics(eval_pred):
 
 
 
-class LoggingCallback(TrainerCallback):
-    def __init__(self):
-        self.train_acc = []
-        self.eval_acc_asdiv = []
-        self.eval_acc_mcas = []
+# class LoggingCallback(TrainerCallback):
+#     def __init__(self):
+#         self.train_acc = []
+#         self.eval_acc_asdiv = []
+#         self.eval_acc_mcas = []
         
-    def on_log(self, args, state, control, logs=None, **kwargs):
-        if logs is not None:
-            print(f"Logs: {logs}")  # Print the logs to see what they contain
+#     def on_log(self, args, state, control, logs=None, **kwargs):
+#         if logs is not None:
+#             print(f"Logs: {logs}")  # Print the logs to see what they contain
