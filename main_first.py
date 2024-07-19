@@ -1,9 +1,16 @@
 from libs import *
 import matplotlib.pyplot as plt
-
-# from utils import Math_Classification
-# from utils import train
-# from utils import validation
+from transformers import TrainerCallback
+import argparse
+import torch
+import pandas as pd
+from datasets import Dataset
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, DataCollatorWithPadding, Trainer, TrainingArguments
+from transformers.trainer_utils import EvalPrediction
+import datetime
+import os
+from tabulate import tabulate
+import pyperclip
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -19,11 +26,33 @@ def parse_args():
     parser.add_argument('--resume', default=False, action='store_true', help='Resume')
     parser.add_argument('--use-gpu', action='store_true', help='Use GPU')
     parser.add_argument('--model', type=str, help='Model name or path')
-    parser.add_argument('--path', type=str, default= f"/home/leviethai/AI4SOL_KC/result") #Fix to your path to save model
+    parser.add_argument('--path', type=str, default=f"/home/leviethai/AI4SOL_KC/result") #Fix to your path to save model
     parser.add_argument('--gpu', type=int, default=1, help='GPU device')
     parser.add_argument('--eval', type=str, default='test', help='Evaluation on test or valid set')
     
     return parser.parse_args()
+
+class LoggingCallback(TrainerCallback):
+    def __init__(self):
+        self.train_acc = []
+        self.eval_acc_asdiv = []
+        self.eval_acc_mcas = []
+
+    def on_evaluate(self, args, state, control, metrics=None, **kwargs):
+        if 'eval_accuracy' in metrics:
+            if state.is_world_process_zero:
+                if state.args.eval_dataset == 'tokenized_dataset_test_asdiv':
+                    self.eval_acc_asdiv.append(metrics['eval_accuracy'])
+                else:
+                    self.eval_acc_mcas.append(metrics['eval_accuracy'])
+
+    def on_epoch_end(self, args, state, control, **kwargs):
+        # Assuming you compute and log train accuracy at the end of each epoch
+        if 'train_accuracy' in state.log_history[-1]:
+            self.train_acc.append(state.log_history[-1]['train_accuracy'])
+
+def preprocess_function(examples):
+    return tokenizer(examples["Question"], truncation=True, padding='max_length', max_length=512)
 
 if __name__== "__main__":
     args = parse_args()
@@ -31,7 +60,7 @@ if __name__== "__main__":
     if args.use_gpu and torch.cuda.is_available():
         device = torch.device(f'cuda:{args.gpu}') # Change to your suitable GPU device
         
-    # Login
+    #Login
     if args.model in ['meta-llama/Llama-2-7b-hf', 'meta-llama/Meta-Llama-3-8B-Instruct']:
         from huggingface_hub import login
         login()
@@ -48,14 +77,11 @@ if __name__== "__main__":
     seed_num = len(args.seeds)
     for seed in args.seeds:
         # Load model
-        model_name = args.model
+        model_name=args.model
         tokenizer = AutoTokenizer.from_pretrained(model_name)
         model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=19) # Remember to change number of labels
         model.resize_token_embeddings(len(tokenizer))
         data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
-        
-        def preprocess_function(examples):
-            return tokenizer(examples["Question"], truncation=True, padding='max_length', max_length=512)
         
         print(f"Training and evaluating for seed: {seed}")
         
@@ -81,28 +107,7 @@ if __name__== "__main__":
             bf16=torch.cuda.is_bf16_supported(),
             num_train_epochs=args.epochs,
             weight_decay=0.01,
-            logging_dir=f'{args.path}/logs',            # directory for storing logs
-            logging_steps=10,
-            evaluation_strategy="epoch",
-            save_strategy="epoch"
         )
-
-        # Define a callback to log metrics after each epoch
-        class LoggingCallback(TrainerCallback):
-            def __init__(self):
-                self.train_acc = []
-                self.eval_acc_asdiv = []
-                self.eval_acc_mcas = []
-                
-            def on_evaluate(self, args, state, control, **kwargs):
-                self.eval_acc_asdiv.append(kwargs['metrics']['eval_accuracy'])
-                self.eval_acc_mcas.append(kwargs['metrics']['eval_accuracy'])
-
-            def on_log(self, args, state, control, logs=None, **kwargs):
-                if 'eval_accuracy' in logs:
-                    self.eval_acc_asdiv.append(logs['eval_accuracy'])
-                if 'train_accuracy' in logs:
-                    self.train_acc.append(logs['train_accuracy'])
 
         logging_callback = LoggingCallback()
 
@@ -114,15 +119,18 @@ if __name__== "__main__":
             tokenizer=tokenizer,
             data_collator=data_collator,
             compute_metrics=compute_metrics,
-            callbacks=[logging_callback]
+            callbacks=[logging_callback]  # Register the logging callback
         )
 
         if args.phase == 'train':
             trainer.train()
             
             current_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+            
+            # Save the trained model with timestamp prefix
             model_output_dir = os.path.join(args.path, args.model, f"seed_{seed}_{current_time}")
             trainer.save_model(model_output_dir)
+            
             print(f"Model saved to {model_output_dir}")
             
             print("Evaluation on test set...")
@@ -133,9 +141,9 @@ if __name__== "__main__":
             print('MCAS:')
             print(eval_results_mcas)
 
-        elif args.phase == 'test':
+        elif args.phase == 'test':   
             pass
-        
+
         print(f"Evaluation on train set for seed {seed}...")
         train_results = trainer.evaluate(eval_dataset=tokenized_dataset_train)
         
@@ -147,26 +155,24 @@ if __name__== "__main__":
         train_acc += train_results['eval_accuracy']
         test_acc_asdiv += test_results_asdiv['eval_accuracy']
         test_acc_mcas += test_results_mcas['eval_accuracy']
-        
-        # Plot the accuracies
+
+        # Plot accuracies
         epochs = range(1, args.epochs + 1)
-        plt.figure(figsize=(10, 6))
-        plt.plot(epochs, logging_callback.train_acc, label='Train Accuracy')
-        plt.plot(epochs, logging_callback.eval_acc_asdiv, label='Test Accuracy (ASDIV)')
-        plt.plot(epochs, logging_callback.eval_acc_mcas, label='Test Accuracy (MCAS)')
-        plt.xlabel('Epochs')
-        plt.ylabel('Accuracy')
-        plt.title(f'Accuracy for seed {seed}')
-        plt.legend()
-        plt.grid(True)
         
-        model_parts = args.model.split('/')
-        relevant_part = f"{model_parts[-2]}_{model_parts[-1]}"
-        
-        plt_save_path = os.path.join(args.path, f'{relevant_part}_accuracy_seed_{seed}.png')
-        plt.savefig(plt_save_path)
-        print(f"Accuracy plot saved to {plt_save_path}")
-        plt.close()
+        if len(logging_callback.train_acc) == args.epochs and len(logging_callback.eval_acc_asdiv) == args.epochs and len(logging_callback.eval_acc_mcas) == args.epochs:
+            plt.figure(figsize=(10, 6))
+            plt.plot(epochs, logging_callback.train_acc, label='Train Accuracy')
+            plt.plot(epochs, logging_callback.eval_acc_asdiv, label='Test Accuracy (ASDIV)')
+            plt.plot(epochs, logging_callback.eval_acc_mcas, label='Test Accuracy (MCAS)')
+            plt.xlabel('Epochs')
+            plt.ylabel('Accuracy')
+            plt.title(f'Accuracy for seed {seed}')
+            plt.legend()
+            plt.grid(True)
+            plt.savefig(f'{args.path}/accuracy_seed_{seed}.png')
+            plt.close()
+        else:
+            print(f"Logging lengths mismatch for seed {seed}: train_acc={len(logging_callback.train_acc)}, eval_acc_asdiv={len(logging_callback.eval_acc_asdiv)}, eval_acc_mcas={len(logging_callback.eval_acc_mcas)}")
 
     results.append(["Average", train_acc/seed_num, test_acc_asdiv/seed_num , test_acc_mcas/seed_num])
     table = tabulate(results, headers=["Seed", "Train_Accuracy", "Test_Accuracy_ASDIV", "Test_Accuracy_MCAS"], tablefmt="pipe")
