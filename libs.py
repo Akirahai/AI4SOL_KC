@@ -72,13 +72,5 @@ class LoggingCallback(TrainerCallback):
         self.eval_acc_mcas = []
         
     def on_log(self, args, state, control, logs=None, **kwargs):
-        if 'eval_accuracy' in logs:
-            self.eval_acc_asdiv.append(logs['eval_accuracy'])
-            print(f"Epoch: {state.epoch}")
-            print(f"Eval accuracy: {logs['eval_accuracy']}")
-        if 'train_accuracy' in logs:
-            self.train_acc.append(logs['train_accuracy'])
-            
-    def on_evaluate(self, args, state, control, **kwargs):
-        eval_results_asdiv = kwargs['metrics']
-        self.eval_acc_asdiv.append(eval_results_asdiv.get('eval_accuracy', 0))
+        if logs is not None:
+            print(f"Logs: {logs}")  # Print the logs to see what they contain

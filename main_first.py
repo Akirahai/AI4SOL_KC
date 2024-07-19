@@ -90,6 +90,7 @@ if __name__ == "__main__":
             bf16=torch.cuda.is_bf16_supported(),
             num_train_epochs=args.epochs,
             weight_decay=0.01,
+            evaluation_strategy='epoch',
         )
 
         logging_callback = LoggingCallback()
