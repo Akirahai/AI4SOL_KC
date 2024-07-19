@@ -42,7 +42,6 @@ if __name__== "__main__":
 
     # Set environment variables to prevent automatic data parallelism
     os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
-    os.environ["NCCL_DEBUG"] = "INFO"
     
     
     #Login
