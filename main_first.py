@@ -133,13 +133,6 @@ if __name__== "__main__":
             
             print(f"Model saved to {model_output_dir}")
             
-            print("Evaluation on test set...")
-            eval_results_asdiv = trainer.evaluate(eval_dataset=tokenized_dataset_test_asdiv)
-            eval_results_mcas = trainer.evaluate(eval_dataset=tokenized_dataset_test_mcas)
-            print('ASDIV:')
-            print(eval_results_asdiv)
-            print('MCAS:')
-            print(eval_results_mcas)
 
         elif args.phase == 'test':   
             pass
@@ -152,6 +145,9 @@ if __name__== "__main__":
         print(f"Evaluation on test set for seed {seed}...")
         test_results_asdiv = trainer.evaluate(eval_dataset=tokenized_dataset_test_asdiv)
         test_results_mcas = trainer.evaluate(eval_dataset=tokenized_dataset_test_mcas)
+        print(f'ASDIV: {test_results_asdiv}')
+        print(f'MCAS: {test_results_mcas}')
+        
         
         results.append([f"Seed {seed}", train_results['eval_accuracy'], test_results_asdiv['eval_accuracy'], test_results_mcas['eval_accuracy']])
         train_acc += train_results['eval_accuracy']
