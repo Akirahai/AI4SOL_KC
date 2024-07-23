@@ -165,7 +165,7 @@ if __name__== "__main__":
     
         print(f"Evaluation on train set for seed {seed}...")
         train_results = trainer.evaluate(eval_dataset=tokenized_dataset_train)
-        
+        print(f'Trainig results: {train_results}')
         
         print(f"Evaluation on test set for seed {seed}...")
         test_results_asdiv = trainer.evaluate(eval_dataset=tokenized_dataset_test_asdiv)
