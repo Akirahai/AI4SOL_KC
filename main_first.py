@@ -157,8 +157,8 @@ if __name__== "__main__":
             # Save the plot as an image
             model_parts = args.model.split('/')
             relevant_part = f"{model_parts[-2]}_{model_parts[-1]}"
-            plt.savefig(f'Loss_plot/seed_{seed}_loss_plot_{relevant_part}.png')
-            df_log.to_csv(f'Loss_plot/seed_{seed}_loss_plot_{relevant_part}.csv')
+            plt.savefig(f'Loss_plot_first_ver/seed_{seed}_loss_plot_{relevant_part}.png')
+            df_log.to_csv(f'Loss_plot_first_ver/seed_{seed}_loss_plot_{relevant_part}.csv')
         
 
         elif args.phase == 'test':   
