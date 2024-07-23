@@ -61,8 +61,8 @@ if __name__== "__main__":
         if args.model is None:
             raise ValueError("The number of models must match the number of seeds, or a single model must be provided with the --model argument")
 
-    print(f"Number of models does not match the number of seeds. Using the single model: {args.model} for all seeds.")
-    args.models = [args.model] * len(args.seeds)
+        print(f"Number of models does not match the number of seeds. Using the single model: {args.model} for all seeds.")
+        args.models = [args.model] * len(args.seeds)
     
     
     for model_name, seed in zip(args.models, args.seeds):
