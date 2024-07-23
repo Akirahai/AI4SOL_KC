@@ -139,6 +139,7 @@ if __name__== "__main__":
             df_log = pd.DataFrame(trainer.state.log_history)
 
             print(df_log)
+            # Save df_log to csv
             # Plot the training and validation losses
             plt.figure(figsize=(12, 6))
             (df_log.dropna(subset=["eval_loss"]).reset_index()["eval_loss"]
@@ -155,6 +156,7 @@ if __name__== "__main__":
             model_parts = args.model.split('/')
             relevant_part = f"{model_parts[-2]}_{model_parts[-1]}"
             plt.savefig(f'Loss_plot/loss_plot_{relevant_part}.png')
+            df_log.to_csv(f'Loss_plot/loss_plot_{relevant_part}.csv')
         
 
         elif args.phase == 'test':   
