@@ -55,17 +55,22 @@ if __name__== "__main__":
     test_acc_mcas = 0
     seed_num = len(args.seeds)
     
-    if len(args.models) != len(args.seeds):
-        if args.model is None:
-            raise ValueError("The number of models must match the number of seeds, or a single model must be provided with the --model argument")
+    # if len(args.models) != len(args.seeds):
+    #     print(f'Number of models: {len(args.models)}')
+    #     print(f'Number of seeds: {len(args.seeds)}')
+    #     if args.model is None:
+    #         raise ValueError("The number of models must match the number of seeds, or a single model must be provided with the --model argument")
 
-    print(f"Number of models does not match the number of seeds. Using the single model: {args.model} for all seeds.")
-    args.models = [args.model] * len(args.seeds)
+    #     print(f"Number of models does not match the number of seeds. Using the single model: {args.model} for all seeds.")
+    #     args.models = [args.model] * len(args.seeds)
     
     
-    for model_name, seed in zip(args.models, args.seeds):
+    # for model_name, seed in zip(args.models, args.seeds):
+    
+    for seed in args.seeds:
         
         # Load model
+        model_name=args.model
         tokenizer = AutoTokenizer.from_pretrained(model_name)
         
         model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=19) # Remember to change number of labels

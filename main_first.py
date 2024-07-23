@@ -55,7 +55,7 @@ if __name__== "__main__":
     test_acc_mcas = 0
     seed_num = len(args.seeds)
     
-    if len(args.models) != len(args.seeds):
+    if args.models is None or len(args.models) != len(args.seeds):
         print(f'Number of models: {len(args.models)}')
         print(f'Number of seeds: {len(args.seeds)}')
         if args.model is None:
