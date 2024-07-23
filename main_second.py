@@ -21,6 +21,7 @@ def parse_args():
     parser.add_argument('--model', type=str, help='Model name or path')
     parser.add_argument('--path', type=str, default= f"/home/leviethai/AI4SOL_KC/result") #Fix to your path to save model
     parser.add_argument('--gpu', type=int, default=1, help='GPU device')
+    parser.add_argument('--gradient-accumulation-steps', type=int, default=1, help='Gradient accumulation steps')
     parser.add_argument('--eval', type=str, default='test', help='Evaluation on test or valid set')
     
     
