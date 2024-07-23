@@ -98,7 +98,6 @@ if __name__== "__main__":
     
         # Training setup
         training_args = TrainingArguments(
-        evaluation_strategy="steps",
         output_dir = args.path,
         learning_rate = args.lr,
         per_device_train_batch_size=args.batch_size,
@@ -109,7 +108,10 @@ if __name__== "__main__":
         fp16 = not torch.cuda.is_bf16_supported(),
         bf16 = torch.cuda.is_bf16_supported(),
         optim="paged_adamw_32bit",
-        lr_scheduler_type="linear"
+        lr_scheduler_type="linear",
+        logging_strategy="epoch",
+        evaluation_strategy="epoch",
+        log_level='error'
         )
 
         trainer = Trainer(
@@ -150,8 +152,10 @@ if __name__== "__main__":
             # plt.grid(True)
 
             # Save the plot as an image
-            plt.savefig(f'Loss_plot/loss_plot_{model_name}.png')
-            
+            model_parts = args.model.split('/')
+            relevant_part = f"{model_parts[-2]}_{model_parts[-1]}"
+            plt.savefig(f'Loss_plot/loss_plot_{relevant_part}.png')
+        
 
         elif args.phase == 'test':   
             pass
