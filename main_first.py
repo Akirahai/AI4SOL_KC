@@ -139,22 +139,22 @@ if __name__== "__main__":
             df_log = pd.DataFrame(trainer.state.log_history)
 
             print(df_log)
-            # # Plot the training and validation losses
-            # plt.figure(figsize=(12, 6))
-            # (df_log.dropna(subset=["eval_loss"]).reset_index()["eval_loss"]
-            # .plot(label="Validation"))
-            # df_log.dropna(subset=["loss"]).reset_index()["loss"].plot(label="Train")
+            # Plot the training and validation losses
+            plt.figure(figsize=(12, 6))
+            (df_log.dropna(subset=["eval_loss"]).reset_index()["eval_loss"]
+            .plot(label="Validation"))
+            df_log.dropna(subset=["train_loss"]).reset_index()["train_loss"].plot(label="Train")
 
-            # plt.xlabel("Epochs")
-            # plt.ylabel("Loss")
-            # plt.title("Training and Validation Losses")
-            # plt.legend(loc="upper right")
-            # plt.grid(True)
+            plt.xlabel("Epochs")
+            plt.ylabel("Loss")
+            plt.title("Training and Validation Losses")
+            plt.legend(loc="upper right")
+            plt.grid(True)
 
             # Save the plot as an image
-            # model_parts = args.model.split('/')
-            # relevant_part = f"{model_parts[-2]}_{model_parts[-1]}"
-            # plt.savefig(f'Loss_plot/loss_plot_{relevant_part}.png')
+            model_parts = args.model.split('/')
+            relevant_part = f"{model_parts[-2]}_{model_parts[-1]}"
+            plt.savefig(f'Loss_plot/loss_plot_{relevant_part}.png')
         
 
         elif args.phase == 'test':   
