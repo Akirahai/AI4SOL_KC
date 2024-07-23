@@ -139,18 +139,20 @@ if __name__== "__main__":
             df_log = pd.DataFrame(trainer.state.log_history)
 
             print(df_log)
-            # Save df_log to csv
-            # Plot the training and validation losses
             plt.figure(figsize=(12, 6))
-            (df_log.dropna(subset=["eval_loss"]).reset_index()["eval_loss"]
-            .plot(label="Validation"))
-            df_log.dropna(subset=["train_loss"]).reset_index()["train_loss"].plot(label="Train")
+
+            # Plot validation loss
+            plt.plot(df_log[['eval_loss']].dropna().reset_index(drop=True), label="Validation", color='blue')
+
+            # Plot training loss
+            plt.plot(df_log[['loss']].dropna().reset_index(drop=True), label="Train", color='red')
 
             plt.xlabel("Epochs")
             plt.ylabel("Loss")
             plt.title("Training and Validation Losses")
             plt.legend(loc="upper right")
             plt.grid(True)
+            plt.tight_layout()
 
             # Save the plot as an image
             model_parts = args.model.split('/')
