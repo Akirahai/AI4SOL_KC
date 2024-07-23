@@ -55,22 +55,20 @@ if __name__== "__main__":
     test_acc_mcas = 0
     seed_num = len(args.seeds)
     
-    # if len(args.models) != len(args.seeds):
-    #     print(f'Number of models: {len(args.models)}')
-    #     print(f'Number of seeds: {len(args.seeds)}')
-    #     if args.model is None:
-    #         raise ValueError("The number of models must match the number of seeds, or a single model must be provided with the --model argument")
+    if args.models is None or len(args.models) != len(args.seeds):
+        if args.models is not None:
+            print(f'Number of models: {len(args.models)}')
+        print(f'Number of seeds: {len(args.seeds)}')
+        if args.model is None:
+            raise ValueError("The number of models must match the number of seeds, or a single model must be provided with the --model argument")
 
-    #     print(f"Number of models does not match the number of seeds. Using the single model: {args.model} for all seeds.")
-    #     args.models = [args.model] * len(args.seeds)
+        print(f"Number of models does not match the number of seeds. Using the single model: {args.model} for all seeds.")
+        args.models = [args.model] * len(args.seeds)
     
     
-    # for model_name, seed in zip(args.models, args.seeds):
-    
-    for seed in args.seeds:
+    for model_name, seed in zip(args.models, args.seeds):
         
         # Load model
-        model_name=args.model
         tokenizer = AutoTokenizer.from_pretrained(model_name)
         
         model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=19) # Remember to change number of labels
@@ -100,7 +98,6 @@ if __name__== "__main__":
     
         # Training setup
         training_args = TrainingArguments(
-        evaluation_strategy="steps",
         output_dir = args.path,
         learning_rate = args.lr,
         per_device_train_batch_size=args.batch_size,
@@ -111,7 +108,10 @@ if __name__== "__main__":
         fp16 = not torch.cuda.is_bf16_supported(),
         bf16 = torch.cuda.is_bf16_supported(),
         optim="paged_adamw_32bit",
-        lr_scheduler_type="linear"
+        lr_scheduler_type="linear",
+        logging_strategy="epoch",
+        evaluation_strategy="epoch",
+        log_level='error'
         )
 
         trainer = Trainer(
@@ -136,25 +136,61 @@ if __name__== "__main__":
             
             print(f"Model saved to {model_output_dir}")
             
-            print("Evaluation on test set...")
-            eval_results_asdiv = trainer.evaluate(eval_dataset=tokenized_dataset_test_asdiv)
-            eval_results_mcas = trainer.evaluate(eval_dataset=tokenized_dataset_test_mcas)
-            print('ASDIV:')
-            print(eval_results_asdiv)
-            print('MCAS:')
-            print(eval_results_mcas)
+            df_log = pd.DataFrame(trainer.state.log_history)
+
+            print(df_log)
+            plt.figure(figsize=(12, 6))
+
+            # Plot validation loss
+            plt.plot(df_log[['eval_loss']].dropna().reset_index(drop=True), label="Validation", color='blue')
+
+            # Plot training loss
+            plt.plot(df_log[['loss']].dropna().reset_index(drop=True), label="Train", color='red')
+
+            plt.xlabel("Epochs")
+            plt.ylabel("Loss")
+            plt.title("Training and Validation Losses")
+            plt.legend(loc="upper right")
+            plt.grid(True)
+            plt.tight_layout()
+
+            # Save the plot as an image
+            plot_output_dir = os.path.join('Loss_plot_first_ver', args.model, f"seed_{seed}_{current_time}")
+            os.makedirs(plot_output_dir, exist_ok=True)
+            
+            plot_save_path = os.path.join(plot_output_dir, 'loss_plot.png')
+            csv_save_path = os.path.join(plot_output_dir, 'loss_log.csv')
+            
+            plt.savefig(plot_save_path)
+            df_log.to_csv(csv_save_path, index=False)
+            print(f"Plot saved to {plot_save_path}")
+            print(f"CSV saved to {csv_save_path}")
 
         elif args.phase == 'test':   
-            pass
+            sample = df_test_asdiv['Question'].iloc[0]
+            print(f"Sample question: {sample}")
+            tokenized_sample = preprocess_function(sample)
+            # Convert to PyTorch tensor
+            input_ids = torch.tensor(tokenized_sample['input_ids']).unsqueeze(0).to(device)  # Add batch dimension and move to device
+            attention_mask = torch.tensor(tokenized_sample['attention_mask']).unsqueeze(0).to(device)
+            model.eval()
+            with torch.no_grad():
+                outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+                logits = outputs.logits
+                probabilities = torch.softmax(logits, dim=-1)
+                top_probs, top_labels = torch.topk(probabilities, 2)
     
     
         print(f"Evaluation on train set for seed {seed}...")
         train_results = trainer.evaluate(eval_dataset=tokenized_dataset_train)
-        
+        print(f'Trainig results: {train_results}')
         
         print(f"Evaluation on test set for seed {seed}...")
         test_results_asdiv = trainer.evaluate(eval_dataset=tokenized_dataset_test_asdiv)
         test_results_mcas = trainer.evaluate(eval_dataset=tokenized_dataset_test_mcas)
+        print(f'ASDIV: {test_results_asdiv}')
+        print(f'MCAS: {test_results_mcas}')
+        
         
         results.append([f"Seed {seed}", train_results['eval_accuracy'], test_results_asdiv['eval_accuracy'], test_results_mcas['eval_accuracy']])
         train_acc += train_results['eval_accuracy']
@@ -165,4 +201,3 @@ if __name__== "__main__":
     results.append(["Average", train_acc/seed_num, test_acc_asdiv/seed_num , test_acc_mcas/seed_num])
     table = tabulate(results, headers=["Seed", "Train_Accuracy", "Test_Accuracy_ASDIV", "Test_Accuracy_MCAS"], tablefmt="pipe")
     print(table)
-    pyperclip.copy(table)

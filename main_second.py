@@ -79,11 +79,16 @@ if __name__== "__main__":
         per_device_eval_batch_size=args.batch_size,
         num_train_epochs=args.epochs,
         weight_decay=0.01,
-        # evaluation_strategy = 'epoch',
-        # logging_strategy = 'epoch',
-        # save_strategy="epoch",
+        gradient_accumulation_steps=args.gradient_accumulation_steps,
+        fp16 = not torch.cuda.is_bf16_supported(),
+        bf16 = torch.cuda.is_bf16_supported(),
+        optim="paged_adamw_32bit",
+        lr_scheduler_type="linear",
+        logging_strategy="epoch",
+        evaluation_strategy="epoch",
+        log_level='error'
         )
-
+        
         trainer = Trainer(
             model=model,
             args=training_args,
@@ -93,7 +98,7 @@ if __name__== "__main__":
             data_collator=data_collator,
             compute_metrics=compute_metrics,
         )
-
+        
         if args.phase == 'train':
             trainer.train()
             
