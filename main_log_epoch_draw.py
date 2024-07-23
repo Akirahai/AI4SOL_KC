@@ -56,8 +56,6 @@ if __name__== "__main__":
     seed_num = len(args.seeds)
     
     if len(args.models) != len(args.seeds):
-        print(f'Number of models: {len(args.models)}')
-        print(f'Number of seeds: {len(args.seeds)}')
         if args.model is None:
             raise ValueError("The number of models must match the number of seeds, or a single model must be provided with the --model argument")
 
