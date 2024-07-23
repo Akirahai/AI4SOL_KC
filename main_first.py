@@ -73,7 +73,7 @@ if __name__== "__main__":
         # Load data
         df_train =pd.read_csv(f'data_first_ver/{seed}_train_set.csv')
         df_test_asdiv =pd.read_csv(f'data_first_ver/{seed}_test_set_asdiv.csv')
-        df_test_mcas =pd.read_csv(f'data_first_ver/{seed}_test_set_asdiv.csv')
+        df_test_mcas =pd.read_csv(f'data_first_ver/{seed}_test_set_mcas.csv')
         
         dataset_train = Dataset.from_pandas(df_train)
         dataset_test_asdiv = Dataset.from_pandas(df_test_asdiv)
