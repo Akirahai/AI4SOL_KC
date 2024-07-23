@@ -102,18 +102,42 @@ if __name__== "__main__":
             # Save the trained model with timestamp prefix
             model_output_dir = os.path.join(args.path, args.model, f"seed_{seed}_{current_time}")
             
-            # model.save_pretrained(model_output_dir)
-            # tokenizer.save_pretrained(model_output_dir)
-            
             trainer.save_model(model_output_dir)
             
             print(f"Model saved to {model_output_dir}")
             
-            print("Evaluation on test set...")
-            eval_results = trainer.evaluate(eval_dataset=tokenized_dataset_test)
-            print(eval_results)
+            df_log = pd.DataFrame(trainer.state.log_history)
+
+            print(df_log)
+            plt.figure(figsize=(12, 6))
+
+            # Plot validation loss
+            plt.plot(df_log[['eval_loss']].dropna().reset_index(drop=True), label="Validation", color='blue')
+
+            # Plot training loss
+            plt.plot(df_log[['loss']].dropna().reset_index(drop=True), label="Train", color='red')
+
+            plt.xlabel("Epochs")
+            plt.ylabel("Loss")
+            plt.title("Training and Validation Losses")
+            plt.legend(loc="upper right")
+            plt.grid(True)
+            plt.tight_layout()
+
+            # Save the plot as an image
+            plot_output_dir = os.path.join('Loss_plot_second_ver', args.model, f"seed_{seed}_{current_time}")
+            os.makedirs(plot_output_dir, exist_ok=True)
+            
+            plot_save_path = os.path.join(plot_output_dir, 'loss_plot.png')
+            csv_save_path = os.path.join(plot_output_dir, 'loss_log.csv')
+            
+            plt.savefig(plot_save_path)
+            df_log.to_csv(csv_save_path, index=False)
+            print(f"Plot saved to {plot_save_path}")
+            print(f"CSV saved to {csv_save_path}")
 
         elif args.phase == 'test':   
+            pass 
             # if args.eval == 'test':
             #     print("Evaluation on test set...")
             #     eval_results = trainer.evaluate(eval_dataset=tokenized_dataset_test)
@@ -123,7 +147,6 @@ if __name__== "__main__":
             #     print("Evaluation on train set...")
             #     eval_results = trainer.evaluate(eval_dataset=tokenized_dataset_train)
             #     print(eval_results)
-            pass
     
     
         print(f"Evaluation on train set for seed {seed}...")
