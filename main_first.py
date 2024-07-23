@@ -155,11 +155,16 @@ if __name__== "__main__":
             plt.tight_layout()
 
             # Save the plot as an image
-            model_parts = args.model.split('/')
-            relevant_part = f"{model_parts[-2]}_{model_parts[-1]}"
-            plt.savefig(f'Loss_plot_first_ver/seed_{seed}_loss_plot_{relevant_part}.png')
-            df_log.to_csv(f'Loss_plot_first_ver/seed_{seed}_loss_plot_{relevant_part}.csv')
-        
+            plot_output_dir = os.path.join('Loss_plot_first_ver', args.model, f"seed_{seed}_{current_time}")
+            os.makedirs(plot_output_dir, exist_ok=True)
+            
+            plot_save_path = os.path.join(plot_output_dir, 'loss_plot.png')
+            csv_save_path = os.path.join(plot_output_dir, 'loss_log.csv')
+            
+            plt.savefig(plot_save_path)
+            df_log.to_csv(csv_save_path, index=False)
+            print(f"Plot saved to {plot_save_path}")
+            print(f"CSV saved to {csv_save_path}")
 
         elif args.phase == 'test':   
             pass
