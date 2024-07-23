@@ -152,9 +152,9 @@ if __name__== "__main__":
             # plt.grid(True)
 
             # Save the plot as an image
-            model_parts = args.model.split('/')
-            relevant_part = f"{model_parts[-2]}_{model_parts[-1]}"
-            plt.savefig(f'Loss_plot/loss_plot_{relevant_part}.png')
+            # model_parts = args.model.split('/')
+            # relevant_part = f"{model_parts[-2]}_{model_parts[-1]}"
+            # plt.savefig(f'Loss_plot/loss_plot_{relevant_part}.png')
         
 
         elif args.phase == 'test':   
