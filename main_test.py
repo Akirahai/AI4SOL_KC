@@ -179,6 +179,12 @@ if __name__== "__main__":
                 logits = outputs.logits
                 probabilities = torch.softmax(logits, dim=-1)
                 top_probs, top_labels = torch.topk(probabilities, 2)
+                
+                # Print the raw logits, probabilities, and top labels
+                print(f"Logits: {logits}")
+                print(f"Probabilities: {probabilities}")
+                print(f"Top 2 probabilities: {top_probs}")
+                print(f"Top 2 labels: {top_labels}")
     
     
         print(f"Evaluation on train set for seed {seed}...")
