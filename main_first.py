@@ -54,6 +54,7 @@ if __name__== "__main__":
     test_acc_asdiv = 0
     test_acc_mcas = 0
     seed_num = len(args.seeds)
+    current_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     
     if args.models is None or len(args.models) != len(args.seeds):
         if args.models is not None:
@@ -127,10 +128,10 @@ if __name__== "__main__":
         if args.phase == 'train':
             trainer.train()
             
-            current_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+            
             
             # Save the trained model with timestamp prefix
-            model_output_dir = os.path.join(args.path, args.model, f"seed_{seed}_{current_time}")
+            model_output_dir = os.path.join(args.path, args.model, current_time, f"seed_{seed}")
             
             trainer.save_model(model_output_dir)
             
@@ -149,13 +150,13 @@ if __name__== "__main__":
 
             plt.xlabel("Epochs")
             plt.ylabel("Loss")
-            plt.title("Training and Validation Losses")
+            plt.title(f"Training and Validation Losses of {args.model} through {args.epochs} epochs with seed {seed}")
             plt.legend(loc="upper right")
             plt.grid(True)
             plt.tight_layout()
 
             # Save the plot as an image
-            plot_output_dir = os.path.join('Loss_plot_first_ver', args.model, f"seed_{seed}_{current_time}")
+            plot_output_dir = os.path.join('Loss_plot_first_ver', args.model, current_time,  f"seed_{seed}")
             os.makedirs(plot_output_dir, exist_ok=True)
             
             plot_save_path = os.path.join(plot_output_dir, 'loss_plot.png')
