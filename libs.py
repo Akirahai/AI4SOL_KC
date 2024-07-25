@@ -64,6 +64,10 @@ def compute_metrics(eval_pred):
     return {'accuracy': accuracy}
 
 def compute_top_k_accuracy(preds, labels, k=1):
+    
+    if isinstance(preds, tuple):
+        preds = preds[0]
+        
     top_k_preds = np.argsort(preds, axis=1)[:, -k:]
     top_k_accuracy = np.any(top_k_preds == np.expand_dims(labels, axis=1), axis=1).mean()
     return top_k_accuracy
