@@ -1,4 +1,6 @@
 /result/distilbert
 /result/*
 __pycache__/
+.vscode/
 /utils/__pycache__/
+Train_log_history.ipynb

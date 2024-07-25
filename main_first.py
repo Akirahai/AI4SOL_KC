@@ -24,6 +24,7 @@ def parse_args():
     parser.add_argument('--gpu', type=int, default=1, help='GPU device')
     parser.add_argument('--gradient-accumulation-steps', type=int, default=1, help='Gradient accumulation steps')
     parser.add_argument('--eval', type=str, default='test', help='Evaluation on test or valid set')
+    parser.add_argument('--top-k', type=int, default=3, help='Top k accuracy')
     
     
     
@@ -54,6 +55,11 @@ if __name__== "__main__":
     test_acc_asdiv = 0
     test_acc_mcas = 0
     seed_num = len(args.seeds)
+    # Initialize accumulators for top-k accuracies
+    top_k_accumulators_asdiv = {k: 0 for k in range(1, args.top_k + 1)}
+    top_k_accumulators_mcas = {k: 0 for k in range(1, args.top_k + 1)}
+    
+    
     current_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     
     if args.models is None or len(args.models) != len(args.seeds):
@@ -71,13 +77,12 @@ if __name__== "__main__":
         
         # Load model
         tokenizer = AutoTokenizer.from_pretrained(model_name)
+        tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+        # tokenizer.eos_token = tokenizer.sep_token
         
         model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=19) # Remember to change number of labels
         model.resize_token_embeddings(len(tokenizer))
-        data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
-        
-        def preprocess_function(examples):
-            return tokenizer(examples["Question"], truncation=True, padding = 'max_length', max_length=512)   
+        data_collator = DataCollatorWithPadding(tokenizer=tokenizer)   
         
         
         print(f"Training and evaluating for seed: {seed}")
@@ -92,9 +97,9 @@ if __name__== "__main__":
         dataset_test_asdiv = Dataset.from_pandas(df_test_asdiv)
         dataset_test_mcas = Dataset.from_pandas(df_test_mcas)
         
-        tokenized_dataset_train = dataset_train.map(preprocess_function, batched=True)
-        tokenized_dataset_test_asdiv = dataset_test_asdiv.map(preprocess_function, batched=True)
-        tokenized_dataset_test_mcas = dataset_test_mcas.map(preprocess_function, batched=True)
+        tokenized_dataset_train = dataset_train.map(lambda x: preprocess_function(x, tokenizer), batched=True)
+        tokenized_dataset_test_asdiv = dataset_test_asdiv.map(lambda x: preprocess_function(x, tokenizer), batched=True)
+        tokenized_dataset_test_mcas = dataset_test_mcas.map(lambda x: preprocess_function(x, tokenizer), batched=True)
     
     
         # Training setup
@@ -167,10 +172,23 @@ if __name__== "__main__":
             print(f"Plot saved to {plot_save_path}")
             print(f"CSV saved to {csv_save_path}")
 
-        elif args.phase == 'test':   
+        elif args.phase == 'test':
             pass
+        
+        
+        
+        model.eval()
+        preds_asdiv = trainer.predict(tokenized_dataset_test_asdiv).predictions
+        labels_asdiv = np.array(tokenized_dataset_test_asdiv["label"])
+
+        preds_mcas = trainer.predict(tokenized_dataset_test_mcas).predictions
+        labels_mcas = np.array(tokenized_dataset_test_mcas["label"])
+        
+
+                    
     
-    
+        # Evaluation on training and testing set
+        
         print(f"Evaluation on train set for seed {seed}...")
         train_results = trainer.evaluate(eval_dataset=tokenized_dataset_train)
         print(f'Trainig results: {train_results}')
@@ -182,12 +200,61 @@ if __name__== "__main__":
         print(f'MCAS: {test_results_mcas}')
         
         
-        results.append([f"Seed {seed}", train_results['eval_accuracy'], test_results_asdiv['eval_accuracy'], test_results_mcas['eval_accuracy']])
+        # Evaluation on Top K accuracy of training and testing set
+        
+        # Evaluate top-k accuracies
+        top_k_accuracies_asdiv = {k: compute_top_k_accuracy(preds_asdiv, labels_asdiv, k=k) for k in range(1, args.top_k + 1)}
+        top_k_accuracies_mcas = {k: compute_top_k_accuracy(preds_mcas, labels_mcas, k=k) for k in range(1, args.top_k + 1)}
+
+        # Accumulate top-k accuracies
+        for k in range(1, args.top_k + 1):
+            top_k_accumulators_asdiv[k] += top_k_accuracies_asdiv[k]
+            top_k_accumulators_mcas[k] += top_k_accuracies_mcas[k]
+
+        # Append results dynamically
+        top_k_asdiv = [top_k_accuracies_asdiv[k] for k in range(1, args.top_k + 1)]
+        top_k_mcas = [top_k_accuracies_mcas[k] for k in range(1, args.top_k + 1)]
+
+
+
+
+        results.append([
+            f"Seed {seed}",
+            train_results['eval_accuracy'],
+            test_results_asdiv['eval_accuracy'], 
+            test_results_mcas['eval_accuracy'],
+            *top_k_asdiv,
+            *top_k_mcas
+        ])
+        
         train_acc += train_results['eval_accuracy']
         test_acc_asdiv += test_results_asdiv['eval_accuracy']
         test_acc_mcas += test_results_mcas['eval_accuracy']
 
     
-    results.append(["Average", train_acc/seed_num, test_acc_asdiv/seed_num , test_acc_mcas/seed_num])
-    table = tabulate(results, headers=["Seed", "Train_Accuracy", "Test_Accuracy_ASDIV", "Test_Accuracy_MCAS"], tablefmt="pipe")
+
+    # Compute average top-K accuracies
+    average_top_k_asdiv = {k: top_k_accumulators_asdiv[k] / seed_num for k in range(1, args.top_k + 1)}
+    average_top_k_mcas = {k: top_k_accumulators_mcas[k] / seed_num for k in range(1, args.top_k + 1)}
+
+    results.append(["Average", train_acc/seed_num, test_acc_asdiv/seed_num, test_acc_mcas/seed_num, 
+                    *[average_top_k_asdiv[k] for k in range(1, args.top_k + 1)],
+                    *[average_top_k_mcas[k] for k in range(1, args.top_k + 1)]] )
+    
+    
+    # Create headers
+    
+    headers = [
+        "Seed", 
+        "Train_Accuracy", 
+        "Test_Accuracy_ASDIV", 
+        "Test_Accuracy_MCAS"
+    ]
+
+    for k in range(1, args.top_k + 1):
+        headers.append(f"Top_{k}_Accuracy_ASDIV")
+        headers.append(f"Top_{k}_Accuracy_MCAS")
+        
+    
+    table = tabulate(results, headers=headers, tablefmt="pipe")
     print(table)
