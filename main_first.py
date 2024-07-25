@@ -50,7 +50,8 @@ if __name__== "__main__":
         compute_dtype = torch.float16
         
         
-    results = []
+    results_ASDIV = []
+    results_MCAS = []
     train_acc = 0
     test_acc_asdiv = 0
     test_acc_mcas = 0
@@ -218,14 +219,21 @@ if __name__== "__main__":
 
 
 
-        results.append([
+        results_ASDIV.append([
             f"Seed {seed}",
             train_results['eval_accuracy'],
             test_results_asdiv['eval_accuracy'], 
-            # test_results_mcas['eval_accuracy'],
             *top_k_asdiv
-            # *top_k_mcas
         ])
+        
+        results_MCAS.append([
+            f"Seed {seed}",
+            train_results['eval_accuracy'],
+            test_results_mcas['eval_accuracy'],
+            *top_k_mcas
+            
+        ])
+        
         
         train_acc += train_results['eval_accuracy']
         test_acc_asdiv += test_results_asdiv['eval_accuracy']
@@ -237,28 +245,42 @@ if __name__== "__main__":
     average_top_k_asdiv = {k: top_k_accumulators_asdiv[k] / seed_num for k in range(1, args.top_k + 1)}
     average_top_k_mcas = {k: top_k_accumulators_mcas[k] / seed_num for k in range(1, args.top_k + 1)}
 
-    results.append(["Average", 
+    results_ASDIV.append(["Average", 
                     train_acc/seed_num, 
                     test_acc_asdiv/seed_num, 
-                    # test_acc_mcas/seed_num, 
                     *[average_top_k_asdiv[k] for k in range(1, args.top_k + 1)]
-                    # *[average_top_k_mcas[k] for k in range(1, args.top_k + 1)] 
                 ])
     
+    results_MCAS.append(["Average",
+                    train_acc/seed_num, 
+                    test_acc_mcas/seed_num, 
+                    *[average_top_k_mcas[k] for k in range(1, args.top_k + 1)] 
+                ])
     
     # Create headers
     
-    headers = [
+    headers_ASDIV = [
         "Seed", 
         "Train_Accuracy", 
         "Test_Accuracy_ASDIV"
-        # "Test_Accuracy_MCAS"
+    ]
+    
+    headers_MCAS = [
+        "Seed", 
+        "Train_Accuracy", 
+        "Test_Accuracy_MCAS"
     ]
 
     for k in range(1, args.top_k + 1):
-        headers.append(f"Top_{k}_Accuracy_ASDIV")
-        # headers.append(f"Top_{k}_Accuracy_MCAS")
+        headers_ASDIV.append(f"Top_{k}_Accuracy_ASDIV")
+        headers_MCAS.append(f"Top_{k}_Accuracy_MCAS")
         
     
-    table = tabulate(results, headers=headers, tablefmt="pipe")
-    print(table)
+    table_ASDIV = tabulate(results_ASDIV, headers=headers_ASDIV, tablefmt="pipe")
+    table_MCAS = tabulate(results_MCAS, headers=headers_MCAS, tablefmt="pipe")
+    
+    print("Results for ASDIV:")
+    print(table_ASDIV)
+    print("-" * 100)
+    print("Results for MCAS:")
+    print(table_MCAS)
