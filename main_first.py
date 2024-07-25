@@ -78,13 +78,16 @@ if __name__== "__main__":
         
         # Load model
         tokenizer = AutoTokenizer.from_pretrained(model_name)
-        tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+        # tokenizer.add_special_tokens({'pad_token': '[PAD]'})
         # tokenizer.eos_token = tokenizer.sep_token
         
         model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=19) # Remember to change number of labels
         model.resize_token_embeddings(len(tokenizer))
         data_collator = DataCollatorWithPadding(tokenizer=tokenizer)   
         
+        if tokenizer.pad_token is None:
+            tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+            model.resize_token_embeddings(len(tokenizer))
         
         print(f"Training and evaluating for seed: {seed}")
         
