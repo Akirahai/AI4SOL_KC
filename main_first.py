@@ -79,6 +79,7 @@ if __name__== "__main__":
         # Load model
         tokenizer = AutoTokenizer.from_pretrained(model_name)
         # tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+        tokenizer.pad_token = tokenizer.eos_token
         
         model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=19) # Remember to change number of labels
         model.resize_token_embeddings(len(tokenizer))
@@ -86,7 +87,6 @@ if __name__== "__main__":
         
         if tokenizer.pad_token is None:
             print("Adding padding token to tokenizer...")
-            tokenizer.pad_token = tokenizer.eos_token
             tokenizer.add_special_tokens({'pad_token': '[PAD]'})
             model.resize_token_embeddings(len(tokenizer))
         
