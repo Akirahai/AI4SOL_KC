@@ -78,7 +78,7 @@ if __name__== "__main__":
         
         # Load model
         tokenizer = AutoTokenizer.from_pretrained(model_name)
-        # tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+        tokenizer.add_special_tokens({'pad_token': '[PAD]'})
         # tokenizer.eos_token = tokenizer.sep_token
         
         model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=19) # Remember to change number of labels
