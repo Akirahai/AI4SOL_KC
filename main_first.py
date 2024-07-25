@@ -222,9 +222,9 @@ if __name__== "__main__":
             f"Seed {seed}",
             train_results['eval_accuracy'],
             test_results_asdiv['eval_accuracy'], 
-            test_results_mcas['eval_accuracy'],
-            *top_k_asdiv,
-            *top_k_mcas
+            # test_results_mcas['eval_accuracy'],
+            *top_k_asdiv
+            # *top_k_mcas
         ])
         
         train_acc += train_results['eval_accuracy']
@@ -237,9 +237,13 @@ if __name__== "__main__":
     average_top_k_asdiv = {k: top_k_accumulators_asdiv[k] / seed_num for k in range(1, args.top_k + 1)}
     average_top_k_mcas = {k: top_k_accumulators_mcas[k] / seed_num for k in range(1, args.top_k + 1)}
 
-    results.append(["Average", train_acc/seed_num, test_acc_asdiv/seed_num, test_acc_mcas/seed_num, 
-                    *[average_top_k_asdiv[k] for k in range(1, args.top_k + 1)],
-                    *[average_top_k_mcas[k] for k in range(1, args.top_k + 1)]] )
+    results.append(["Average", 
+                    train_acc/seed_num, 
+                    test_acc_asdiv/seed_num, 
+                    # test_acc_mcas/seed_num, 
+                    *[average_top_k_asdiv[k] for k in range(1, args.top_k + 1)]
+                    # *[average_top_k_mcas[k] for k in range(1, args.top_k + 1)] 
+                ])
     
     
     # Create headers
@@ -247,13 +251,13 @@ if __name__== "__main__":
     headers = [
         "Seed", 
         "Train_Accuracy", 
-        "Test_Accuracy_ASDIV", 
-        "Test_Accuracy_MCAS"
+        "Test_Accuracy_ASDIV"
+        # "Test_Accuracy_MCAS"
     ]
 
     for k in range(1, args.top_k + 1):
         headers.append(f"Top_{k}_Accuracy_ASDIV")
-        headers.append(f"Top_{k}_Accuracy_MCAS")
+        # headers.append(f"Top_{k}_Accuracy_MCAS")
         
     
     table = tabulate(results, headers=headers, tablefmt="pipe")
