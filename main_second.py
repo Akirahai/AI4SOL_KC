@@ -39,6 +39,7 @@ if __name__== "__main__":
         device = torch.device(f'cuda:{args.gpu}') # Change to your suitable GPU device
         
     #Login
+    print(device)
     if args.model in ['meta-llama/Llama-2-7b-hf', 'meta-llama/Meta-Llama-3-8B-Instruct']:
         from huggingface_hub import login
         login()
