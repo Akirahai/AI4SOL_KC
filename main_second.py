@@ -119,7 +119,7 @@ if __name__== "__main__":
         optim="paged_adamw_32bit",
         lr_scheduler_type="linear",
         logging_strategy="epoch",
-        evaluation_strategy="epoch",
+        evaluation_strategy="no",
         log_level='error'
         )
 
