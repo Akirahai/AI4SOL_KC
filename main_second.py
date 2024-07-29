@@ -8,8 +8,8 @@ from libs import *
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--data-dir', type=str, default='data/Knowledge_Base/', help='Directory for data dir')
-    parser.add_argument('--seed', type=int, default=42, help='Seed to split data') #42
-    parser.add_argument('--seeds', type=int, nargs='+', default=[42, 50, 100], help='List of seeds to split data')
+    # parser.add_argument('--seed', type=int, default=42, help='Seed to split data') #42
+    # parser.add_argument('--seeds', type=int, nargs='+', default=[42, 50, 100], help='List of seeds to split data')
     parser.add_argument('--models', type=str, nargs='+', help='List of models to train')
     parser.add_argument('--num-classes', type=int, default=4, help='Num of grade')
     parser.add_argument('--lr', '--learning-rate', type=float, default=0.00009, help='Learning rate') #0.0001
@@ -20,7 +20,7 @@ def parse_args():
     parser.add_argument('--resume', default=False, action='store_true', help='Resume')
     parser.add_argument('--use-gpu', action='store_true', help='Use GPU')
     parser.add_argument('--model', type=str, help='Model name or path')
-    parser.add_argument('--path', type=str, default= f"/home/leviethai/AI4SOL_KC/result") #Fix to your path to save model
+    parser.add_argument('--path', type=str, default= f"./result") #Fix to your path to save model
     parser.add_argument('--gpu', type=int, default=1, help='GPU device')
     parser.add_argument('--gradient-accumulation-steps', type=int, default=1, help='Gradient accumulation steps')
     parser.add_argument('--eval', type=str, default='test', help='Evaluation on test or valid set')
@@ -52,7 +52,6 @@ if __name__== "__main__":
         
         
     results = []
-    train_acc = 0
     # Initialize accumulators for top-k accuracies
     top_k_accumulators_asdiv = {k: 0 for k in range(1, args.top_k + 1)}
     top_k_accumulators_mcas = {k: 0 for k in range(1, args.top_k + 1)}
@@ -61,16 +60,16 @@ if __name__== "__main__":
     current_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     
     
-    if args.models is None or len(args.models) != len(args.seeds):
-        if args.models is not None:
-            print(f'Number of models: {len(args.models)}')
-        print(f'Number of seeds: {len(args.seeds)}')
-        if args.model is None:
-            raise ValueError("The number of models must match the number of seeds, or a single model must be provided with the --model argument")
+    # if args.models is None or len(args.models) != len(args.seeds):
+    #     if args.models is not None:
+    #         print(f'Number of models: {len(args.models)}')
+    #     print(f'Number of seeds: {len(args.seeds)}')
+    #     if args.model is None:
+    #         raise ValueError("The number of models must match the number of seeds, or a single model must be provided with the --model argument")
 
-        print(f"Number of models does not match the number of seeds. Using the single model: {args.model} for all seeds.")
-        args.models = [args.model] * len(args.seeds)
-    
+    #     print(f"Number of models does not match the number of seeds. Using the single model: {args.model} for all seeds.")
+    #     args.models = [args.model] * len(args.seeds)
+
     
     for model_name in args.models:
         
@@ -134,7 +133,7 @@ if __name__== "__main__":
             trainer.train()
             
             # Save the trained model with timestamp prefix
-            model_output_dir = os.path.join(args.path, args.model, current_time, f"seed_{seed}")
+            model_output_dir = os.path.join(args.path, args.model, current_time)
             
             trainer.save_model(model_output_dir)
             
@@ -144,9 +143,6 @@ if __name__== "__main__":
 
             print(df_log)
             plt.figure(figsize=(12, 6))
-
-            # # Plot validation loss
-            # plt.plot(df_log[['eval_loss']].dropna().reset_index(drop=True), label="Validation", color='blue')
 
             # Plot training loss
             plt.plot(df_log[['loss']].dropna().reset_index(drop=True), label="Train", color='red')
@@ -173,30 +169,29 @@ if __name__== "__main__":
         elif args.phase == 'test':   
             
             preds_asdiv = trainer.predict(tokenized_dataset_test).predictions
-            labels_asdiv = np.array(dataset_test['label'])
-
-            top_k_preds_asdiv = np.argsort(preds_asdiv, axis=1)[:, -args.top_k:]
             
-            # Prepare DataFrame for output
             df_test_predictions = df_test.copy()
-            df_test_predictions['top_k_preds'] = list(top_k_preds_asdiv)
             
+            
+            for k in range(1, args.top_k + 1):
+                top_k_preds_asdiv = np.argsort(preds_asdiv, axis=1)[:, -k:]
+                df_test_predictions[f'top_{k}_preds'] = list(top_k_preds_asdiv)
+                
+                
             # Save the predictions to CSV
-            predictions_output_dir = os.path.join(args.path, 'predictions', f"seed_{seed}")
+            predictions_output_dir = os.path.join('Preds_second_ver', args.model, current_time)
             os.makedirs(predictions_output_dir, exist_ok=True)
-            predictions_csv_path = os.path.join(predictions_output_dir, 'top_k_predictions.csv')
+            predictions_csv_path = os.path.join(predictions_output_dir, 'Preds_top_k.csv')
             df_test_predictions.to_csv(predictions_csv_path, index=False)
             print(f"Top-k predictions saved to {predictions_csv_path}")
     
     
-        print(f"Evaluation on train set for seed {seed}...")
+        print(f"Evaluation on train set")
         train_results = trainer.evaluate(eval_dataset=tokenized_dataset_train)
         print(train_results)
             
         results.append([f"Model {model_name}", train_results['eval_accuracy']])
-        train_acc += train_results['eval_accuracy']
 
     
-    results.append(["Average", train_acc/seed_num])
     table = tabulate(results, headers=["Model", "Train_Accuracy"], tablefmt="pipe")
     print(table)
