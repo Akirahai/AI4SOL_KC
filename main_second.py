@@ -52,11 +52,6 @@ if __name__== "__main__":
         
         
     results = []
-    # Initialize accumulators for top-k accuracies
-    top_k_accumulators_asdiv = {k: 0 for k in range(1, args.top_k + 1)}
-    top_k_accumulators_mcas = {k: 0 for k in range(1, args.top_k + 1)}
-    
-    
     current_time = datetime.datetime.now().strftime("%Y-%m-%d-%H")
 
     
@@ -134,7 +129,7 @@ if __name__== "__main__":
             
             # Save the trained model with timestamp prefix
             model_output_dir = os.path.join(args.path, current_time, model_name)
-            os.makedirs(predictions_output_dir, exist_ok=True)
+            os.makedirs(model_output_dir, exist_ok=True)
             
             trainer.save_model(model_output_dir)
             
