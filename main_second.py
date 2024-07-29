@@ -53,8 +53,6 @@ if __name__== "__main__":
         
     results = []
     train_acc = 0
-    seed_num = len(args.seeds)
-    seed_num = len(args.seeds)
     # Initialize accumulators for top-k accuracies
     top_k_accumulators_asdiv = {k: 0 for k in range(1, args.top_k + 1)}
     top_k_accumulators_mcas = {k: 0 for k in range(1, args.top_k + 1)}
@@ -155,7 +153,7 @@ if __name__== "__main__":
 
             plt.xlabel("Epochs")
             plt.ylabel("Loss")
-            plt.title(f"Training Losses of {args.model} through {args.epochs} epochs with seed {seed}")
+            plt.title(f"Training Losses of {args.model} through {args.epochs} epochs")
             plt.legend(loc="upper right")
             plt.grid(True)
             plt.tight_layout()
