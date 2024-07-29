@@ -118,6 +118,8 @@ if __name__== "__main__":
         evaluation_strategy="no",
         log_level='error'
         )
+        
+        model.to(device)
 
         trainer = Trainer(
             model=model,
