@@ -170,7 +170,9 @@ if __name__== "__main__":
         
         df_test_predictions = df_test.copy()
         
-        
+        if isinstance(preds_asdiv, tuple):
+            preds_asdiv = preds_asdiv[0]
+            
         for k in range(1, args.top_k + 1):
             top_k_preds_asdiv = np.argsort(preds_asdiv, axis=1)[:, -k:]
             df_test_predictions[f'top_{k}_preds'] = list(top_k_preds_asdiv)
