@@ -37,7 +37,7 @@ if __name__== "__main__":
     args.best_metric = 0
     if args.use_gpu and torch.cuda.is_available():
         device = torch.device(f'cuda:{args.gpu}') # Change to your suitable GPU device
-        
+        CUDA_VISIBLE_DEVICES = "1,2,3"
     #Login
     print(device)
     if args.model in ['meta-llama/Llama-2-7b-hf', 'meta-llama/Meta-Llama-3-8B-Instruct']:
