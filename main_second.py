@@ -57,8 +57,8 @@ if __name__== "__main__":
     top_k_accumulators_mcas = {k: 0 for k in range(1, args.top_k + 1)}
     
     
-    current_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    
+    current_time = datetime.datetime.now().strftime("%Y-%m-%d-%H")
+
     
     # if args.models is None or len(args.models) != len(args.seeds):
     #     if args.models is not None:
@@ -133,7 +133,7 @@ if __name__== "__main__":
             trainer.train()
             
             # Save the trained model with timestamp prefix
-            model_output_dir = os.path.join(args.path, args.model)
+            model_output_dir = os.path.join(args.path, current_time, model_name)
             os.makedirs(predictions_output_dir, exist_ok=True)
             
             trainer.save_model(model_output_dir)
@@ -156,7 +156,7 @@ if __name__== "__main__":
             plt.tight_layout()
 
             # Save the plot as an image
-            plot_output_dir = os.path.join('Loss_plot_second_ver', args.model, current_time)
+            plot_output_dir = os.path.join('Loss_plot_second_ver', current_time, model_name)
             os.makedirs(plot_output_dir, exist_ok=True)
             
             plot_save_path = os.path.join(plot_output_dir, 'loss_plot.png')
@@ -180,7 +180,7 @@ if __name__== "__main__":
                 
                 
             # Save the predictions to CSV
-            predictions_output_dir = os.path.join('Preds_second_ver', args.model, current_time)
+            predictions_output_dir = os.path.join('Preds_second_ver', current_time, model_name)
             os.makedirs(predictions_output_dir, exist_ok=True)
             predictions_csv_path = os.path.join(predictions_output_dir, 'Preds_top_k.csv')
             df_test_predictions.to_csv(predictions_csv_path, index=False)
