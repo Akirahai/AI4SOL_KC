@@ -1,0 +1,187 @@
+Question,label
+"Question: Debby received twenty-one text messages before noon and another eighteen after noon. How many text messages did Debby receive total?
+Solution: 39 (text messages)
+Steps: 21+18=39",3
+"Question: To get to school, Jenny decided to ride the school's double decker bus. The bus has a total of 20 rows of seats and each row has a capacity of 4 kids. How many kids in total can ride the school bus?
+Solution: 80 (kids)
+Steps: 20*4=80",4
+"Question: Paul got a box of 479 crayons for his birthday. At the end of the school year, he only had 134 left. How many crayons had been lost or given away?
+Solution: 345 (crayons)
+Steps: 479-134=345",2
+"Question: Ted and Fred measured their height. Their total height is 98 inches. Ted is 39 inches tall. How tall is Fred?
+Solution: 98-39=59
+Steps: 98-39=59",3
+"Question: A restaurant offers diet soda and regular soda. In one day they sold 64 sodas. If 28 of the sodas they sold were diet, what is the ratio of regular sodas sold to diet sodas sold?
+Solution: 9:07:00
+Steps: 64-28=36; 36:28=9:7",0
+"Question: One-third of a number minus seven gives eight. Find the number.
+Solution: 45
+Steps: x:The number; (1/3)*x-7=8",13
+"Question: There are 43 empty seats and 7 occupied seats on an airplane. What is the ratio of the number of occupied seats to the total number of seats?
+Solution: 0.326388889
+Steps: 7+43=50; 7:50",3
+"Question: There are 43 empty seats and 7 occupied seats on an airplane. What is the ratio of the number of occupied seats to the total number of seats?
+Solution: 0.326388889
+Steps: 7+43=50; 7:50",15
+"Question: Bruno had some story books. He lost 4 of them and his dad gave him 10 more books. If he had 39 books after that, how many books did Bruno have at first?
+Solution: 33 (books)
+Steps: 39-10+4=33",3
+"Question: 2 beavers were working on their home. 1 went for a swim. How many beavers are still working on their home?
+Solution: 1 (beavers)
+Steps: 2-1=1",18
+"Question: A furniture store had fifteen chairs. After selling some, there was three left. How many chairs did they sell?
+Solution: 12 (chairs)
+Steps: 15-3=12",0
+"Question: Jenny was told to clean up her room in fourteen days or she could not go to her best friend's birthday party. It is three days left but Jenny has cleaned up her room. How many days did she spend?
+Solution: 11 (days)
+Steps: 14-3=11",0
+"Question: Since the result of the vote was close, it was decided that they will balance the menu with both meat and vegetables. This decision was agreed upon by 154 third grade students and 237 fourth grade students. How many students agreed with the decision?
+Solution: 391 (students)
+Steps: 154+237=391",2
+"Question: Dave was making ice using ice trays. He originally had two ice cubes. But made seven more cubes. How many ice cubes did he have totaled?
+Solution: 9 (ice cubes)
+Steps: 2+7=9",18
+"Question: Adam was reading through his favorite book series. The first week he read 5 different books. The next week he read 8 books. How many books did he read total?
+Solution: 13 (books)
+Steps: 5+8=13",3
+"Question: Zoe is on vacation. She has already taken 28 pictures. She has enough film left to take 32 more pictures. Zoe took 16 more pictures at the dolphin show. How many pictures has Zoe taken altogether?
+Solution: 44 (pictures)
+Steps: 28+16=44",3
+"Question: If Lewis earns $1367.00 every week during the 5 weeks of harvest. How much money does he earn during harvest season?
+Solution: 6835 (dollars)
+Steps: 1367*5=6835",9
+"Question: P and Q start at the same time in the same direction to run around a stadium. P completes a round in 252 seconds and Q in 198 seconds, both starting at the same point. After what time will they meet again at the starting point?
+Solution: 2772 (seconds)
+Steps: LCM[252,198]=2772",14
+"Question: Jack is reading a 285-page book. If he reads 23 pages per day, how many pages will he read on the last day?
+Solution: 9 (pages)
+Steps: 285/23=12 r9",12
+"Question: Edward had beaten 24 levels in a video game. If the ratio of levels he had beaten to not beaten was 3:1, how many levels does the game have total?
+Solution: 32 (levels)
+Steps: 3:4=24:32",16
+"Question: Ned ordered some pizzas for a party. During the party four were eaten. Now he has seven left. How many pizzas did Ned order for the party?
+Solution: 11 (pizzas)
+Steps: 4+7=11",0
+"Question: On Martin's first stroke, his golf ball traveled 4/5 of the distance to the hole. On his second stroke, the ball went into the hole. Martin was standing 79 meters from the hole as he took his second stroke. How many kilometers from the hole was Martin when he started?
+Solution: 0.395 (kilometers)
+Steps: 79 (m)*5 = 395 (m); 395/1000 (m/km) = 0.395 (km)",7
+"Question: There are some passengers on a bus. At a bus stop, 7 more passengers got on the bus and 9 passengers got off. If there are 26 passengers in the bus in the end, how many passengers were there at first?
+Solution: 28 (passengers)
+Steps: 26+9-7=28",3
+"Question: A food company has seven hundred seventy-seven kilograms of food to put into boxes. If each box gets exactly two kilograms, how many full boxes will they have?
+Solution: 388 (boxes)
+Steps: 777/2=388 r1",10
+"Question: An architect was building a hotel downtown. He built it 3 stories tall with 8 rooms on each story. How many rooms does the hotel have totaled?
+Solution: 24 (rooms)
+Steps: 3*8=24",4
+"Question: Packages of cheddar cheese come with 12 slices, while packages of Swiss cheese come with 28 slices. If Randy bought the same number of slices of each type of cheese, what is the smallest number of slices of each type that Randy could have bought?
+Solution: 84 (slices)
+Steps: LCM[12,28]=84",14
+"Question: After 15 years, Ariel will be four times as old as she is now. Determine her present age.
+Solution: 5 (years old)
+Steps: x:Ariel's present age; 4x=x+15",13
+"Question: Mrs. Hilt bought 3 pizzas for $8 each. What was the total amount she paid for the three pizzas?
+Solution: 24 (dollars)
+Steps: 3*8=24",4
+"Question: For the school bake sale Amy made pastries. She baked 15 cupcakes and 48 cookies. After the sale she had 12 to take back home. How many pastries did she sell?
+Solution: 51 (pastries)
+Steps: 15+48-12=51",3
+"Question: Mr. Bradley gave his class a math problem to solve. He said, ""Begin with the number 28. Add 12 to it. Then add 7 more."" Ned followed the instructions perfectly but Billy subtracted 7. What is the difference between the boys' answers?
+Solution: 14
+Steps: (28+12+7)-(28+12-7)=14",1
+"Question: Five years ago, Nancy was thrice as old as Sam. Ten years later, Nancy will be twice as old as Sam. How old are Nancy and Sam?
+Solution: 50 (years old); 20 (years old)
+Steps: x:Sam's present age; y:Nancy's present age; y-5=3(x-5); y+10=2(x+10)",12
+"Question: A company invited sixty-eight people to a luncheon, but fifty of them didn't show up. If the tables they had held three people each, how many tables do they need?
+Solution: 6 (tables)
+Steps: (68-50)/3=6",6
+"Question: Lukas averages 12 points per game in basketball. How many points would he score in 5 games?
+Solution: 60 (points)
+Steps: 12*5=60",4
+"Question: Cade had 87 marbles. He gave 8 to Dylan. How many does he have left?
+Solution: 79 (marbles)
+Steps: 87-8=79",3
+"Question: Ethan and Frank went rowing. Ethan rowed the boat from 10:50 to 11:15. Frank rowed the boat twice as long. How long did the boys row the boat altogether?
+Solution: 75 (minutes)
+Steps: (11*60 (min/hour)+15)-(10*60 (min/hour)+50)+(((11*60 (min/hour)+15)-(10*60 (min/hour)+50))*2)=75 (min)",7
+"Question: A chef needs to cook 12 potatoes. He has already cooked 6. If each potato takes 6 minutes to cook, how long will it take him to cook the rest?
+Solution: 36 (minutes)
+Steps: (12-6)*6=36",5
+"Question: A small school has 55 students. If 10 of the students are boys, what is the ratio of girls to boys?
+Solution: 9:02:00
+Steps: 55-10=45; 45:10=9:2",15
+"Question: If five is subtracted from three times a certain number, the result is 10. What is the number?
+Solution: 5
+Steps: x:The certain number; 3x-5=10",13
+"Question: A new building needed 14 windows. The builder had already installed 5 of them. If it takes 4 hours to install each window, how long will it take him to install the rest?
+Solution: 36 (hours)
+Steps: (14-5)*4=36",3
+"Question: A new building needed 14 windows. The builder had already installed 5 of them. If it takes 4 hours to install each window, how long will it take him to install the rest?
+Solution: 36 (hours)
+Steps: (14-5)*4=36",15
+"Question: It takes eight grams of plastic to make a ruler. If a company had eight hundred twenty-eight grams of plastic, how many entire rulers could they make?
+Solution: 103 (rulers)
+Steps: 828/8=103 r4",10
+"Question: A company donates 935 pencils to a school. The pencils are divided evenly among 9 classrooms. The rest of the pencils are given to the library. How many pencils were donated to the library?
+Solution: 8 (pencils)
+Steps: 935/9=103 r8",10
+"Question: A book store was selling 2 books for $15.86. Online the you could buy 7 books for $55.93. Which place has a lower unit price?
+Solution: Book store
+Steps: 15.86/2=7.93(Book store) < 55.93/7=7.99(Online)",7
+"Question: There are 5 boys and 4 girls in a classroom. After 3 boys left the classroom, another 2 girls came in the classroom. How many children were there in the classroom in the end?
+Solution: 8 (children)
+Steps: 5+4-3+2=8",18
+"Question: Paige had a sheet of paper that was 9 inches long and 10 inches wide. What is the area of the paper?
+Solution: 90 (square inches)
+Steps: 9*10=90",8
+"Question: A parking lot has 117 spaces total. If 36 of the spaces have cars in them, what is the ratio of empty spaces to filled spaces?
+Solution: 9:04
+Steps: 117-36=81; 81:36=9:4",2
+"Question: A parking lot has 117 spaces total. If 36 of the spaces have cars in them, what is the ratio of empty spaces to filled spaces?
+Solution: 9:04
+Steps: 117-36=81; 81:36=9:4",15
+"Question: A coat factory had 29 coats. If they wanted to put them into 3 boxes, with the same number of coats in each box, how many extra coats would they have left over?
+Solution: 2 (coats)
+Steps: 29/3=9 r2",10
+"Question: Jane's mom picked cherry tomatoes from their backyard. If she gathered 56 cherry tomatoes and is about to place them in small jars which can contain 8 cherry tomatoes at a time, how many jars will she need?
+Solution: 7 (jars)
+Steps: 56/8=7",4
+"Question: She also decided to contribute to the collection of the Museum of Natural History. After donating some of her bug collection, she was left with 39 bug species. If she originally has 98 bug species, how many did she donate?
+Solution: 59 (bug species)
+Steps: 98-39=59",3
+"Question: A lawn care company bought 4 lawnmower blade for $8 each. They also bought a spool of weed eater string for $7. How much money did they spend on supplies?
+Solution: 39 (dollars)
+Steps: 4*8+7=39",5
+"Question: The grasshopper and the frog had a jumping contest. The grasshopper jumped 25 inches. The frog jumped 15 inches farther than the grasshopper. How far did the frog jump?
+Solution: 40 (inches)
+Steps: 25+15=40",11
+"Question: For a dinner party, Abraham is creating individual servings of starters. He has 9 carrot sticks and 18 celery sticks. If he wants each serving to be identical, with no food left over, what is the greatest number of servings Abraham can create?
+Solution: 9 (servings)
+Steps: GCD(9,18)=9",14
+"Question: At the fair Kaleb bought 6 tickets. After riding the ferris wheel he had 3 tickets left. If each ticket cost 9 dollars, how much money did Kaleb spend riding the ferris wheel?
+Solution: (6-3)*9=27
+Steps: (6-3)*9=27",18
+"Question: At the fair Kaleb bought 6 tickets. After riding the ferris wheel he had 3 tickets left. If each ticket cost 9 dollars, how much money did Kaleb spend riding the ferris wheel?
+Solution: (6-3)*9=27
+Steps: (6-3)*9=27",4
+"Question: At a farming supply store 2 pounds of seed cost $44.68. If a farmer needed 6 pounds of seeds, how much would it cost him?
+Solution: 134.04 (dollars)
+Steps: (44.68/2)*6=134.04",7
+"Question: Their last stop before leaving the zoo is the bird museum. There, they went through 7 bird exhibits, spending 9 minutes going around each exhibit. How much time did they spend going through the museum?
+Solution: 63 (minutes)
+Steps: 7*9=63",4
+"Question: Allie has 5 math books and 10 science books. If she wants to distribute them evenly among some bookshelves so that each bookshelf has the same combination of math and science books, with no books left over, what is the greatest number of bookshelves Allie can use?
+Solution: 5 (bookshelves)
+Steps: GCD(5,10)=5",14
+"Question: If Tom plans to fix 158 watches at the rate of 12 watches per day, how many days does he need to fix the watches?
+Solution: 14 (days)
+Steps: 158/12=13 r2",12
+"Question: The present age of Jacob's father is three times that of Jacob. After 5 years, sum of their ages would be 70 years. Find their present ages.
+Solution: 45 (years old); 15 (years old)
+Steps: F:Present age of Jacob's father; J:Jacob's present age; F=J*3; (F+5)+(J+5)=70",17
+"Question: Last season, Lisa's soccer team won 8 games and lost 6 games. Her cousin Susan's team won 17 games and lost 14 games. Which team had a higher ratio of wins to losses?
+Solution: Lisa's soccer team
+Steps: 8/6(Lisa's soccer team) > 17/14(Susan's team)",16
+"Question: A cafeteria was putting milk cartons into stacks. They had seven hundred ninety-nine cartons and were putting them into stacks with six cartons in each stack. How many full stacks could they make?
+Solution: 133 (stacks)
+Steps: 799/6=133 r1",10
