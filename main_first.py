@@ -248,13 +248,11 @@ if __name__== "__main__":
 
     results_ASDIV.append(["Average", 
                     train_acc/seed_num, 
-                    test_acc_asdiv/seed_num, 
                     *[average_top_k_asdiv[k] for k in range(1, args.top_k + 1)]
                 ])
     
     results_MCAS.append(["Average",
                     train_acc/seed_num, 
-                    test_acc_mcas/seed_num, 
                     *[average_top_k_mcas[k] for k in range(1, args.top_k + 1)] 
                 ])
     
