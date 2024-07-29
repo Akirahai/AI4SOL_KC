@@ -262,14 +262,12 @@ if __name__== "__main__":
     
     headers_ASDIV = [
         "Seed", 
-        "Train_Accuracy", 
-        "Test_Accuracy_ASDIV"
+        "Train_Acc", 
     ]
     
     headers_MCAS = [
         "Seed", 
-        "Train_Accuracy", 
-        "Test_Accuracy_MCAS"
+        "Train_Acc", 
     ]
 
     for k in range(1, args.top_k + 1):
