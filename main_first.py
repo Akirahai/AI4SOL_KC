@@ -276,15 +276,15 @@ if __name__== "__main__":
     ]
 
     for k in range(1, args.top_k + 1):
-        headers_ASDIV.append(f"Top_{k}_Accuracy_ASDIV")
-        headers_MCAS.append(f"Top_{k}_Accuracy_MCAS")
+        headers_ASDIV.append(f"Top_{k}_Acc")
+        headers_MCAS.append(f"Top_{k}_Acc")
         
     
     table_ASDIV = tabulate(results_ASDIV, headers=headers_ASDIV, tablefmt="pipe")
     table_MCAS = tabulate(results_MCAS, headers=headers_MCAS, tablefmt="pipe")
     
-    print("Results for ASDIV:")
+    print("**Results for ASDIV:**")
     print(table_ASDIV)
     print("-" * 100)
-    print("Results for MCAS:")
+    print("**Results for MCAS:**")
     print(table_MCAS)
