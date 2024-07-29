@@ -167,24 +167,27 @@ if __name__== "__main__":
             print(f"Plot saved to {plot_save_path}")
             print(f"CSV saved to {csv_save_path}")
 
-        elif args.phase == 'test':   
+        elif args.phase == 'test':
             
-            preds_asdiv = trainer.predict(tokenized_dataset_test).predictions
+            pass
             
-            df_test_predictions = df_test.copy()
+        preds_asdiv = trainer.predict(tokenized_dataset_test).predictions
+        
+        df_test_predictions = df_test.copy()
+        
+        
+        for k in range(1, args.top_k + 1):
+            top_k_preds_asdiv = np.argsort(preds_asdiv, axis=1)[:, -k:]
+            df_test_predictions[f'top_{k}_preds'] = list(top_k_preds_asdiv)
             
-            
-            for k in range(1, args.top_k + 1):
-                top_k_preds_asdiv = np.argsort(preds_asdiv, axis=1)[:, -k:]
-                df_test_predictions[f'top_{k}_preds'] = list(top_k_preds_asdiv)
-                
-                
-            # Save the predictions to CSV
-            predictions_output_dir = os.path.join('Preds_second_ver', current_time, model_name)
-            os.makedirs(predictions_output_dir, exist_ok=True)
-            predictions_csv_path = os.path.join(predictions_output_dir, 'Preds_top_k.csv')
-            df_test_predictions.to_csv(predictions_csv_path, index=False)
-            print(f"Top-k predictions saved to {predictions_csv_path}")
+        
+        model_name = model_name.split('/')[-1]
+        # Save the predictions to CSV
+        predictions_output_dir = os.path.join('Preds_second_ver', current_time, model_name)
+        os.makedirs(predictions_output_dir, exist_ok=True)
+        predictions_csv_path = os.path.join(predictions_output_dir, f'Preds_{model_name}_top_k.csv')
+        df_test_predictions.to_csv(predictions_csv_path, index=False)
+        print(f"Top-k predictions saved to {predictions_csv_path}")
     
     
         print(f"Evaluation on train set")
