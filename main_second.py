@@ -39,6 +39,7 @@ if __name__== "__main__":
     if args.use_gpu and torch.cuda.is_available():
         os.environ["CUDA_VISIBLE_DEVICES"] = "1,2,3"  # Set visible devices
         device = torch.device(f'cuda:{args.gpu}')  # Change to your suitable GPU device
+        print(f"Using GPU: {torch.cuda.get_device_name(device)}")
 
     #Login
     print(device)
