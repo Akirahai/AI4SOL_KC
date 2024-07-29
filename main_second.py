@@ -161,7 +161,7 @@ if __name__== "__main__":
             plt.tight_layout()
 
             # Save the plot as an image
-            plot_output_dir = os.path.join('Loss_plot_second_ver', args.model, current_time,  f"seed_{seed}")
+            plot_output_dir = os.path.join('Loss_plot_second_ver', args.model, current_time)
             os.makedirs(plot_output_dir, exist_ok=True)
             
             plot_save_path = os.path.join(plot_output_dir, 'loss_plot.png')
