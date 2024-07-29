@@ -20,7 +20,7 @@ def parse_args():
     parser.add_argument('--resume', default=False, action='store_true', help='Resume')
     parser.add_argument('--use-gpu', action='store_true', help='Use GPU')
     parser.add_argument('--model', type=str, help='Model name or path')
-    parser.add_argument('--path', type=str, default= f"./result") #Fix to your path to save model
+    parser.add_argument('--path', type=str, default= f"./result_second_ver") #Fix to your path to save model
     parser.add_argument('--gpu', type=int, default=1, help='GPU device')
     parser.add_argument('--gradient-accumulation-steps', type=int, default=1, help='Gradient accumulation steps')
     parser.add_argument('--eval', type=str, default='test', help='Evaluation on test or valid set')
@@ -133,7 +133,8 @@ if __name__== "__main__":
             trainer.train()
             
             # Save the trained model with timestamp prefix
-            model_output_dir = os.path.join(args.path, args.model, current_time)
+            model_output_dir = os.path.join(args.path, args.model)
+            os.makedirs(predictions_output_dir, exist_ok=True)
             
             trainer.save_model(model_output_dir)
             
