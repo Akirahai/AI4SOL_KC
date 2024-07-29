@@ -226,14 +226,14 @@ if __name__== "__main__":
         results_ASDIV.append([
             f"Seed {seed}",
             train_results['eval_accuracy'],
-            # test_results_asdiv['eval_accuracy'], 
+            test_results_asdiv['eval_accuracy'], 
             *top_k_asdiv
         ])
         
         results_MCAS.append([
             f"Seed {seed}",
             train_results['eval_accuracy'],
-            # test_results_mcas['eval_accuracy'],
+            test_results_mcas['eval_accuracy'],
             *top_k_mcas
             
         ])
@@ -265,14 +265,14 @@ if __name__== "__main__":
     
     headers_ASDIV = [
         "Seed", 
-        "Train_Acc", 
-        "Test_Acc"
+        "Train_Accuracy", 
+        "Test_Accuracy_ASDIV"
     ]
     
     headers_MCAS = [
         "Seed", 
-        "Train_Acc", 
-        "Test_Acc"
+        "Train_Accuracy", 
+        "Test_Accuracy_MCAS"
     ]
 
     for k in range(1, args.top_k + 1):
