@@ -183,7 +183,7 @@ if __name__== "__main__":
         
         model_name = model_name.split('/')[-1]
         # Save the predictions to CSV
-        predictions_output_dir = os.path.join('Preds_second_ver', current_time, model_name)
+        predictions_output_dir = os.path.join('Preds_second_ver', current_time)
         os.makedirs(predictions_output_dir, exist_ok=True)
         predictions_csv_path = os.path.join(predictions_output_dir, f'Preds_{model_name}_top_k.csv')
         df_test_predictions.to_csv(predictions_csv_path, index=False)
