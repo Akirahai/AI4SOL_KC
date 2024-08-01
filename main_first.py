@@ -1,8 +1,14 @@
+import os
+os.environ['CUDA_DEVICE_ORDER'] =  'PCI_BUS_ID'
+os.environ['CUDA_VISIBLE_DEVICES']=  '1,2'
+
 from libs import *
 
 # from utils import Math_Classification
 # from utils import train
 # from utils import validation
+
+
 
 
 def parse_args():

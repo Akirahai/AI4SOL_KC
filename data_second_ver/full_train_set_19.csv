@@ -95,6 +95,9 @@ Steps: 420/30=14",12
 "Question: Marcus has 210 baseball cards. He has 58 more than Carter. How many baseball cards does Carter have?
 Solution: 152 (baseball cards)
 Steps: 210-58=152",2
+"Question: Robin drank seven bottles of water in the morning and seven in the afternoon. How many bottles did Robin drink total?
+Solution: 14 (bottles)
+Steps: 7+7=14",0
 "Question: A baker made 2 batches of chocolate chip cookies. Each batch had 3 cookies in it. Then he made an additional 4 oatmeal cookies just in case someone didn't want chocolate chip. How many cookies did he bake total?
 Solution: 10 (cookies)
 Steps: 2*3+4=10",5

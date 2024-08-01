@@ -2,78 +2,84 @@ Question,label
 "Question: Last season, Lisa's soccer team won 8 games and lost 6 games. Her cousin Susan's team won 17 games and lost 14 games. Which team had a higher ratio of wins to losses?
 Solution: Lisa's soccer team
 Steps: 8/6(Lisa's soccer team) > 17/14(Susan's team)",16
-"Question: If Lillian split 20 Skittles between 8 people in her class and kept the left overs, how many Skittles did each classmate get?
-Solution: 2 (Skittles)
-Steps: 20/8=2 r4",10
+"Question: Drew prepared 61 servings of butterscotch. If she expects her 6 sweet-tooth guests to share the butterscotch among them equally, how many will be left unconsumed?
+Solution: 1 (servings of butterscotch)
+Steps: 61/6=10 r1",10
 "Question: There are 43 students and 1720 apples. Each student has 9 Skittles. If the apples are divided equally among the students,how many does each student get?
 Solution: 1720/43=40
 Steps: 1720/43=40",12
-"Question: The school cafeteria had 17 apples. If they used 2 to make lunch for the students and then bought 23 more, how many apples would they have?
-Solution: 17-2+23=38
-Steps: 17-2+23=38",1
-"Question: 35 campers went rowing in the morning. 27 campers went rowing in the afternoon. How many campers went rowing in all?
-Solution: 62 (campers)
-Steps: 35+27=62",3
-"Question: Oceanside Bike Rental Shop charges a 17 dollar fixed fee plus 7 dollars an hour for renting a bike. Mary paid 80 dollars to rent a bike. How many hours did she pay to have the bike checked out ?
-Solution: 9 (hours)
-Steps: x:Dollars for renting an hour; 17+7x=80",13
-"Question: The cafeteria had fifty-one apples. For lunch they handed out forty-one to students and decided to use the rest to make pies. If each pie takes five apples, how many pies could they make?
-Solution: 2 (pies)
-Steps: (51-41)/5=2",5
-"Question: A chef used five potatoes to make fries for the lunch crowd. Later he used another two potatoes for the dinner crowd. How many potatoes did he use total?
-Solution: 7 (potatoes)
-Steps: 5+2=7",18
+"Question: Mrs. Hilt has 15 friends. She can only take 8 of her friends to the movies. How many friends can't go to the movies?
+Solution: 7 (friends)
+Steps: 15-8=7",0
 "Question: Jenny goes to dance class every 6 days, karate class every 12 days, and to the library every 18 days. On December 1st she went to both classes and the libary. How many days from December 1st will she do both classes and go to the library?
 Solution: 36 (days)
 Steps: LCM[6,12,18]=36",14
-"Question: Rebecca wants to split a collection of eggs into groups of 2. Rebecca has 16 eggs and 3 marbles. How many groups will be created?
-Solution: 16/2=8
-Steps: 16/2=8",4
-"Question: Last week Howard had 26 dollars. He washed windows over the weekend and now has 52 dollars. How much money did he make washing windows?
-Solution: 26 (dollars)
-Steps: 52-26=26",3
-"Question: After paying 6 dollars for the pie, Sandy has 57 dollars left. How much money did she have before buying the pie ?
-Solution: 63 (dollars)
-Steps: 6+57=63",3
-"Question: Maria had fifty sheets of paper in her desk and forty-one more in her backpack. How many did she have total?
-Solution: 91 (sheets of paper)
-Steps: 50+41=91",3
+"Question: After paying $2.30 for a drink, Bryon has $17.15. How much money did he have before buying the drink?
+Solution: 19.45 (dollars)
+Steps: 2.3+17.15=19.45",7
+"Question: Rita is buying flower bulbs for her garden. She wants to buy the same number of tulips and daffodils. If tulip bulbs come in packs of 15 and daffodil bulbs come in packs of 16, what is the least number of each type of bulb Rita will need to buy?
+Solution: 240 (bulbs)
+Steps: LCM[15,16]=240",14
+"Question: It takes 7 minutes to bake one pan of cookies. How long will it take to bake 4 pans of cookies?
+Solution: 28 (minutes)
+Steps: 7*4=28",4
+"Question: One number is half the other. Sum of two numbers is equal to 6. Find the numbers.
+Solution: 4; 2
+Steps: x:One of the numbers; x+(x/2)=6",13
+"Question: At the zoo a cage had sixty-eight snakes. If forty-two were hiding, how many snakes were not hiding?
+Solution: 26 (snakes)
+Steps: 68-42=26",3
+"Question: The wolves, though accustomed to cold weather, also wanted to move away from the incoming winter. If there are 43 packs of wolves living in the forest and 31 packs went away, how many wolf packs were left in the forest?
+Solution: 12 (wolf packs)
+Steps: 43-31=12",3
+"Question: Mr. Fortree, a businessman also gave seedlings for the tree planting activity. If he gave 14 seedlings of cedar and 38 seedlings of pine, how many seedlings did he give in total?
+Solution: 52 (seedlings)
+Steps: 14+38=52",3
+"Question: Paul got a box of 479 crayons for his birthday. At the end of the school year, he only had 134 left. How many crayons had been lost or given away?
+Solution: 345 (crayons)
+Steps: 479-134=345",2
 "Question: 2 birds were sitting on the fence. 4 more birds came to join them. How many birds are sitting on the fence?
 Solution: 6 (birds)
 Steps: 2+4=6",18
-"Question: Collin baked 9 brownies with nuts on top and 34 brownies without nuts. What is the ratio of the number of brownies with nuts on top to the total number of brownies?
-Solution: 9:43:00
-Steps: 9+34=43; 9:43",15
 "Question: Martha bought 18 small cakes. She has 3 children. She would like to divide the cakes among her children so that each child gets the same amount. How many cakes would each child get?
 Solution: 6 (cakes)
 Steps: 18/3=6",4
-"Question: Jerry's freezer had 30 ice cubes in it. If he had to get ice for 6 cups, how many pieces should he put in each cup to make them have the same amount?
-Solution: 5 (pieces)
-Steps: 30/6=5",4
-"Question: A company donates 935 pencils to a school. The pencils are divided evenly among 9 classrooms. The rest of the pencils are given to the library. How many pencils were donated to the library?
-Solution: 8 (pencils)
-Steps: 935/9=103 r8",10
-"Question: A vase can hold nine flowers. If you had four carnations and twenty-three roses, how many vases would you need to hold the flowers?
-Solution: 3 (vases)
-Steps: (4+23)/9=3",6
-"Question: After agreeing that the school menu needs to be changed, they had a vote for food suggestions. If 337 voted to add more veggies to the menu and 335 voted to add more meat, how many students voted?
-Solution: 672 (students)
-Steps: 337+335=672",2
-"Question: The difference of 5 times a number and 17 is 23. Find the number and 5 times the number.
-Solution: 8; 40
-Steps: x:The number; 5x-17=23",13
-"Question: Shirley sold 54 boxes of Trefoils. How many cases of 6 boxes does Shirley need to deliver?
-Solution: 9 (cases)
-Steps: 54/6=9",4
-"Question: Mom made 32 chocolate chip cookies. It took 24 minutes to mix the ingredients and 16 minutes to bake. Julie and Matt ate 9 cookies after dinner. How many cookies were left?
-Solution: 23 (cookies)
-Steps: 32-9=23",3
+"Question: A chef used five potatoes to make fries for the lunch crowd. Later he used another two potatoes for the dinner crowd. How many potatoes did he use total?
+Solution: 7 (potatoes)
+Steps: 5+2=7",18
+"Question: Virginia had 13 Sweettarts. If Virginia gave equal numbers of Sweettarts to her 4 friends and then she ate what was left, how many Sweettarts did each person eat?
+Solution: 3 (Sweettarts)
+Steps: 13/4=3 r1",5
 "Question: A group of science students went on a field trip. They took 2 vans and 3 buses. There were 8 people in each van and 20 people in each bus. How many people went on the field trip?
 Solution: 76 (people)
 Steps: (8*2)+(3*20)=76",11
-"Question: The woods behind Wendy's house were 8 miles wide and have an area of 24 square miles. What is the length of the woods?
-Solution: 3 (miles)
-Steps: 24/8=3",8
+"Question: I see 23 boys. How many eyes do I see?
+Solution: 46 (eyes)
+Steps: 23*2=46",4
+"Question: Oceanside Bike Rental Shop charges a 17 dollar fixed fee plus 7 dollars an hour for renting a bike. Mary paid 80 dollars to rent a bike. How many hours did she pay to have the bike checked out ?
+Solution: 9 (hours)
+Steps: x:Dollars for renting an hour; 17+7x=80",13
+"Question: A rectangle flower bed had a total area of 35 square yards. If it was 5 yards wide, how long was it?
+Solution: 7 (yards)
+Steps: 35/5=7",4
+"Question: Mrs. Hilt wants to make a border around her garden. She needs 125 rocks to complete the border. She has 64 rocks. How many more rocks does she need to complete the border?
+Solution: 61 (rocks)
+Steps: 125-64=61",2
+"Question: After counting all her money, she went to her mom and had all her savings exchanged into whole $100 bills. After the exchange, she has 8 pieces of $100 bills. How much was total amount of Michelle's savings?
+Solution: 800 (dollars)
+Steps: 8*100=800",9
+"Question: Cody made 12 dollars mowing lawns over the summer. If he charged 4 bucks for each lawn, how many lawns did he mow?
+Solution: 3 (lawns)
+Steps: 12/4=3",4
+"Question: Mrs. Hilt's favorite first grade classes are baking muffins. Mrs. Brier's class bakes 18 muffins, Mrs. MacAdams's class bakes 20 muffins, and Mrs. Flannery's class bakes 17 muffins. How many muffins does first grade bake in all?
+Solution: 55 (muffins)
+Steps: 18+20+17=55",3
+"Question: Sweettarts come in packages of 7. Stephen ate 64 Sweettarts. How many Sweettarts does he have left?
+Solution: 1 (Sweettart)
+Steps: 64/7=9 r1",10
+"Question: The cafeteria had fifty-one apples. For lunch they handed out forty-one to students and decided to use the rest to make pies. If each pie takes five apples, how many pies could they make?
+Solution: 2 (pies)
+Steps: (51-41)/5=2",5
 "Question: I have 28 cents in my pocket. How coins could I have on minimization?
 Solution: 4 (coins)
 Steps: 28/25=1 r3; 3/1=3; 1+3=4",10
@@ -83,102 +89,102 @@ Steps: 28/25=1 r3; 3/1=3; 1+3=4",4
 "Question: I have 28 cents in my pocket. How coins could I have on minimization?
 Solution: 4 (coins)
 Steps: 28/25=1 r3; 3/1=3; 1+3=4",18
-"Question: Upon finishing the treehouse, Charlie's mother served them freshly baked cookies. If Charlie ate 15 cookies, his father ate 10 and his mother only ate 5, how many cookies were eaten in total?
-Solution: 30 (cookies)
-Steps: 15+10+5=30",3
-"Question: Emily owned 6 songs by her favorite artists. Later on she bought 7 more songs. How many songs did she have totaled?
-Solution: 13 (songs)
-Steps: 6+7=13",0
-"Question: In 3 seconds, Kevin can dribble a basketball 13 times. If Kevin dribbles at this same rate for 27 seconds, how many times will he dribble the basketball?
-Solution: 117 (times)
-Steps: 3:13=27:117",16
-"Question: Adam has $5.00 to buy an airplane that costs $4.28. How much change will he get?
-Solution: 0.72 (dollars)
-Steps: 5.00-4.28=0.72",7
-"Question: Cora sliced 18 kg of green apples for a party. She divided the apple slices equally between 5 large bowls. How many grams of apple slices did Cora put in each bowl?
-Solution: 3600 (grams of apple)
-Steps: (18 (kg) *1000 (g/kg))/5 = 3600 (g)",7
-"Question: Virginia had 13 Sweettarts. If Virginia gave equal numbers of Sweettarts to her 4 friends and then she ate what was left, how many Sweettarts did each person eat?
-Solution: 3 (Sweettarts)
-Steps: 13/4=3 r1",5
+"Question: Mom made 32 chocolate chip cookies. It took 24 minutes to mix the ingredients and 16 minutes to bake. Julie and Matt ate 9 cookies after dinner. How many cookies were left?
+Solution: 23 (cookies)
+Steps: 32-9=23",3
+"Question: A pet store took ten birds out of a cage and had nine still left inside. How many birds were in the cage to start with?
+Solution: 19 (birds)
+Steps: 10+9=19",0
+"Question: There are 3300 bananas in Janice's banana collection. Janice also has 5 crayons. If the bananas are organized into 75 groups, how big is each group?
+Solution: 44 (bananas)
+Steps: 3300/75=44",12
 "Question: Mrs. Hilt saw an iPod for sale. The price tag said the iPod cost $128, but a sign announced that it was on sale for ""35% off."" How much would the iPod cost after the discount?
 Solution: 83.2 (dollars)
 Steps: 128-(128*0.35)=83.2",7
-"Question: An architect was building a hotel downtown. He built it 3 stories tall with 8 rooms on each story. How many rooms does the hotel have totaled?
-Solution: 24 (rooms)
-Steps: 3*8=24",4
-"Question: Mr. Fortree, a businessman also gave seedlings for the tree planting activity. If he gave 14 seedlings of cedar and 38 seedlings of pine, how many seedlings did he give in total?
-Solution: 52 (seedlings)
-Steps: 14+38=52",3
-"Question: Tom used 2 batteries on his flashlights, 15 in his toys and 2 in his controllers. What's the difference between the number of Tom's batteries on flashlights and in toys?
-Solution: 13 (batteries)
-Steps: 15-2=13",0
-"Question: For homework, a student had to complete 15 problems total. If she finished 6 problems in class, what is the ratio of problems she still needs to complete to problems that she's already finished?
-Solution: 3:02:00
-Steps: 15-6=9; 9:6=3:2",0
-"Question: For homework, a student had to complete 15 problems total. If she finished 6 problems in class, what is the ratio of problems she still needs to complete to problems that she's already finished?
-Solution: 3:02:00
-Steps: 15-6=9; 9:6=3:2",15
-"Question: Cody made 12 dollars mowing lawns over the summer. If he charged 4 bucks for each lawn, how many lawns did he mow?
-Solution: 3 (lawns)
-Steps: 12/4=3",4
-"Question: Sweettarts come in packages of 7. Stephen ate 64 Sweettarts. How many Sweettarts does he have left?
-Solution: 1 (Sweettart)
-Steps: 64/7=9 r1",10
-"Question: Girl Scout cookies come packed 12 boxes to a case. Scout Deborah sold 31 boxes of Lemon Chalet Cremes. How many boxes will not be packed to a case?
-Solution: 7 (boxes)
-Steps: 31/12=2 r7",12
-"Question: Seven times a two digit is equal to four times the number obtained by reversing the order of digits and the sum of the digits is 3. Find the number.
-Solution: 12
-Steps: x:The number of the tens digital; y:The number of the unit digital; 7(10x+y)=4(10y+x); x+y=3",17
-"Question: Jenny was told to clean up her room in fourteen days or she could not go to her best friend's birthday party. It is three days left but Jenny has cleaned up her room. How many days did she spend?
-Solution: 11 (days)
-Steps: 14-3=11",0
-"Question: Rita is buying flower bulbs for her garden. She wants to buy the same number of tulips and daffodils. If tulip bulbs come in packs of 15 and daffodil bulbs come in packs of 16, what is the least number of each type of bulb Rita will need to buy?
-Solution: 240 (bulbs)
-Steps: LCM[15,16]=240",14
-"Question: An architect built a house with ten bedrooms total. If the second floor had two bedrooms. How many bedrooms does the first floor have?
-Solution: 8 (bedrooms)
-Steps: 10-2=8",18
-"Question: For a dinner party, Abraham is creating individual servings of starters. He has 9 carrot sticks and 18 celery sticks. If he wants each serving to be identical, with no food left over, what is the greatest number of servings Abraham can create?
-Solution: 9 (servings)
-Steps: GCD(9,18)=9",14
-"Question: At a school event, adults are seated in groups of exactly 17 and children are seated in groups of exactly 15. If there are the same number of adults as children, what is the minimum number of adults attending?
-Solution: 255 (adults)
-Steps: LCM[17,15]=255",14
-"Question: After paying $2.30 for a drink, Bryon has $17.15. How much money did he have before buying the drink?
-Solution: 19.45 (dollars)
-Steps: 2.3+17.15=19.45",7
-"Question: At the edge of the forest, an anthill is blocking the way out. In order to pass through, he needs to help the ants gather food. If the ants need 911 grains of food and they already have 762, how many more grains are needed to be gathered?
-Solution: 149 (grains)
-Steps: 911-762=149",2
-"Question: At the first day back in school, her parents bought her different colored pens. If her parents bought her 56 pens and she gave 22 of those to her friends, how many pens were left for her to use?
-Solution: 34 (pens)
-Steps: 56-22=34",3
-"Question: There are 5 boys and 4 girls in a classroom. After 3 boys left the classroom, another 2 girls came in the classroom. How many children were there in the classroom in the end?
-Solution: 8 (children)
-Steps: 5+4-3+2=8",18
+"Question: A vase can hold nine flowers. If you had four carnations and twenty-three roses, how many vases would you need to hold the flowers?
+Solution: 3 (vases)
+Steps: (4+23)/9=3",6
+"Question: Adam has $5.00 to buy an airplane that costs $4.28. How much change will he get?
+Solution: 0.72 (dollars)
+Steps: 5.00-4.28=0.72",7
 "Question: While playing a game Sam had ninety-two points. If he scored another three points, how many points would he have total?
 Solution: 95 (points)
 Steps: 92+3=95",3
 "Question: Zoe is on vacation. She has already taken 28 pictures. She has enough film left to take 32 more pictures. Zoe took 16 more pictures at the dolphin show. How many pictures has Zoe taken altogether?
 Solution: 44 (pictures)
 Steps: 28+16=44",3
-"Question: There are 3300 bananas in Janice's banana collection. Janice also has 5 crayons. If the bananas are organized into 75 groups, how big is each group?
-Solution: 44 (bananas)
-Steps: 3300/75=44",12
-"Question: Drew prepared 61 servings of butterscotch. If she expects her 6 sweet-tooth guests to share the butterscotch among them equally, how many will be left unconsumed?
-Solution: 1 (servings of butterscotch)
-Steps: 61/6=10 r1",10
-"Question: Mrs. Hilt wants to make a border around her garden. She needs 125 rocks to complete the border. She has 64 rocks. How many more rocks does she need to complete the border?
-Solution: 61 (rocks)
-Steps: 125-64=61",2
-"Question: After counting all her money, she went to her mom and had all her savings exchanged into whole $100 bills. After the exchange, she has 8 pieces of $100 bills. How much was total amount of Michelle's savings?
-Solution: 800 (dollars)
-Steps: 8*100=800",9
-"Question: While on vacation, Debby took 24 pictures at the zoo and 12 at the museum. If she later deleted 14 of the pictures, how many pictures from her vacation did she still have?
-Solution: 22 (pictures)
-Steps: 24+12-14=22",3
-"Question: One number is half the other. Sum of two numbers is equal to 6. Find the numbers.
-Solution: 4; 2
-Steps: x:One of the numbers; x+(x/2)=6",13
+"Question: For homework, a student had to complete 15 problems total. If she finished 6 problems in class, what is the ratio of problems she still needs to complete to problems that she's already finished?
+Solution: 3:02:00
+Steps: 15-6=9; 9:6=3:2",0
+"Question: For homework, a student had to complete 15 problems total. If she finished 6 problems in class, what is the ratio of problems she still needs to complete to problems that she's already finished?
+Solution: 3:02:00
+Steps: 15-6=9; 9:6=3:2",15
+"Question: Jenny was told to clean up her room in fourteen days or she could not go to her best friend's birthday party. It is three days left but Jenny has cleaned up her room. How many days did she spend?
+Solution: 11 (days)
+Steps: 14-3=11",0
+"Question: Andrew is having his friends over for game night. So he decided to prepare the snacks and the games. He started by making mini sandwiches. If he has 4 friends coming over and he made 3 sandwiches for each one of them, how many sandwiches did he make in total?
+Solution: 12 (sandwiches)
+Steps: 4*3=12",4
+"Question: If Lillian split 20 Skittles between 8 people in her class and kept the left overs, how many Skittles did each classmate get?
+Solution: 2 (Skittles)
+Steps: 20/8=2 r4",10
+"Question: In 3 seconds, Kevin can dribble a basketball 13 times. If Kevin dribbles at this same rate for 27 seconds, how many times will he dribble the basketball?
+Solution: 117 (times)
+Steps: 3:13=27:117",16
+"Question: Seven times a two digit is equal to four times the number obtained by reversing the order of digits and the sum of the digits is 3. Find the number.
+Solution: 12
+Steps: x:The number of the tens digital; y:The number of the unit digital; 7(10x+y)=4(10y+x); x+y=3",17
+"Question: Emily owned 6 songs by her favorite artists. Later on she bought 7 more songs. How many songs did she have totaled?
+Solution: 13 (songs)
+Steps: 6+7=13",0
+"Question: For a dinner party, Abraham is creating individual servings of starters. He has 9 carrot sticks and 18 celery sticks. If he wants each serving to be identical, with no food left over, what is the greatest number of servings Abraham can create?
+Solution: 9 (servings)
+Steps: GCD(9,18)=9",14
+"Question: An architect built a house with ten bedrooms total. If the second floor had two bedrooms. How many bedrooms does the first floor have?
+Solution: 8 (bedrooms)
+Steps: 10-2=8",18
+"Question: At a school event, adults are seated in groups of exactly 17 and children are seated in groups of exactly 15. If there are the same number of adults as children, what is the minimum number of adults attending?
+Solution: 255 (adults)
+Steps: LCM[17,15]=255",14
+"Question: Daniel has 44 commemorative plates and 33 commemorative spoons. He wants to display them in groups throughout his house, each with the same combination of plates and spoons, with none left over. What is the greatest number of groups Daniel can display?
+Solution: GCD(44,33)=11
+Steps: GCD(44,33)=11",14
+"Question: Cora sliced 18 kg of green apples for a party. She divided the apple slices equally between 5 large bowls. How many grams of apple slices did Cora put in each bowl?
+Solution: 3600 (grams of apple)
+Steps: (18 (kg) *1000 (g/kg))/5 = 3600 (g)",7
+"Question: The school cafeteria had 17 apples. If they used 2 to make lunch for the students and then bought 23 more, how many apples would they have?
+Solution: 17-2+23=38
+Steps: 17-2+23=38",1
+"Question: 35 campers went rowing in the morning. 27 campers went rowing in the afternoon. How many campers went rowing in all?
+Solution: 62 (campers)
+Steps: 35+27=62",3
+"Question: There are 5 boys and 4 girls in a classroom. After 3 boys left the classroom, another 2 girls came in the classroom. How many children were there in the classroom in the end?
+Solution: 8 (children)
+Steps: 5+4-3+2=8",18
+"Question: A fast food restaurant had ninety-one hotdogs. After selling some they had twenty left. What's the difference between the number of hotdogs before selling and after selling?
+Solution: 71 (hotdogs)
+Steps: 91-20=71",3
+"Question: At the arcade Billy had won forty-eight tickets. After buying a yoyo he had thirty-two tickets left. How many tickets did the yoyo cost?
+Solution: 16 (tickets)
+Steps: 48-32=16",3
+"Question: Girl Scout cookies come packed 12 boxes to a case. Scout Deborah sold 31 boxes of Lemon Chalet Cremes. How many boxes will not be packed to a case?
+Solution: 7 (boxes)
+Steps: 31/12=2 r7",12
+"Question: A company donates 935 pencils to a school. The pencils are divided evenly among 9 classrooms. The rest of the pencils are given to the library. How many pencils were donated to the library?
+Solution: 8 (pencils)
+Steps: 935/9=103 r8",10
+"Question: 532 people are watching a movie in a theater. The theater has 750 seats. How many seats are empty in the theater?
+Solution: 218 (seats)
+Steps: 750-532=218",2
+"Question: The woods behind Wendy's house were 8 miles wide and have an area of 24 square miles. What is the length of the woods?
+Solution: 3 (miles)
+Steps: 24/8=3",8
+"Question: A new building needed 14 windows. The builder had already installed 5 of them. If it takes 4 hours to install each window, how long will it take him to install the rest?
+Solution: 36 (hours)
+Steps: (14-5)*4=36",3
+"Question: A new building needed 14 windows. The builder had already installed 5 of them. If it takes 4 hours to install each window, how long will it take him to install the rest?
+Solution: 36 (hours)
+Steps: (14-5)*4=36",15
+"Question: The difference of 5 times a number and 17 is 23. Find the number and 5 times the number.
+Solution: 8; 40
+Steps: x:The number; 5x-17=23",13
