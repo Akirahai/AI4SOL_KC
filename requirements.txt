@@ -9,5 +9,4 @@ evaluate
 tqdm
 tabulate
 argparse
-sci-kit-learn
-accelerate -U
+pyperclip

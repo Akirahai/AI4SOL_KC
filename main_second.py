@@ -1,5 +1,9 @@
 from libs import *
 
+import os
+os.environ['CUDA_DEVICE_ORDER'] =  'PCI_BUS_ID'
+os.environ['CUDA_VISIBLE_DEVICES']=  '1,2'
+
 # from utils import Math_Classification
 # from utils import train
 # from utils import validation
@@ -37,12 +41,13 @@ if __name__== "__main__":
     args.best_metric = 0
     
     if args.use_gpu and torch.cuda.is_available():
-        os.environ["CUDA_VISIBLE_DEVICES"] = "1,2,3"  # Set visible devices
+        os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # Set visible devices
         device = torch.device(f'cuda:{args.gpu}')  # Change to your suitable GPU device
         print(f"Using GPU: {torch.cuda.get_device_name(device)}")
-
+    else:
+        device = torch.device('cpu')
+        print("Using CPU")
     #Login
-    print(device)
     if args.model in ['meta-llama/Llama-2-7b-hf', 'meta-llama/Meta-Llama-3-8B-Instruct']:
         from huggingface_hub import login
         login()
@@ -76,7 +81,7 @@ if __name__== "__main__":
         tokenizer = AutoTokenizer.from_pretrained(model_name)
         # tokenizer.add_special_tokens({'pad_token': '[PAD]'})
         
-        model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=19) # Remember to change number of labels
+        model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=31) # Remember to change number of labels
         model.resize_token_embeddings(len(tokenizer))
         data_collator = DataCollatorWithPadding(tokenizer=tokenizer)   
         
@@ -90,7 +95,7 @@ if __name__== "__main__":
         
         
         # Load data
-        df_train =pd.read_csv(f'data_second_ver/full_train_set.csv')
+        df_train =pd.read_csv(f'data_second_ver/full_train_set_31.csv')
         df_test =pd.read_csv(f'data_second_ver/full_test_set.csv')
         # df_valid =pd.read_csv('data/Grade_data_valid_set.csv')
         
@@ -182,13 +187,28 @@ if __name__== "__main__":
         for k in range(1, args.top_k + 1):
             top_k_preds_asdiv = np.argsort(preds_asdiv, axis=1)[:, -k:]
             df_test_predictions[f'top_{k}_preds'] = list(top_k_preds_asdiv)
-            
         
+        id_to_label = {0: '1.OA.A.1', 1: '1.OA.A.2', 2: '2.NBT.B.5', 3: '2.NBT.B.6', 4: '2.NBT.B.7', 
+            5: '2.OA.A.1', 6: '3.MD.D.8', 7: '3.NBT.A.2', 8: '3.NBT.A.3', 9: '3.NF.A.3', 
+            10: '3.OA.A.3', 11: '3.OA.A.8', 12: '3.OA.A.9', 13: '3.OA.D.8', 14: '3.OA.D.9', 
+            15: '4.MD.A.2', 16: '4.MD.A.3', 17: '4.NBT.B.4', 18: '4.NBT.B.5', 19: '4.NBT.B.6', 
+            20: '4.OA.A.3', 21: '5.NBT.B.5', 22: '5.NBT.B.6', 23: '6.EE.B.6', 24: '6.EE.C.9', 
+            25: '6.NS.B.4', 26: '6.RP.A.1', 27: '6.RP.A.3', 28: '6.SP.B.5', 29: '8.EE.C.8', 30: 'K.OA.A.2'}
+        
+        
+        def map_ids_to_labels(pred_ids):
+            return ','.join([ ' '+id_to_label[i] for i in pred_ids])
+
+        # Create columns for top_1_labels, top_2_labels, and top_3_labels
+        
+        for k in range(1, args.top_k + 1):
+            df_test_predictions[f'Top_{k}_labels'] = df_test_predictions[f'top_{k}_preds'].apply(map_ids_to_labels)
+            
         model_name = model_name.split('/')[-1]
         # Save the predictions to CSV
         predictions_output_dir = os.path.join('Preds_second_ver', current_time)
         os.makedirs(predictions_output_dir, exist_ok=True)
-        predictions_csv_path = os.path.join(predictions_output_dir, f'Preds_{model_name}_top_k.csv')
+        predictions_csv_path = os.path.join(predictions_output_dir, f'Labels_{model_name}_top_k.csv')
         df_test_predictions.to_csv(predictions_csv_path, index=False)
         print(f"Top-k predictions saved to {predictions_csv_path}")
     
