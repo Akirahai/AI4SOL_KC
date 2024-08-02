@@ -24,15 +24,7 @@ def parse_args():
     return parser.parse_args()
     
 
-GPU_list = ','.join(map(str, args.gpus))
-    
 
-import os
-os.environ['CUDA_DEVICE_ORDER'] =  'PCI_BUS_ID'
-os.environ['CUDA_VISIBLE_DEVICES']=  GPU_list
-print(f"Using GPU: {GPU_list}")
-
-from libs import *
 
 # from utils import Math_Classification
 # from utils import train
@@ -42,6 +34,15 @@ from libs import *
 
 if __name__== "__main__":
     args = parse_args()
+    
+    GPU_list = ','.join(map(str, args.gpus))
+    
+    import os
+    os.environ['CUDA_DEVICE_ORDER'] =  'PCI_BUS_ID'
+    os.environ['CUDA_VISIBLE_DEVICES']=  GPU_list
+    print(f"Using GPU: {GPU_list}")
+
+    from libs import *
     args.best_metric = 0
     
     if args.use_gpu and torch.cuda.is_available(): 
