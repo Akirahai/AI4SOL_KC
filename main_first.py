@@ -1,14 +1,5 @@
-import os
-os.environ['CUDA_DEVICE_ORDER'] =  'PCI_BUS_ID'
-os.environ['CUDA_VISIBLE_DEVICES']=  '0,1,2,3'
 
-from libs import *
-
-# from utils import Math_Classification
-# from utils import train
-# from utils import validation
-
-
+import argparse
 
 
 def parse_args():
@@ -27,7 +18,7 @@ def parse_args():
     parser.add_argument('--use-gpu', action='store_true', help='Use GPU')
     parser.add_argument('--model', type=str, help='Model name or path')
     parser.add_argument('--path', type=str, default= f"/home/leviethai/AI4SOL_KC/result") #Fix to your path to save model
-    parser.add_argument('--gpu', type=int, default=1, help='GPU device')
+    parser.add_argument('--gpus', type=int, nargs='+', default=[0, 1, 2, 3], help='List of gpus to use')
     parser.add_argument('--gradient-accumulation-steps', type=int, default=1, help='Gradient accumulation steps')
     parser.add_argument('--eval', type=str, default='test', help='Evaluation on test or valid set')
     parser.add_argument('--top-k', type=int, default=3, help='Top k accuracy')
@@ -37,6 +28,19 @@ def parse_args():
     return parser.parse_args()
 
 
+GPU_list = ','.join(map(str, args.gpus))
+    
+
+import os
+os.environ['CUDA_DEVICE_ORDER'] =  'PCI_BUS_ID'
+os.environ['CUDA_VISIBLE_DEVICES']=  GPU_list
+print(f"Using GPU: {GPU_list}")
+
+from libs import *
+
+# from utils import Math_Classification
+# from utils import train
+# from utils import validation
 
 if __name__== "__main__":
     args = parse_args()

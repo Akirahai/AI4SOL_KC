@@ -13,7 +13,6 @@ from transformers import TrainerCallback
 
 
 import evaluate
-import argparse
 import os
 from tqdm import tqdm
 from tabulate import tabulate
