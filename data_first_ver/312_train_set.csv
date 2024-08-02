@@ -2,9 +2,9 @@ Question,label
 "Question: There's only a week left before Christmas. John went out to buy gifts for his family. Having $999.00 for his budget, he went to a sports store and bought his brother a new pair of shoes for $165.00. How much money does he have left?
 Solution: 834 (dollars)
 Steps: 999-165=834",2
-"Question: Ned was buying books about astronomy. He bought 8 books about the planets and 4 about the space program. How many books did he buy total?
-Solution: 12 (books)
-Steps: 8+4=12",0
+"Question: Ned ordered some pizzas for a party. During the party four were eaten. Now he has seven left. How many pizzas did Ned order for the party?
+Solution: 11 (pizzas)
+Steps: 4+7=11",0
 "Question: Sally memorized eight poems. After some time she could only recite three of them. How many poems did she forget?
 Solution: 5 (poems)
 Steps: 8-3=5",18
@@ -23,9 +23,12 @@ Steps: GCD(16,24)=8",14
 "Question: After paying 6 dollars for the pie, Sandy has 57 dollars left. How much money did she have before buying the pie ?
 Solution: 63 (dollars)
 Steps: 6+57=63",3
-"Question: Kaleb has seventeen shirts. If he got rid of seven of them, how many shirts would Kaleb have?
-Solution: 10 (shirts)
-Steps: 17-7=10",0
+"Question: For homework, a student had to complete 15 problems total. If she finished 6 problems in class, what is the ratio of problems she still needs to complete to problems that she's already finished?
+Solution: 3:02:00
+Steps: 15-6=9; 9:6=3:2",0
+"Question: For homework, a student had to complete 15 problems total. If she finished 6 problems in class, what is the ratio of problems she still needs to complete to problems that she's already finished?
+Solution: 3:02:00
+Steps: 15-6=9; 9:6=3:2",15
 "Question: Three workers are working to cut the trees. Worker X can cut a tree every 16 min, Worker Y every 32 min and Worker C every 24 min. If they start cutting three trees at the same time at 7:48, at what time will they start cutting trees at the same time again?
 Solution: 0.391666667
 Steps: (7*60 (min/hour) + 48) + LCM[16,32,24] + 0 = 564 (min); 564/60 (min/hour)=9 r24; hh:mm=9:24",7
@@ -35,9 +38,9 @@ Steps: (7*60 (min/hour) + 48) + LCM[16,32,24] + 0 = 564 (min); 564/60 (min/hour)
 "Question: Sofia, president of the school student organization, held a meeting to talk about the food being served at the school cafeteria. The first order of business is to discuss whether the students like the food being served at the school. If 383 students said that they like the food and 431 students said they didn't, how many students participated in the discussion?
 Solution: 814 (students)
 Steps: 383+431=814",2
-"Question: Roger went to the movies fifteen times last year and three times this year. How many times did Roger go to the movies all together?
-Solution: 18 (times)
-Steps: 15+3=18",0
+"Question: Jenny was told to clean up her room in fourteen days or she could not go to her best friend's birthday party. It is three days left but Jenny has cleaned up her room. How many days did she spend?
+Solution: 11 (days)
+Steps: 14-3=11",0
 "Question: Consider three consecutive positive integers. If the third number is subtracted from the sum of first two numbers, the difference is 10. Find the numbers.
 Solution: 11; 12; 13
 Steps: x:The first number; x+(x+1)-(x+2)=10",13
@@ -131,9 +134,9 @@ Steps: 7*4=28",4
 "Question: Atomic fireballs come in packages of 9. Barbara ate 59 Atomic Fireballs. How many Atomic Fireballs does she have left?
 Solution: 5 (Atomic Fireballs)
 Steps: 59/9=6 r5",10
-"Question: A pet store took ten birds out of a cage and had nine still left inside. How many birds were in the cage to start with?
-Solution: 19 (birds)
-Steps: 10+9=19",0
+"Question: Tom used 2 batteries on his flashlights, 15 in his toys and 2 in his controllers. What's the difference between the number of Tom's batteries on flashlights and in toys?
+Solution: 13 (batteries)
+Steps: 15-2=13",0
 "Question: Girl Scout cookies come packed 12 boxes to a case. Scout Deborah sold 31 boxes of Lemon Chalet Cremes. How many boxes will not be packed to a case?
 Solution: 7 (boxes)
 Steps: 31/12=2 r7",12
@@ -188,9 +191,9 @@ Steps: 5+2=7",18
 "Question: At the arcade Billy had won forty-eight tickets. After buying a yoyo he had thirty-two tickets left. How many tickets did the yoyo cost?
 Solution: 16 (tickets)
 Steps: 48-32=16",3
-"Question: Lana had eleven DS games. If she bought two more games, how many would she have total?
-Solution: 13 (DS games)
-Steps: 11+2=13",0
+"Question: Katie had twelve pencils in her desk and three more in her backpack. How many did she have total?
+Solution: 15 (pencils)
+Steps: 12+3=15",0
 "Question: Shirley sold 54 boxes of Trefoils. How many cases of 6 boxes does Shirley need to deliver?
 Solution: 9 (cases)
 Steps: 54/6=9",4
@@ -224,9 +227,9 @@ Steps: 1050/65=16 r10",12
 "Question: Adam picked thirty-five strawberries. After eating some, he had thirty-three left. How many strawberries did Adam eat?
 Solution: 2 (strawberries)
 Steps: 35-33=2",3
-"Question: Mrs. Hilt made 5 Rice Krispie Treats. She used 8 large marshmallows and 10 mini marshmallows. How many marshmallows did she use altogether?
-Solution: 18 (marshmallows)
-Steps: 8+10=18",0
+"Question: Kaleb has seventeen shirts. If he got rid of seven of them, how many shirts would Kaleb have?
+Solution: 10 (shirts)
+Steps: 17-7=10",0
 "Question: Kevin can mow a square lawn that is 30 meters of each side in 45 minutes. If he works at the same rate, how many minutes will it take Kevin to mow a square lawn that measures 60 meters on each side?
 Solution: 180 (minutes)
 Steps: 4*45=180",7
@@ -284,15 +287,15 @@ Steps: 23*2=46",4
 "Question: 532 people are watching a movie in a theater. The theater has 750 seats. How many seats are empty in the theater?
 Solution: 218 (seats)
 Steps: 750-532=218",2
-"Question: Emily owned 6 songs by her favorite artists. Later on she bought 7 more songs. How many songs did she have totaled?
-Solution: 13 (songs)
-Steps: 6+7=13",0
+"Question: Julia played tag with 12 kids on Monday. She played tag with 7 kids on Tuesday. How many kids did she play with altogether?
+Solution: 19 (kids)
+Steps: 12+7=19",0
 "Question: A chess club has 3 members. If 4 new members are enrolled, how many total members are there in the chess club?
 Solution: 7 (members)
 Steps: 3+4=7",18
-"Question: Tom used 2 batteries on his flashlights, 15 in his toys and 2 in his controllers. What's the difference between the number of Tom's batteries on flashlights and in toys?
-Solution: 13 (batteries)
-Steps: 15-2=13",0
+"Question: Robin drank seven bottles of water in the morning and seven in the afternoon. How many bottles did Robin drink total?
+Solution: 14 (bottles)
+Steps: 7+7=14",0
 "Question: When Jenna works out, she spends 18 minutes doing cardio and 20 minutes doing resistance training. Leon's workout consists of 17 minutes of cardio and 18 minutes of resistance training. Who does a higher ratio of cardio to resistance training?
 Solution: Leon
 Steps: 17/18=94.444%(Leon) > 18/20=90%(Jenna)",16
@@ -305,9 +308,9 @@ Steps: 92+3=95",3
 "Question: One number is half the other. Sum of two numbers is equal to 6. Find the numbers.
 Solution: 4; 2
 Steps: x:One of the numbers; x+(x/2)=6",13
-"Question: Collin baked 9 brownies with nuts on top and 34 brownies without nuts. What is the ratio of the number of brownies with nuts on top to the total number of brownies?
-Solution: 9:43:00
-Steps: 9+34=43; 9:43",15
+"Question: A small school has 55 students. If 10 of the students are boys, what is the ratio of girls to boys?
+Solution: 9:02:00
+Steps: 55-10=45; 45:10=9:2",15
 "Question: Adam had 5 dollars. At the store he spent $2 on a new game. If he got another 5 dollars for his allowance, how much money does he have now?
 Solution: 8 (dollars)
 Steps: 5-2+5=8",18
@@ -332,9 +335,9 @@ Steps: (10*60 (min/hour) + 10) + LCM[60,30,40] + 0 = 730 (min); 730/60 (min/hour
 "Question: There are three bosses in a computer game. Boss A appears every 1 hour. Boss B appears every 30 minutes. Boss C appears every 40 minutes. If the three bosses appear together at 10:10, at what time will the three bosses appear together again in the game?
 Solution: 0.506944444
 Steps: (10*60 (min/hour) + 10) + LCM[60,30,40] + 0 = 730 (min); 730/60 (min/hour)=12 r10; hh:mm=12:10",12
-"Question: Julia played tag with 12 kids on Monday. She played tag with 7 kids on Tuesday. How many kids did she play with altogether?
-Solution: 19 (kids)
-Steps: 12+7=19",0
+"Question: Mrs. Hilt has 15 friends. She can only take 8 of her friends to the movies. How many friends can't go to the movies?
+Solution: 7 (friends)
+Steps: 15-8=7",0
 "Question: A box of cupcakes cost $six. If you had eight hundred twenty-one dollars and bought as many boxes as you could, how much money would you have left?
 Solution: 5 (dollars)
 Steps: 821/6=136 r5",10
@@ -347,9 +350,9 @@ Steps: 356-112=244",2
 "Question: Robin is making bead necklaces. She wants to use 31 beads to make 4 necklaces. If she wants each necklace to have the same number of beads, how many beads will she have left over?
 Solution: 3 (beads)
 Steps: 31/4=7 r3",10
-"Question: Katie had twelve pencils in her desk and three more in her backpack. How many did she have total?
-Solution: 15 (pencils)
-Steps: 12+3=15",0
+"Question: Emily owned 6 songs by her favorite artists. Later on she bought 7 more songs. How many songs did she have totaled?
+Solution: 13 (songs)
+Steps: 6+7=13",0
 "Question: John bought some cupcakes for a party. During the party eleven were eaten. Now he has twenty-one left. How many cupcakes did John get for the party?
 Solution: 32 (cupcakes)
 Steps: 11+21=32",3
@@ -407,9 +410,9 @@ Steps: 648/4=162",10
 "Question: Janine owns a catering service company. She was hired to cater for the mayor's 50th birthday. For the appetizers, she needs to make 750 mini meat pies. She divided her crew into 3 teams. If the first team made 235, and the second made 275, how many pies should the third team make?
 Solution: 240 (pies)
 Steps: 750-(235+275)=240",6
-"Question: Marin has nine apples and Donald has two apples. How many apples do Marin and Donald have together?
-Solution: 11 (apples)
-Steps: 9+2=11",0
+"Question: Lana had eleven DS games. If she bought two more games, how many would she have total?
+Solution: 13 (DS games)
+Steps: 11+2=13",0
 "Question: Mrs. Hilt's favorite first grade classes are baking muffins. Mrs. Brier's class bakes 18 muffins, Mrs. MacAdams's class bakes 20 muffins, and Mrs. Flannery's class bakes 17 muffins. How many muffins does first grade bake in all?
 Solution: 55 (muffins)
 Steps: 18+20+17=55",3
@@ -446,9 +449,9 @@ Steps: 85/10=8 r5; 10-5=5",10
 "Question: After agreeing that the school menu needs to be changed, they had a vote for food suggestions. If 337 voted to add more veggies to the menu and 335 voted to add more meat, how many students voted?
 Solution: 672 (students)
 Steps: 337+335=672",2
-"Question: Mrs. Hilt has 15 friends. She can only take 8 of her friends to the movies. How many friends can't go to the movies?
-Solution: 7 (friends)
-Steps: 15-8=7",0
+"Question: Megan had seventeen bottles of water. If she drank three of them, how many bottles would Megan have left?
+Solution: 14 (bottles)
+Steps: 17-3=14",0
 "Question: My car gets 20 miles per gallon of gas. If Grandma's house is 100 miles away, how many gallons of gas would it take to get to her house?
 Solution: 5 (gallons of gas)
 Steps: 100/20=5",4
@@ -611,15 +614,15 @@ Steps: 12*24=288",9
 "Question: The school cafeteria had 17 apples. If they used 2 to make lunch for the students and then bought 23 more, how many apples would they have?
 Solution: 17-2+23=38
 Steps: 17-2+23=38",1
-"Question: There were six roses in the vase. Jessica cut some more roses from her flower garden. There are now eighteen roses in the vase. How many roses did she cut ?
-Solution: 12 (roses)
-Steps: 18-6=12",0
+"Question: Ned was buying books about astronomy. He bought 8 books about the planets and 4 about the space program. How many books did he buy total?
+Solution: 12 (books)
+Steps: 8+4=12",0
 "Question: Finally, she planned on going to the Halloween party in the village club house. She wanted to make sure that she will have the perfect costume so she rented 4 different costumes from the Halloween store. If each costume rent costs $2.00, how much did she spend on all the costumes?
 Solution: 8 (dollars)
 Steps: 4*2=8",4
-"Question: Megan had seventeen bottles of water. If she drank three of them, how many bottles would Megan have left?
-Solution: 14 (bottles)
-Steps: 17-3=14",0
+"Question: Mrs. Hilt made 5 Rice Krispie Treats. She used 8 large marshmallows and 10 mini marshmallows. How many marshmallows did she use altogether?
+Solution: 18 (marshmallows)
+Steps: 8+10=18",0
 "Question: The capacity of a tank is 32 gallons. If a company bought 728 gallons of oil, how many tanks are needed to hold all the oil?
 Solution: 23 (tanks)
 Steps: 728/32=22 r24",12
@@ -701,9 +704,9 @@ Steps: 710/5=142",10
 "Question: At a comic convention Janet wanted to buy 8 comics, but each one costs 4 dollars, plus it costs 2 to even get in. How much money should she take with her so she can get in and buy what she wants?
 Solution: 34 (dollars)
 Steps: 8*4+2=34",5
-"Question: Jenny goes to dance class every 6 days, karate class every 12 days, and to the library every 18 days. On December 1st she went to both classes and the libary. How many days from December 1st will she do both classes and go to the library?
-Solution: 36 (days)
-Steps: LCM[6,12,18]=36",14
+"Question: Collin baked 9 brownies with nuts on top and 34 brownies without nuts. What is the ratio of the number of brownies with nuts on top to the total number of brownies?
+Solution: 9:43:00
+Steps: 9+34=43; 9:43",15
 "Question: Simon, Mark, Kevin, and Carl love collecting stamps. They meet up every month to compare and share their collections with each other. During the previous month, Kevin was able to collect 45 stamps while Simon was only able to collect 27. How many more stamps does Kevin have more than Simon?
 Solution: 18 (stamps)
 Steps: 45-27=18",3
@@ -734,12 +737,9 @@ Steps: (360/20)*2+20*2=76",12
 "Question: A baker made 2 batches of chocolate chip cookies. Each batch had 3 cookies in it. Then he made an additional 4 oatmeal cookies just in case someone didn't want chocolate chip. How many cookies did he bake total?
 Solution: 10 (cookies)
 Steps: 2*3+4=10",5
-"Question: For homework, a student had to complete 15 problems total. If she finished 6 problems in class, what is the ratio of problems she still needs to complete to problems that she's already finished?
-Solution: 3:02:00
-Steps: 15-6=9; 9:6=3:2",0
-"Question: For homework, a student had to complete 15 problems total. If she finished 6 problems in class, what is the ratio of problems she still needs to complete to problems that she's already finished?
-Solution: 3:02:00
-Steps: 15-6=9; 9:6=3:2",15
-"Question: When Amy got to the fair she had $15. When she left she had $11. How much money did she spend at the fair?
-Solution: 4 (dollars)
-Steps: 15-11=4",0
+"Question: Marin has nine apples and Donald has two apples. How many apples do Marin and Donald have together?
+Solution: 11 (apples)
+Steps: 9+2=11",0
+"Question: Roger went to the movies fifteen times last year and three times this year. How many times did Roger go to the movies all together?
+Solution: 18 (times)
+Steps: 15+3=18",0

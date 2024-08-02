@@ -44,9 +44,9 @@ Steps: 7+43=50; 7:50",3
 "Question: There are 43 empty seats and 7 occupied seats on an airplane. What is the ratio of the number of occupied seats to the total number of seats?
 Solution: 0.326388889
 Steps: 7+43=50; 7:50",15
-"Question: At a school event, adults are seated in groups of exactly 17 and children are seated in groups of exactly 15. If there are the same number of adults as children, what is the minimum number of adults attending?
-Solution: 255 (adults)
-Steps: LCM[17,15]=255",14
+"Question: Collin baked 9 brownies with nuts on top and 34 brownies without nuts. What is the ratio of the number of brownies with nuts on top to the total number of brownies?
+Solution: 9:43:00
+Steps: 9+34=43; 9:43",15
 "Question: A baker made 2 batches of chocolate chip cookies. Each batch had 3 cookies in it. Then he made an additional 4 oatmeal cookies just in case someone didn't want chocolate chip. How many cookies did he bake total?
 Solution: 10 (cookies)
 Steps: 2*3+4=10",5
@@ -293,9 +293,9 @@ Steps: 98-39=59",3
 "Question: Lukas averages 12 points per game in basketball. How many points would he score in 5 games?
 Solution: 60 (points)
 Steps: 12*5=60",4
-"Question: Collin baked 9 brownies with nuts on top and 34 brownies without nuts. What is the ratio of the number of brownies with nuts on top to the total number of brownies?
-Solution: 9:43:00
-Steps: 9+34=43; 9:43",15
+"Question: A small school has 55 students. If 10 of the students are boys, what is the ratio of girls to boys?
+Solution: 9:02:00
+Steps: 55-10=45; 45:10=9:2",15
 "Question: It usually takes Stanley 10 hours to go around his two favorite places. If he took 10 times longer than the usual, how many hours did it take him to go around the places this time?
 Solution: 100 (hours)
 Steps: 10*10=100",7
@@ -422,12 +422,12 @@ Steps: 79-45=34",3
 "Question: P and Q start at the same time in the same direction to run around a stadium. P completes a round in 252 seconds and Q in 198 seconds, both starting at the same point. After what time will they meet again at the starting point?
 Solution: 2772 (seconds)
 Steps: LCM[252,198]=2772",14
-"Question: There were six roses in the vase. Jessica cut some more roses from her flower garden. There are now eighteen roses in the vase. How many roses did she cut ?
-Solution: 12 (roses)
-Steps: 18-6=12",0
-"Question: When Amy got to the fair she had $15. When she left she had $11. How much money did she spend at the fair?
-Solution: 4 (dollars)
-Steps: 15-11=4",0
+"Question: Roger went to the movies fifteen times last year and three times this year. How many times did Roger go to the movies all together?
+Solution: 18 (times)
+Steps: 15+3=18",0
+"Question: Tom used 2 batteries on his flashlights, 15 in his toys and 2 in his controllers. What's the difference between the number of Tom's batteries on flashlights and in toys?
+Solution: 13 (batteries)
+Steps: 15-2=13",0
 "Question: If Mr. Brown and his son together had $220, and Mr. Brown had 10 times as much as his son, how much money had each?
 Solution: 20 (dollars); 200 (dollars)
 Steps: x:The money of Mr. Brown; y:The money of Mr. Brown's son; x+y=220; x=10y",13
@@ -512,9 +512,9 @@ Steps: (7*4)+(1*9)=37",11
 "Question: At a farming supply store 2 pounds of seed cost $44.68. If a farmer needed 6 pounds of seeds, how much would it cost him?
 Solution: 134.04 (dollars)
 Steps: (44.68/2)*6=134.04",7
-"Question: Tom used 2 batteries on his flashlights, 15 in his toys and 2 in his controllers. What's the difference between the number of Tom's batteries on flashlights and in toys?
-Solution: 13 (batteries)
-Steps: 15-2=13",0
+"Question: There were six roses in the vase. Jessica cut some more roses from her flower garden. There are now eighteen roses in the vase. How many roses did she cut ?
+Solution: 12 (roses)
+Steps: 18-6=12",0
 "Question: There were 14 kids on the soccer field. 22 kids decided to join in. Now how many kids are on the soccer field?
 Solution: 36 (kids)
 Steps: 14+22=36",3

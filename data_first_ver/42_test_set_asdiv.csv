@@ -1,4 +1,22 @@
 Question,label
+"Question: A baker made 2 batches of chocolate chip cookies. Each batch had 3 cookies in it. Then he made an additional 4 oatmeal cookies just in case someone didn't want chocolate chip. How many cookies did he bake total?
+Solution: 10 (cookies)
+Steps: 2*3+4=10",5
+"Question: Kevin collected toys to use as prizes at the fair. He collected 14 stuffed animals. He also collected 18 frisbees and several yo-yos. Kevin has 50 prizes in all. How many yo-yos did Kevin collect?
+Solution: 18 (yo-yos)
+Steps: 50-18-14=18",3
+"Question: The school cafeteria had 17 apples. If they used 2 to make lunch for the students and then bought 23 more, how many apples would they have?
+Solution: 17-2+23=38
+Steps: 17-2+23=38",1
+"Question: A flash drive could hold nine gigs of data. If you needed to store four hundred sixty-two gigs, how many flash drive would you need?
+Solution: 52 (flash drive)
+Steps: 462/9=51 r3",10
+"Question: Vanessa had to complete 3 pages of homework. Each page had 4 problems on it. How many problems did she have to complete total?
+Solution: 12 (problems)
+Steps: 3*4=12",4
+"Question: Adam was reading through his favorite book series. The first week he read 5 different books. The next week he read 8 books. How many books did he read total?
+Solution: 13 (books)
+Steps: 5+8=13",3
 "Question: A lawn care company bought 4 lawnmower blade for $8 each. They also bought a spool of weed eater string for $7. How much money did they spend on supplies?
 Solution: 39 (dollars)
 Steps: 4*8+7=39",5
@@ -8,30 +26,9 @@ Steps: (14-5)*4=36",3
 "Question: A new building needed 14 windows. The builder had already installed 5 of them. If it takes 4 hours to install each window, how long will it take him to install the rest?
 Solution: 36 (hours)
 Steps: (14-5)*4=36",15
-"Question: Mikey had 356 leaves. Some of her leaves blew away. Now she has 112 leaves left. How many of her leaves blew away?
-Solution: 244 (leaves)
-Steps: 356-112=244",2
-"Question: At the fair Kaleb bought 6 tickets. After riding the ferris wheel he had 3 tickets left. If each ticket cost 9 dollars, how much money did Kaleb spend riding the ferris wheel?
-Solution: (6-3)*9=27
-Steps: (6-3)*9=27",18
-"Question: At the fair Kaleb bought 6 tickets. After riding the ferris wheel he had 3 tickets left. If each ticket cost 9 dollars, how much money did Kaleb spend riding the ferris wheel?
-Solution: (6-3)*9=27
-Steps: (6-3)*9=27",4
-"Question: Brenda's mother made cookies for five. If she prepared 35 cookies and each of them had the same number of cookies, how many did each of them have?
-Solution: 7 (cookies)
-Steps: 35/5=7",4
-"Question: For Bianca's birthday 5 of her friends gave her 6 dollars. How much money did she get for her birthday?
-Solution: 30 (dollars)
-Steps: 5*6=30",4
-"Question: At Billy's Restaurant a group with two adults and five children came in to eat. If each meal cost three dollars, how much was the bill?
-Solution: 21 (dollars)
-Steps: (2+5)*3=21",6
-"Question: Debby received twenty-one text messages before noon and another eighteen after noon. How many text messages did Debby receive total?
-Solution: 39 (text messages)
-Steps: 21+18=39",3
-"Question: Bob strikes the drums every 9 seconds and the cymbals every 12 seconds. If he just struck both at the same time, how many seconds will pass before he again strikes them at the same time?
-Solution: 36 (seconds)
-Steps: LCM[9,12]=36",14
+"Question: Consider three consecutive positive integers. If the third number is subtracted from the sum of first two numbers, the difference is 10. Find the numbers.
+Solution: 11; 12; 13
+Steps: x:The first number; x+(x+1)-(x+2)=10",13
 "Question: If five is subtracted from three times a certain number, the result is 10. What is the number?
 Solution: 5
 Steps: x:The certain number; 3x-5=10",13
@@ -44,144 +41,150 @@ Steps: 8/6(Lisa's soccer team) > 17/14(Susan's team)",16
 "Question: In 3 seconds, Kevin can dribble a basketball 13 times. If Kevin dribbles at this same rate for 27 seconds, how many times will he dribble the basketball?
 Solution: 117 (times)
 Steps: 3:13=27:117",16
-"Question: Daniel has 44 commemorative plates and 33 commemorative spoons. He wants to display them in groups throughout his house, each with the same combination of plates and spoons, with none left over. What is the greatest number of groups Daniel can display?
-Solution: GCD(44,33)=11
-Steps: GCD(44,33)=11",14
+"Question: Allie has 5 math books and 10 science books. If she wants to distribute them evenly among some bookshelves so that each bookshelf has the same combination of math and science books, with no books left over, what is the greatest number of bookshelves Allie can use?
+Solution: 5 (bookshelves)
+Steps: GCD(5,10)=5",14
 "Question: Jack is reading a 285-page book. If he reads 23 pages per day, how many pages will he read on the last day?
 Solution: 9 (pages)
 Steps: 285/23=12 r9",12
-"Question: Simon, Mark, Kevin, and Carl love collecting stamps. They meet up every month to compare and share their collections with each other. During the previous month, Kevin was able to collect 45 stamps while Simon was only able to collect 27. How many more stamps does Kevin have more than Simon?
-Solution: 18 (stamps)
-Steps: 45-27=18",3
-"Question: Adam was reading through his favorite book series. The first week he read 5 different books. The next week he read 8 books. How many books did he read total?
-Solution: 13 (books)
-Steps: 5+8=13",3
+"Question: Debby received twenty-one text messages before noon and another eighteen after noon. How many text messages did Debby receive total?
+Solution: 39 (text messages)
+Steps: 21+18=39",3
+"Question: Her friends are coming over the next day so she also bought some refreshments. If she has $50.00 left from the money she had after buying cookies, and she has $69.00 before, how much did she spend on juice?
+Solution: 19 (dollars)
+Steps: 69-50=19",3
+"Question: A group of science students went on a field trip. They took 2 vans and 3 buses. There were 8 people in each van and 20 people in each bus. How many people went on the field trip?
+Solution: 76 (people)
+Steps: (8*2)+(3*20)=76",11
+"Question: I am three times as old as my son. Five years later, I shall be two and a half times as old as my son. How old am I and how old is my son?
+Solution: 45 (years old); 15 (years old)
+Steps: x:My age; y:The age of my son; x=3y; x+5=2.5(y+5)",17
+"Question: Sofia, president of the school student organization, held a meeting to talk about the food being served at the school cafeteria. The first order of business is to discuss whether the students like the food being served at the school. If 383 students said that they like the food and 431 students said they didn't, how many students participated in the discussion?
+Solution: 814 (students)
+Steps: 383+431=814",2
+"Question: Mrs. Hilt made 5 Rice Krispie Treats. She used 8 large marshmallows and 10 mini marshmallows. How many marshmallows did she use altogether?
+Solution: 18 (marshmallows)
+Steps: 8+10=18",0
+"Question: There are 270 seats in a movie theater. If the movie theater has 9 sections with the same number of seats in each section, how many seats are in each section?
+Solution: 30 (seats)
+Steps: 270/9=30",10
+"Question: 58 children are taking a bus to the zoo. They sit 2 children in every seat. How many seats will the children need in all?
+Solution: 29 (seats)
+Steps: 58/2=29",4
+"Question: The exit door leads to a river 487 inches across, if the bridge he needs to cross is only 295 inches, how much longer does he need to build if he wants to cross the river using the bridge?
+Solution: 192 (inches)
+Steps: 487-295=192",7
+"Question: It usually takes Stanley 10 hours to go around his two favorite places. If he took 10 times longer than the usual, how many hours did it take him to go around the places this time?
+Solution: 100 (hours)
+Steps: 10*10=100",7
+"Question: I see 23 boys. How many eyes do I see?
+Solution: 46 (eyes)
+Steps: 23*2=46",4
+"Question: Kim sold 54 boxes of Girl Scout cookies. Jennifer sold 17 more boxes than Kim. How many boxes of cookies did Jennifer sell?
+Solution: 71 (boxes of cookies)
+Steps: 54+17=71",3
+"Question: If Mr. Brown and his son together had $220, and Mr. Brown had 10 times as much as his son, how much money had each?
+Solution: 20 (dollars); 200 (dollars)
+Steps: x:The money of Mr. Brown; y:The money of Mr. Brown's son; x+y=220; x=10y",13
+"Question: After recess, Buddy changed clothes for gym class. Down at the gym, all the students were divided into two groups. If one group has 34 members and the other has 37, how many students are in Buddy's gym class?
+Solution: 71 (students)
+Steps: 34+37=71",3
+"Question: For Bianca's birthday 5 of her friends gave her 6 dollars. How much money did she get for her birthday?
+Solution: 30 (dollars)
+Steps: 5*6=30",4
+"Question: Bob strikes the drums every 9 seconds and the cymbals every 12 seconds. If he just struck both at the same time, how many seconds will pass before he again strikes them at the same time?
+Solution: 36 (seconds)
+Steps: LCM[9,12]=36",14
+"Question: Lana had eleven DS games. If she bought two more games, how many would she have total?
+Solution: 13 (DS games)
+Steps: 11+2=13",0
+"Question: Mikey had 356 leaves. Some of her leaves blew away. Now she has 112 leaves left. How many of her leaves blew away?
+Solution: 244 (leaves)
+Steps: 356-112=244",2
+"Question: The woods behind Wendy's house were 8 miles wide and have an area of 24 square miles. What is the length of the woods?
+Solution: 3 (miles)
+Steps: 24/8=3",8
+"Question: At the fair Kaleb bought 6 tickets. After riding the ferris wheel he had 3 tickets left. If each ticket cost 9 dollars, how much money did Kaleb spend riding the ferris wheel?
+Solution: (6-3)*9=27
+Steps: (6-3)*9=27",18
+"Question: At the fair Kaleb bought 6 tickets. After riding the ferris wheel he had 3 tickets left. If each ticket cost 9 dollars, how much money did Kaleb spend riding the ferris wheel?
+Solution: (6-3)*9=27
+Steps: (6-3)*9=27",4
 "Question: Dave was working as a sacker at a grocery store where he made six dollars an hour. On Monday he worked six hours and on Tuesday he worked two hours. How much money did Dave make in those two days?
 Solution: (6+2)*6=48
 Steps: (6+2)*6=48",18
 "Question: Dave was working as a sacker at a grocery store where he made six dollars an hour. On Monday he worked six hours and on Tuesday he worked two hours. How much money did Dave make in those two days?
 Solution: (6+2)*6=48
 Steps: (6+2)*6=48",4
-"Question: I am three times as old as my son. Five years later, I shall be two and a half times as old as my son. How old am I and how old is my son?
-Solution: 45 (years old); 15 (years old)
-Steps: x:My age; y:The age of my son; x=3y; x+5=2.5(y+5)",17
-"Question: 67 medals are displayed in the sports center. There are 19 gold medals and 32 silver medals. How many bronze medals are displayed?
-Solution: 16 (bronze medals)
-Steps: (67-19)-32=16",3
-"Question: The school cafeteria had 17 apples. If they used 2 to make lunch for the students and then bought 23 more, how many apples would they have?
-Solution: 17-2+23=38
-Steps: 17-2+23=38",1
-"Question: There are 3300 bananas in Janice's banana collection. Janice also has 5 crayons. If the bananas are organized into 75 groups, how big is each group?
-Solution: 44 (bananas)
-Steps: 3300/75=44",12
-"Question: My car gets 20 miles per gallon of gas. If Grandma's house is 100 miles away, how many gallons of gas would it take to get to her house?
-Solution: 5 (gallons of gas)
-Steps: 100/20=5",4
-"Question: After paying $2.30 for a drink, Bryon has $17.15. How much money did he have before buying the drink?
-Solution: 19.45 (dollars)
-Steps: 2.3+17.15=19.45",7
-"Question: Cora sliced 18 kg of green apples for a party. She divided the apple slices equally between 5 large bowls. How many grams of apple slices did Cora put in each bowl?
-Solution: 3600 (grams of apple)
-Steps: (18 (kg) *1000 (g/kg))/5 = 3600 (g)",7
-"Question: 58 children are taking a bus to the zoo. They sit 2 children in every seat. How many seats will the children need in all?
-Solution: 29 (seats)
-Steps: 58/2=29",4
-"Question: While on vacation, Debby took 24 pictures at the zoo and 12 at the museum. If she later deleted 14 of the pictures, how many pictures from her vacation did she still have?
-Solution: 22 (pictures)
-Steps: 24+12-14=22",3
-"Question: If Mr. Brown and his son together had $220, and Mr. Brown had 10 times as much as his son, how much money had each?
-Solution: 20 (dollars); 200 (dollars)
-Steps: x:The money of Mr. Brown; y:The money of Mr. Brown's son; x+y=220; x=10y",13
-"Question: Her friends are coming over the next day so she also bought some refreshments. If she has $50.00 left from the money she had after buying cookies, and she has $69.00 before, how much did she spend on juice?
-Solution: 19 (dollars)
-Steps: 69-50=19",3
-"Question: Vanessa had to complete 3 pages of homework. Each page had 4 problems on it. How many problems did she have to complete total?
-Solution: 12 (problems)
-Steps: 3*4=12",4
-"Question: If Lewis earns $1367.00 every week during the 5 weeks of harvest. How much money does he earn during harvest season?
-Solution: 6835 (dollars)
-Steps: 1367*5=6835",9
-"Question: When Amy got to the fair she had $15. When she left she had $11. How much money did she spend at the fair?
-Solution: 4 (dollars)
-Steps: 15-11=4",0
-"Question: Since the result of the vote was close, it was decided that they will balance the menu with both meat and vegetables. This decision was agreed upon by 154 third grade students and 237 fourth grade students. How many students agreed with the decision?
-Solution: 391 (students)
-Steps: 154+237=391",2
-"Question: A baker had 7 boxes for donuts. He ended up making 48 donuts and splitting them evenly between the boxes. How many extra donuts did he end up with?
-Solution: 6 (donuts)
-Steps: 48/7=6 r6",10
 "Question: Rosa is making a game board that is 16 inches by 24 inches. She wants to use square tiles. What is the largest tile she can use?
 Solution: 8 (tiles)
 Steps: GCD(16,24)=8",14
-"Question: An industrial machine can make three hundred twenty-one crayons a day. If each box of crayons has seven crayons in it, how many full boxes does the machine make a day?
-Solution: 45 (boxes)
-Steps: 321/7=45 r6",10
-"Question: Allie has 5 math books and 10 science books. If she wants to distribute them evenly among some bookshelves so that each bookshelf has the same combination of math and science books, with no books left over, what is the greatest number of bookshelves Allie can use?
-Solution: 5 (bookshelves)
-Steps: GCD(5,10)=5",14
-"Question: Sofia, president of the school student organization, held a meeting to talk about the food being served at the school cafeteria. The first order of business is to discuss whether the students like the food being served at the school. If 383 students said that they like the food and 431 students said they didn't, how many students participated in the discussion?
-Solution: 814 (students)
-Steps: 383+431=814",2
-"Question: A baker made 2 batches of chocolate chip cookies. Each batch had 3 cookies in it. Then he made an additional 4 oatmeal cookies just in case someone didn't want chocolate chip. How many cookies did he bake total?
-Solution: 10 (cookies)
-Steps: 2*3+4=10",5
-"Question: After recess, Buddy changed clothes for gym class. Down at the gym, all the students were divided into two groups. If one group has 34 members and the other has 37, how many students are in Buddy's gym class?
-Solution: 71 (students)
-Steps: 34+37=71",3
-"Question: I see 23 boys. How many eyes do I see?
-Solution: 46 (eyes)
-Steps: 23*2=46",4
-"Question: There are 270 seats in a movie theater. If the movie theater has 9 sections with the same number of seats in each section, how many seats are in each section?
-Solution: 30 (seats)
-Steps: 270/9=30",10
-"Question: There were six roses in the vase. Jessica cut some more roses from her flower garden. There are now eighteen roses in the vase. How many roses did she cut ?
-Solution: 12 (roses)
-Steps: 18-6=12",0
-"Question: It usually takes Stanley 10 hours to go around his two favorite places. If he took 10 times longer than the usual, how many hours did it take him to go around the places this time?
-Solution: 100 (hours)
-Steps: 10*10=100",7
-"Question: Joan is baking a cake. The recipe calls for 7 cups of flour. She already put in 3 cups. How many more cups does she need to add ?
-Solution: 4 (cups)
-Steps: 7-3=4",18
-"Question: Kevin collected toys to use as prizes at the fair. He collected 14 stuffed animals. He also collected 18 frisbees and several yo-yos. Kevin has 50 prizes in all. How many yo-yos did Kevin collect?
-Solution: 18 (yo-yos)
-Steps: 50-18-14=18",3
-"Question: The exit door leads to a river 487 inches across, if the bridge he needs to cross is only 295 inches, how much longer does he need to build if he wants to cross the river using the bridge?
-Solution: 192 (inches)
-Steps: 487-295=192",7
-"Question: Consider three consecutive positive integers. If the third number is subtracted from the sum of first two numbers, the difference is 10. Find the numbers.
-Solution: 11; 12; 13
-Steps: x:The first number; x+(x+1)-(x+2)=10",13
-"Question: A chef used five potatoes to make fries for the lunch crowd. Later he used another two potatoes for the dinner crowd. How many potatoes did he use total?
-Solution: 7 (potatoes)
-Steps: 5+2=7",18
-"Question: Kim sold 54 boxes of Girl Scout cookies. Jennifer sold 17 more boxes than Kim. How many boxes of cookies did Jennifer sell?
-Solution: 71 (boxes of cookies)
-Steps: 54+17=71",3
-"Question: A group of science students went on a field trip. They took 2 vans and 3 buses. There were 8 people in each van and 20 people in each bus. How many people went on the field trip?
-Solution: 76 (people)
-Steps: (8*2)+(3*20)=76",11
-"Question: The woods behind Wendy's house were 8 miles wide and have an area of 24 square miles. What is the length of the woods?
-Solution: 3 (miles)
-Steps: 24/8=3",8
-"Question: Lana had eleven DS games. If she bought two more games, how many would she have total?
-Solution: 13 (DS games)
-Steps: 11+2=13",0
+"Question: Two neon signs are turned on at the same time. both signs blink as they are turned on. One sign blinks every 9 seconds. The other sign blinks every 15 seconds. In how many seconds will they blink together again?
+Solution: 45 (seconds)
+Steps: LCM[9,15]=45",14
+"Question: Since the result of the vote was close, it was decided that they will balance the menu with both meat and vegetables. This decision was agreed upon by 154 third grade students and 237 fourth grade students. How many students agreed with the decision?
+Solution: 391 (students)
+Steps: 154+237=391",2
+"Question: My car gets 20 miles per gallon of gas. If Grandma's house is 100 miles away, how many gallons of gas would it take to get to her house?
+Solution: 5 (gallons of gas)
+Steps: 100/20=5",4
+"Question: Simon, Mark, Kevin, and Carl love collecting stamps. They meet up every month to compare and share their collections with each other. During the previous month, Kevin was able to collect 45 stamps while Simon was only able to collect 27. How many more stamps does Kevin have more than Simon?
+Solution: 18 (stamps)
+Steps: 45-27=18",3
+"Question: Brenda's mother made cookies for five. If she prepared 35 cookies and each of them had the same number of cookies, how many did each of them have?
+Solution: 7 (cookies)
+Steps: 35/5=7",4
+"Question: If Lewis earns $1367.00 every week during the 5 weeks of harvest. How much money does he earn during harvest season?
+Solution: 6835 (dollars)
+Steps: 1367*5=6835",9
 "Question: Jenny was told to clean up her room in fourteen days or she could not go to her best friend's birthday party. It is three days left but Jenny has cleaned up her room. How many days did she spend?
 Solution: 11 (days)
 Steps: 14-3=11",0
+"Question: After paying $2.30 for a drink, Bryon has $17.15. How much money did he have before buying the drink?
+Solution: 19.45 (dollars)
+Steps: 2.3+17.15=19.45",7
+"Question: Joan is baking a cake. The recipe calls for 7 cups of flour. She already put in 3 cups. How many more cups does she need to add ?
+Solution: 4 (cups)
+Steps: 7-3=4",18
 "Question: Bianca had 45 coloring books. If she gave away 6 of them, but then bought 20 more, how many would she have total?
 Solution: 59 (coloring books)
 Steps: 45-6+20=59",3
-"Question: A flash drive could hold nine gigs of data. If you needed to store four hundred sixty-two gigs, how many flash drive would you need?
-Solution: 52 (flash drive)
-Steps: 462/9=51 r3",10
+"Question: At Billy's Restaurant a group with two adults and five children came in to eat. If each meal cost three dollars, how much was the bill?
+Solution: 21 (dollars)
+Steps: (2+5)*3=21",6
 "Question: Sam has 389 riddles for 18 of his students to guess. If he wants the students to guess the same number of riddles, at least how many more riddles does he need to distribute?
 Solution: 7 (riddles)
 Steps: 389/18=21 r11; 18-11=7",12
 "Question: Sam has 389 riddles for 18 of his students to guess. If he wants the students to guess the same number of riddles, at least how many more riddles does he need to distribute?
 Solution: 7 (riddles)
 Steps: 389/18=21 r11; 18-11=7",0
-"Question: A small school has 55 students. If 10 of the students are boys, what is the ratio of girls to boys?
-Solution: 9:02:00
-Steps: 55-10=45; 45:10=9:2",15
+"Question: A chef used five potatoes to make fries for the lunch crowd. Later he used another two potatoes for the dinner crowd. How many potatoes did he use total?
+Solution: 7 (potatoes)
+Steps: 5+2=7",18
+"Question: 67 medals are displayed in the sports center. There are 19 gold medals and 32 silver medals. How many bronze medals are displayed?
+Solution: 16 (bronze medals)
+Steps: (67-19)-32=16",3
+"Question: An industrial machine can make three hundred twenty-one crayons a day. If each box of crayons has seven crayons in it, how many full boxes does the machine make a day?
+Solution: 45 (boxes)
+Steps: 321/7=45 r6",10
+"Question: Cora sliced 18 kg of green apples for a party. She divided the apple slices equally between 5 large bowls. How many grams of apple slices did Cora put in each bowl?
+Solution: 3600 (grams of apple)
+Steps: (18 (kg) *1000 (g/kg))/5 = 3600 (g)",7
+"Question: Tom used 2 batteries on his flashlights, 15 in his toys and 2 in his controllers. What's the difference between the number of Tom's batteries on flashlights and in toys?
+Solution: 13 (batteries)
+Steps: 15-2=13",0
+"Question: Julia played tag with 12 kids on Monday. She played tag with 7 kids on Tuesday. How many kids did she play with altogether?
+Solution: 19 (kids)
+Steps: 12+7=19",0
+"Question: While on vacation, Debby took 24 pictures at the zoo and 12 at the museum. If she later deleted 14 of the pictures, how many pictures from her vacation did she still have?
+Solution: 22 (pictures)
+Steps: 24+12-14=22",3
+"Question: A baker had 7 boxes for donuts. He ended up making 48 donuts and splitting them evenly between the boxes. How many extra donuts did he end up with?
+Solution: 6 (donuts)
+Steps: 48/7=6 r6",10
+"Question: There are 3300 bananas in Janice's banana collection. Janice also has 5 crayons. If the bananas are organized into 75 groups, how big is each group?
+Solution: 44 (bananas)
+Steps: 3300/75=44",12
+"Question: Daniel has 44 commemorative plates and 33 commemorative spoons. He wants to display them in groups throughout his house, each with the same combination of plates and spoons, with none left over. What is the greatest number of groups Daniel can display?
+Solution: GCD(44,33)=11
+Steps: GCD(44,33)=11",14
