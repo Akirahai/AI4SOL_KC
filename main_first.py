@@ -1,6 +1,6 @@
 import os
 os.environ['CUDA_DEVICE_ORDER'] =  'PCI_BUS_ID'
-os.environ['CUDA_VISIBLE_DEVICES']=  '1,2'
+os.environ['CUDA_VISIBLE_DEVICES']=  '0,1,2,3'
 
 from libs import *
 
@@ -84,7 +84,7 @@ if __name__== "__main__":
         
         # Load model
         tokenizer = AutoTokenizer.from_pretrained(model_name)
-        # tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+        tokenizer.add_special_tokens({'pad_token': '[PAD]'})
         
         model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=19) # Remember to change number of labels
         model.resize_token_embeddings(len(tokenizer))
