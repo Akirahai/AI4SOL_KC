@@ -48,6 +48,7 @@ if __name__== "__main__":
     else:
         device = torch.device('cpu')
         print("Using CPU")
+        
     #Login
     if args.model in ['meta-llama/Llama-2-7b-hf', 'meta-llama/Meta-Llama-3-8B-Instruct']:
         from huggingface_hub import login
