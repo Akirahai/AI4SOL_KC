@@ -1,0 +1,301 @@
+id,Question,top_1_preds,top_2_preds,top_3_preds,Top_1_labels,Top_2_labels,Top_3_labels
+566,"Question: Jesse's room is 12 feet long and 8 feet wide. How much carpet does she need to cover the whole floor?
+Solution: 96 (square feet)
+Steps: 12*8=96",[10],[11 10],[ 8 11 10], 3.OA.A.3," 3.OA.A.8, 3.OA.A.3"," 3.NBT.A.3, 3.OA.A.8, 3.OA.A.3"
+766,"Question: A bus can transport 48 passengers. If a school of 1,230 students and teachers are going on a field trip, how many buses should be rented?
+Solution: 26 (buses)
+Steps: 1230/48=25 r30",[22],[19 22],[ 6 19 22], 5.NBT.B.6," 4.NBT.B.6, 5.NBT.B.6"," 3.MD.D.8, 4.NBT.B.6, 5.NBT.B.6"
+860,"Question: Kathy scored 360 in first quarter and 420 in second quarters. Find the ratio of scores in the first quarter to the second quarter.
+Solution: 6:07
+Steps: 360:420=6:7",[26],[ 4 26],[ 0  4 26], 6.RP.A.1," 2.NBT.B.7, 6.RP.A.1"," 1.OA.A.1, 2.NBT.B.7, 6.RP.A.1"
+74,"Question: The clown blew up forty-seven balloons. Then he blew up thirteen more balloons. How many balloons does the clown have now?
+Solution: 60 (balloons)
+Steps: 47+13=60",[5],[0 5],[4 0 5], 2.OA.A.1," 1.OA.A.1, 2.OA.A.1"," 2.NBT.B.7, 1.OA.A.1, 2.OA.A.1"
+1794,"Question: Amy's dad was taking everyone out to eat for her birthday. They spent 5 dollars on the adults and 5 dollars on the kids. How much did it cost for everyone?
+Solution: 10 (dollars)
+Steps: 5+5=10",[0],[10  0],[30 10  0], 1.OA.A.1," 3.OA.A.3, 1.OA.A.1"," K.OA.A.2, 3.OA.A.3, 1.OA.A.1"
+362,"Question: Katie spent a total $350.00 on her whole stay in the island. If she spent $125.00 on food and $135.00 on hotel rooms, how much did she spend on buying other stuff?
+Solution: 90 (dollars)
+Steps: 350-(125+135)=90",[5],[26  5],[11 26  5], 2.OA.A.1," 6.RP.A.1, 2.OA.A.1"," 3.OA.A.8, 6.RP.A.1, 2.OA.A.1"
+1604,"Question: Carol is making bead necklaces for her friends. She has 159 beads and each necklace takes 37 beads. About how many necklaces can Carol make?
+Solution: 4 (necklaces)
+Steps: 159/37=4 r11",[19],[22 19],[10 22 19], 4.NBT.B.6," 5.NBT.B.6, 4.NBT.B.6"," 3.OA.A.3, 5.NBT.B.6, 4.NBT.B.6"
+2022,"Question: Lavinia has 9 glasses and 6 mugs. She would like to set them out in identical groups, with none left over, in preparation for a dinner party. What is the greatest number of groups Lavinia can set out?
+Solution: 3 (groups)
+Steps: GCD(9,6)=3",[25],[22 25],[ 5 22 25], 6.NS.B.4," 5.NBT.B.6, 6.NS.B.4"," 2.OA.A.1, 5.NBT.B.6, 6.NS.B.4"
+1956,"Question: In the freezer there are 2 grape popsicles, 13 cherry popsicles and 2 banana popsicles. How many popsicles are there total?
+Solution: 17 (popsicles)
+Steps: 2+13+2=17",[1],[2 1],[0 2 1], 1.OA.A.2," 2.NBT.B.5, 1.OA.A.2"," 1.OA.A.1, 2.NBT.B.5, 1.OA.A.2"
+412,"Question: She also ate a hearty breakfast so that she would have enough energy. She bought 5 pieces of her favorite bread. If each piece of bread costs 30 cents, how much did Jenny spend for her breakfast?
+Solution: 150 (cents)
+Steps: 5*30=150",[10],[11 10],[ 8 11 10], 3.OA.A.3," 3.OA.A.8, 3.OA.A.3"," 3.NBT.A.3, 3.OA.A.8, 3.OA.A.3"
+747,"Question: Mother bought some potatoes. She used 15 of the potatoes to make salads and 24 of the potatoes for mashed potatoes. If there were 13 potatoes left, how many potatoes did mother buy at first?
+Solution: 52 (potatoes)
+Steps: 15+24+13=52",[5],[2 5],[20  2  5], 2.OA.A.1," 2.NBT.B.5, 2.OA.A.1"," 4.OA.A.3, 2.NBT.B.5, 2.OA.A.1"
+1171,"Question: Sweet Time Bakery just opened and is increasing the number of items they bake. For example, the bakery made 19 carrot cakes in October, 21 carrot cakes in November, 23 carrot cakes in December, and 25 carrot cakes in January. If this pattern continues, how many carrot cakes will the bakery make in February?
+Solution: 27 (carrot cakes)
+Steps: 19, 21, 23, 25, 27",[20],[14 20],[11 14 20], 4.OA.A.3," 3.OA.D.9, 4.OA.A.3"," 3.OA.A.8, 3.OA.D.9, 4.OA.A.3"
+780,"Question: The teacher gave 42 pencils to 12 students equally. How many pencils did each student get?
+Solution: 3 (pencils)
+Steps: 42/12=3 r6",[19],[22 19],[11 22 19], 4.NBT.B.6," 5.NBT.B.6, 4.NBT.B.6"," 3.OA.A.8, 5.NBT.B.6, 4.NBT.B.6"
+1944,"Question: A clown had eighty-two balloons. After a party he had sixteen left. How many balloons did he use at the party?
+Solution: 66 (balloons)
+Steps: 82-16=66",[5],[0 5],[10  0  5], 2.OA.A.1," 1.OA.A.1, 2.OA.A.1"," 3.OA.A.3, 1.OA.A.1, 2.OA.A.1"
+392,"Question: She also estimated the number of candies that she will receive from each block. If she will receive around 7 pieces of candies from every house, and there are 5 houses in a block, how many candies will she receive from each block?
+Solution: 35 (candies)
+Steps: 7*5=35",[10],[11 10],[ 8 11 10], 3.OA.A.3," 3.OA.A.8, 3.OA.A.3"," 3.NBT.A.3, 3.OA.A.8, 3.OA.A.3"
+1463,"Question: An electrician cuts a 30 ft piece of wire into two pieces. One piece is 2 ft longer than the other. How long are the pieces?
+Solution: 14 (ft); 16 (ft)
+Steps: x:The longer piece; y:The shorter piece; x+y=30; x=y+2",[29],[23 29],[27 23 29], 8.EE.C.8," 6.EE.B.6, 8.EE.C.8"," 6.RP.A.3, 6.EE.B.6, 8.EE.C.8"
+1585,"Question: An industrial machine made 196 shirts. If it made one minute to make 7 shirts, how many minutes was it working?
+Solution: 28 (minutes)
+Steps: 196/7=28",[10],[19 10],[30 19 10], 3.OA.A.3," 4.NBT.B.6, 3.OA.A.3"," K.OA.A.2, 4.NBT.B.6, 3.OA.A.3"
+1345,"Question: A rectangular swimming pool was constructed for Kids at Hotel Park. The length of the swimming pool is twice its width. If the length is 16 ft, find the width and area of the pool.
+Solution: 8 (ft); 128 (sq. ft)
+Steps: 2W=16",[16],[ 6 16],[ 8  6 16], 4.MD.A.3," 3.MD.D.8, 4.MD.A.3"," 3.NBT.A.3, 3.MD.D.8, 4.MD.A.3"
+914,"Question: Jake bought a book of tickets for the rides at Fun Land. 8 of the tickets were red. There were twice as many blue tickets as red tickets. Jake used all 6 of his yellow tickets first. How many tickets did Jake buy in all?
+Solution: 30 (tickets)
+Steps: 8*2=16; 8+16+6=30",[11],[ 5 11],[30  5 11], 3.OA.A.8," 2.OA.A.1, 3.OA.A.8"," K.OA.A.2, 2.OA.A.1, 3.OA.A.8"
+1028,"Question: Paul and Vinnie deliver newspapers. Paul made $14 in tips. Vinnie made $16 more than Paul. How much did Vinnie make?
+Solution: 30 (dollars)
+Steps: 14+16=30",[5],[26  5],[ 0 26  5], 2.OA.A.1," 6.RP.A.1, 2.OA.A.1"," 1.OA.A.1, 6.RP.A.1, 2.OA.A.1"
+600,"Question: James has 1222 balloons. Amy has 513 balloons. How many more balloons does James have than Amy?
+Solution: 709 (balloons)
+Steps: 1222-513=709",[4],[18  4],[17 18  4], 2.NBT.B.7," 4.NBT.B.5, 2.NBT.B.7"," 4.NBT.B.4, 4.NBT.B.5, 2.NBT.B.7"
+65,"Question: Lino picked up 292 shells at the seashore in the morning and 324 shells in the afternoon. How many shells did he pick up in all?
+Solution: 616 (shells)
+Steps: 292+324=616",[18],[17 18],[ 4 17 18], 4.NBT.B.5," 4.NBT.B.4, 4.NBT.B.5"," 2.NBT.B.7, 4.NBT.B.4, 4.NBT.B.5"
+172,"Question: There are 3 spiders. How many spider legs are there?
+Solution: 24 (spider legs)
+Steps: 3*8=24",[10],[11 10],[30 11 10], 3.OA.A.3," 3.OA.A.8, 3.OA.A.3"," K.OA.A.2, 3.OA.A.8, 3.OA.A.3"
+714,"Question: A restaurant has 94 pieces of cutlery. 38 are forks, 27 are knives, and the rest are spoons. How many spoons are there?
+Solution: 29 (spoons)
+Steps: (94-38)-27=29",[5],[4 5],[26  4  5], 2.OA.A.1," 2.NBT.B.7, 2.OA.A.1"," 6.RP.A.1, 2.NBT.B.7, 2.OA.A.1"
+398,"Question: While comparing the other robots that they have, Tom and Michael talked about Bob who has a large collection of car robots. If Tom and Michael have 9 car robots and Bob has 9 times more than that, how many car robots does Bob have in total?
+Solution: 81 (car robots)
+Steps: 9*9=81",[11],[10 11],[ 8 10 11], 3.OA.A.8," 3.OA.A.3, 3.OA.A.8"," 3.NBT.A.3, 3.OA.A.3, 3.OA.A.8"
+629,"Question: Mrs. Hilt spent 74 cents at the school store. She bought a notebook for 35 cents, a ruler for 18 cents, and 3 pencils. What is the cost of one pencil?
+Solution: 7 (cents)
+Steps: (74-(35+18))/3=7",[10],[11 10],[13 11 10], 3.OA.A.3," 3.OA.A.8, 3.OA.A.3"," 3.OA.D.8, 3.OA.A.8, 3.OA.A.3"
+388,"Question: At the bird zoo, the kids were able to visit 5 different bird cages, each containing 8 different kinds of birds. How many different kinds of birds did the children see from the bird cages?
+Solution: 40 (kinds of birds)
+Steps: 5*8=40",[10],[11 10],[ 8 11 10], 3.OA.A.3," 3.OA.A.8, 3.OA.A.3"," 3.NBT.A.3, 3.OA.A.8, 3.OA.A.3"
+331,"Question: Willie, the town baker, wanted to make the biggest cake their town has ever seen. First, he prepared the flour. He is planning to use 501 lbs. of flour. If he has 294 lbs. of flour stored in his bakery, how much more flour does he need to buy?
+Solution: 207 (lbs)
+Steps: 501-294=207",[4],[15  4],[25 15  4], 2.NBT.B.7," 4.MD.A.2, 2.NBT.B.7"," 6.NS.B.4, 4.MD.A.2, 2.NBT.B.7"
+877,"Question: I put another number into my machine. The machine added 15 and then subtracted 6. The number 35 came out of the machine. What number did I put in?
+Solution: 26
+Steps: 35+6-15=26",[5],[26  5],[ 2 26  5], 2.OA.A.1," 6.RP.A.1, 2.OA.A.1"," 2.NBT.B.5, 6.RP.A.1, 2.OA.A.1"
+1969,"Question: Tom read 2 books in May, 6 in June and 10 in July. How many books did Tom read?
+Solution: 18 (books)
+Steps: 2+6+10=18",[0],[5 0],[2 5 0], 1.OA.A.1," 2.OA.A.1, 1.OA.A.1"," 2.NBT.B.5, 2.OA.A.1, 1.OA.A.1"
+645,"Question: Harry Hound had a terrible earache yesterday. When I peered into his ears yesterday, I found 36 frisky fleas having a party in his right ear and 85 baby fleas sleeping peacefully in his left ear. I cleaned out Harry Hound's ears. How many fleas perished?
+Solution: 121 (fleas)
+Steps: 36+85=121",[5],[4 5],[20  4  5], 2.OA.A.1," 2.NBT.B.7, 2.OA.A.1"," 4.OA.A.3, 2.NBT.B.7, 2.OA.A.1"
+1060,"Question: During a road trip, Lester stopped at two rest stops. In the parking lot of the first rest stop, he counted 20 cars and 18 trucks. At the second rest stop, he counted 17 cars and 16 trucks. At which rest stop did Lester count a higher ratio of cars to trucks?
+Solution: The first rest stop
+Steps: 20/18(The first rest stop) > 17/16(The second rest stop)",[27],[17 27],[16 17 27], 6.RP.A.3," 4.NBT.B.4, 6.RP.A.3"," 4.MD.A.3, 4.NBT.B.4, 6.RP.A.3"
+907,"Question: Rita, Peter, and Skeeter are penguins. They weigh 90 pounds altogether. Rita and Peter know they weigh the same amount. Peter and Skeeter know they weigh 68 pounds together. How much does Skeeter weigh?
+Solution: 46 (pounds)
+Steps: S:Skeeter's weight; 68+(90-S)/2=90",[29],[27 29],[ 6 27 29], 8.EE.C.8," 6.RP.A.3, 8.EE.C.8"," 3.MD.D.8, 6.RP.A.3, 8.EE.C.8"
+2119,"Question: In the first half of a trivia game Kaleb scored forty-three points. In the second half he scored twenty-three points. How many points did he score total?
+Solution: 66 (points)
+Steps: 43+23=66",[5],[0 5],[26  0  5], 2.OA.A.1," 1.OA.A.1, 2.OA.A.1"," 6.RP.A.1, 1.OA.A.1, 2.OA.A.1"
+749,"Question: There are some rooms in a building. 35 of them are classrooms, 10 of them are office and the remaining 6 are reading rooms. How many rooms are in the building?
+Solution: 51 (rooms)
+Steps: 35+10+6=51",[5],[26  5],[ 0 26  5], 2.OA.A.1," 6.RP.A.1, 2.OA.A.1"," 1.OA.A.1, 6.RP.A.1, 2.OA.A.1"
+1487,"Question: Mrs. Hilt owns a house on a lot shaped like a rectangle. The width is twice its length. The perimeter of the lot is 60 feet. What is the length and the width of the lot?
+Solution: 10 (feet); 20 (feet)
+Steps: 2*(x+2x)=60",[23],[29 23],[ 6 29 23], 6.EE.B.6," 8.EE.C.8, 6.EE.B.6"," 3.MD.D.8, 8.EE.C.8, 6.EE.B.6"
+227,"Question: Chris, tasked to lead the newspaper collection, was able to obtain 42 newspapers from their neighborhood. If his sister Lily helped him and was able to get 23 more newspapers from another block, how many newspapers were they able to collect together?
+Solution: 65 (newspapers)
+Steps: 42+23=65",[5],[26  5],[ 4 26  5], 2.OA.A.1," 6.RP.A.1, 2.OA.A.1"," 2.NBT.B.7, 6.RP.A.1, 2.OA.A.1"
+1751,"Question: The roller coaster at the state fair costs five tickets per ride. If you had ten tickets, how many times could you ride it?
+Solution: 2 (times)
+Steps: 10/5=2",[10],[30 10],[13 30 10], 3.OA.A.3," K.OA.A.2, 3.OA.A.3"," 3.OA.D.8, K.OA.A.2, 3.OA.A.3"
+974,"Question: Denise is getting older and feels like she should donate her collection of stuffed animals to children who are less fortunate. She has 14 stuffed cats and 7 stuffed dogs, which she wants to divide into identical groups, with no stuffed animals left over. What is the greatest number of groups Denise can place her stuffed animals into?
+Solution: 7 (groups)
+Steps: GCD(14,7)=7",[25],[ 5 25],[22  5 25], 6.NS.B.4," 2.OA.A.1, 6.NS.B.4"," 5.NBT.B.6, 2.OA.A.1, 6.NS.B.4"
+588,"Question: Willy has 1400 crayons. Lucy has 290 crayons. How many more crayons does Willy have then Lucy?
+Solution: 1110 (crayons)
+Steps: 1400-290=1110",[17],[27 17],[18 27 17], 4.NBT.B.4," 6.RP.A.3, 4.NBT.B.4"," 4.NBT.B.5, 6.RP.A.3, 4.NBT.B.4"
+1474,"Question: The perimeter of a rectangle is 150 cm. The length is 15 cm greater than the width. Find the dimensions.
+Solution: 45 (cm); 30 (cm)
+Steps: x:The length of a rectangle; y:The width of a rectangle; 2x+2y=150; x=y+15",[29],[23 29],[ 6 23 29], 8.EE.C.8," 6.EE.B.6, 8.EE.C.8"," 3.MD.D.8, 6.EE.B.6, 8.EE.C.8"
+368,"Question: Next on her list are the homeless people where she spent a total of $900.00. If she gave $325.00 to the first set of homeless families and $260.00 to the second set of families, how much did she give to the last set of homeless families?
+Solution: 315 (dollars)
+Steps: 900-(325+260)=315",[4],[15  4],[18 15  4], 2.NBT.B.7," 4.MD.A.2, 2.NBT.B.7"," 4.NBT.B.5, 4.MD.A.2, 2.NBT.B.7"
+1077,"Question: On a modern art painting, there are 3 green dots in the first row, 6 green dots in the second row, 9 green dots in the third row, and 12 green dots in the fourth row. If this pattern continues, how many green dots will there be in the fifth row?
+Solution: 15 (green dots)
+Steps: 3, 6, 9, 12, 15",[14],[28 14],[ 1 28 14], 3.OA.D.9," 6.SP.B.5, 3.OA.D.9"," 1.OA.A.2, 6.SP.B.5, 3.OA.D.9"
+1206,"Question: Lisa is making activity baskets to donate to charity. She has 12 coloring books, 28 markers, and 36 crayons. What is the greatest number of baskets she can make if each type of toy is equally distributed among the baskets?
+Solution: 4 (baskets)
+Steps: GCD(12,28,36)=4",[25],[22 25],[ 5 22 25], 6.NS.B.4," 5.NBT.B.6, 6.NS.B.4"," 2.OA.A.1, 5.NBT.B.6, 6.NS.B.4"
+533,"Question: I see 115 cows grazing in the pasture. How many legs do I see?
+Solution: 460 (legs)
+Steps: 115*4=460",[18],[21 18],[ 6 21 18], 4.NBT.B.5," 5.NBT.B.5, 4.NBT.B.5"," 3.MD.D.8, 5.NBT.B.5, 4.NBT.B.5"
+824,"Question: Mindy's toothbrush is 17 centimeters long. Cesar's toothbrush is 1 centimeter longer than Mindy's. Whose toothbrush is longer?
+Solution: Cesar's toothbrush
+Steps: 17 centimeters(Mindy's toothbrush) < 17+1=18 centimeters(Cesar's toothbrush)",[27],[17 27],[16 17 27], 6.RP.A.3," 4.NBT.B.4, 6.RP.A.3"," 4.MD.A.3, 4.NBT.B.4, 6.RP.A.3"
+2212,"Question: Victor and his friend were buying trick decks from the magic shop for eight dollars each. How much did they spend if Victor bought six decks and his friend bought two decks?
+Solution: 64 (dollars)
+Steps: (6+2)*8=64",[11],[30 11],[13 30 11], 3.OA.A.8," K.OA.A.2, 3.OA.A.8"," 3.OA.D.8, K.OA.A.2, 3.OA.A.8"
+816,"Question: 650 lollipops are to be distributed to 42 kids. If all the kids share all of the lollipops equally, at least how many more lollipops are needed?
+Solution: 22 (lollipops)
+Steps: 650/42=15 r20; 42-20=22",[22],[19 22],[ 0 19 22], 5.NBT.B.6," 4.NBT.B.6, 5.NBT.B.6"," 1.OA.A.1, 4.NBT.B.6, 5.NBT.B.6"
+1013,"Question: Cheryl counted 16 lemons. Lori bought 28 more lemons. How many lemons do the girls have altogether?
+Solution: 44 (lemons)
+Steps: 16+28=44",[5],[0 5],[4 0 5], 2.OA.A.1," 1.OA.A.1, 2.OA.A.1"," 2.NBT.B.7, 1.OA.A.1, 2.OA.A.1"
+2069,"Question: Morris observed two types of birds traveling: ducks and cranes. While the ducks traveled in flocks of 13, the cranes traveled in flocks of 17. If Morris observed the same total number of ducks and cranes, what is the smallest number of ducks that he could have observed?
+Solution: 221 (ducks)
+Steps: LCM[13,17]=221",[25],[22 25],[15 22 25], 6.NS.B.4," 5.NBT.B.6, 6.NS.B.4"," 4.MD.A.2, 5.NBT.B.6, 6.NS.B.4"
+1863,"Question: A museum had thirteen paintings. If they got rid of eight of them, how many pictures would they have left?
+Solution: 5 (pictures)
+Steps: 13-8=5",[0],[30  0],[10 30  0], 1.OA.A.1," K.OA.A.2, 1.OA.A.1"," 3.OA.A.3, K.OA.A.2, 1.OA.A.1"
+322,"Question: The path opened to a beautiful garden enclosed by a wall. The exit door will open when the number of white flowers is the same as the number of red flowers. If there are 555 white flowers and 347 red flowers, how many more red flowers are needed?
+Solution: 208 (red flowers)
+Steps: 555-347=208",[4],[26  4],[15 26  4], 2.NBT.B.7," 6.RP.A.1, 2.NBT.B.7"," 4.MD.A.2, 6.RP.A.1, 2.NBT.B.7"
+828,"Question: Sam is 175 cm tall. John is 20 cm taller than Sam. Who is taller?
+Solution: John
+Steps: 175 cm(Sam) < 175+20=195 cm(John)",[27],[17 27],[15 17 27], 6.RP.A.3," 4.NBT.B.4, 6.RP.A.3"," 4.MD.A.2, 4.NBT.B.4, 6.RP.A.3"
+399,"Question: Tom saw that Michael has the rare robot that would complete one of his robot sets. Michael offered to sell it but he said that Tom will need to pay 3 times the original price. If the rare robot has an original price of $3.00, how much should Tom pay?
+Solution: 9 (dollars)
+Steps: 3.00*3=9",[11],[ 8 11],[27  8 11], 3.OA.A.8," 3.NBT.A.3, 3.OA.A.8"," 6.RP.A.3, 3.NBT.A.3, 3.OA.A.8"
+1066,"Question: Sandra is sorting pencils into boxes. She put 78 pencils in the first box, 87 pencils in the second box, 96 pencils in the third box, and 105 pencils in the fourth box. If this pattern continues, how many pencils will Sandra put in the fifth box?
+Solution: 114 (pencils)
+Steps: 78, 87, 96, 105, 114",[20],[11 20],[ 7 11 20], 4.OA.A.3," 3.OA.A.8, 4.OA.A.3"," 3.NBT.A.2, 3.OA.A.8, 4.OA.A.3"
+1773,"Question: A group of 8 friends were dressing as pirates for Halloween. If each costume cost 5 dollars, how much did they spend?
+Solution: 40 (dollars)
+Steps: 8*5=40",[10],[13 10],[11 13 10], 3.OA.A.3," 3.OA.D.8, 3.OA.A.3"," 3.OA.A.8, 3.OA.D.8, 3.OA.A.3"
+2149,"Question: Roger was packing up his old toys. He filled eleven boxes with action figures and two boxes with old games. How many boxes did he pack total?
+Solution: 13 (boxes)
+Steps: 11+2=13",[0],[30  0],[10 30  0], 1.OA.A.1," K.OA.A.2, 1.OA.A.1"," 3.OA.A.3, K.OA.A.2, 1.OA.A.1"
+886,"Question: Greg and Brad started reading their books at the same time. Greg read 18 pages a day. Brad read 26 pages a day. How many more pages did Brad read than Greg?
+Solution: 8 (pages)
+Steps: 26-18=8",[5],[0 5],[26  0  5], 2.OA.A.1," 1.OA.A.1, 2.OA.A.1"," 6.RP.A.1, 1.OA.A.1, 2.OA.A.1"
+1286,"Question: Zoe picked five apples from her tree. Now the tree has six apples still on it. What's the difference between the number of apples Zoe picked and now the tree has?
+Solution: 1 (apple)
+Steps: 6-5=1",[30],[11 30],[ 1 11 30], K.OA.A.2," 3.OA.A.8, K.OA.A.2"," 1.OA.A.2, 3.OA.A.8, K.OA.A.2"
+1527,"Question: The perimeter of a rectangular cutting board is 50 inches. It is 10 inches wide. How long is it?
+Solution: 15 (inches)
+Steps: (50/2)-10=15",[16],[20 16],[ 6 20 16], 4.MD.A.3," 4.OA.A.3, 4.MD.A.3"," 3.MD.D.8, 4.OA.A.3, 4.MD.A.3"
+1383,"Question: After eating at the restaurant, Mary, Nancy, and Fred decided to divide the bill evenly. Nancy did not have dessert. If each person paid 33 dollars, what was the total of the bill ?
+Solution: 99 (dollars)
+Steps: 3*33=99",[11],[ 8 11],[10  8 11], 3.OA.A.8," 3.NBT.A.3, 3.OA.A.8"," 3.OA.A.3, 3.NBT.A.3, 3.OA.A.8"
+958,"Question: Zachary did 47 push-ups in gym class today. David did 15 more push-ups than Zachary. How many push-ups did David do?
+Solution: 62 (push-ups)
+Steps: 47+15=62",[5],[26  5],[27 26  5], 2.OA.A.1," 6.RP.A.1, 2.OA.A.1"," 6.RP.A.3, 6.RP.A.1, 2.OA.A.1"
+1593,"Question: A school ordered 195 new pencils for the state tests. If they gave each student 3 pencils, how many students are in the school?
+Solution: 65 (students)
+Steps: 195/3=65",[10],[19 10],[11 19 10], 3.OA.A.3," 4.NBT.B.6, 3.OA.A.3"," 3.OA.A.8, 4.NBT.B.6, 3.OA.A.3"
+1905,"Question: Gwen had ninety-eight DS games. After she gave some to her friends she had ninety-one left. How many games did she give away?
+Solution: 7 (games)
+Steps: 98-91=7",[5],[0 5],[10  0  5], 2.OA.A.1," 1.OA.A.1, 2.OA.A.1"," 3.OA.A.3, 1.OA.A.1, 2.OA.A.1"
+1337,"Question: The perimeter of an equilateral triangle is 54 cm. Find the length of each side of triangle.
+Solution: 18 (cm)
+Steps: 3L=54",[23],[27 23],[16 27 23], 6.EE.B.6," 6.RP.A.3, 6.EE.B.6"," 4.MD.A.3, 6.RP.A.3, 6.EE.B.6"
+750,"Question: Mr. Peter harvested some pears. He picked 43 kg of the pears into a bag and 35 kg of the pears into another bag. If there were still 15 kg of pears left unpacked, how many kilograms of pears did Mr. Peter harvest?
+Solution: 93 (kilograms of pears)
+Steps: 43+35+15=93",[5],[20  5],[26 20  5], 2.OA.A.1," 4.OA.A.3, 2.OA.A.1"," 6.RP.A.1, 4.OA.A.3, 2.OA.A.1"
+40,"Question: Mrs. Hilt saw 3 bugs eat two flowers each. How many flowers total did the bugs eat?
+Solution: 6 (flowers)
+Steps: 2+2+2=6",[30],[10 30],[ 0 10 30], K.OA.A.2," 3.OA.A.3, K.OA.A.2"," 1.OA.A.1, 3.OA.A.3, K.OA.A.2"
+1661,"Question: The ratio of white chocolate to dark chocolate sold at a candy shop was 4:3. If there were 20 bars of white chocolate sold, how many bars of dark chocolate were sold?
+Solution: 15 (bars of dark chocolate)
+Steps: 4:3=20:15",[11],[20 11],[30 20 11], 3.OA.A.8," 4.OA.A.3, 3.OA.A.8"," K.OA.A.2, 4.OA.A.3, 3.OA.A.8"
+1542,"Question: A vat of orange juice was one hundred fifty-three pints. If you wanted to pour the vat into five glasses with the same amount in each glass, how many pints would be in each glass?
+Solution: 30 (pints)
+Steps: 153/5=30 r3",[19],[22 19],[30 22 19], 4.NBT.B.6," 5.NBT.B.6, 4.NBT.B.6"," K.OA.A.2, 5.NBT.B.6, 4.NBT.B.6"
+2084,"Question: Samantha has two pieces of cloth. One piece is 72 inches wide and the other piece is 90 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+Solution: 18 (inches)
+Steps: GCD(72,90)=18",[25],[15 25],[16 15 25], 6.NS.B.4," 4.MD.A.2, 6.NS.B.4"," 4.MD.A.3, 4.MD.A.2, 6.NS.B.4"
+203,"Question: To have a more stable treehouse, Charlie's father decided to tie the corner posts of the house to the tree itself. He used 24 inches of rope for the first post, 20 inches on the second, 14 inches on the third and 12 inches on the fourth. How many inches of rope were used?
+Solution: 70 (inches)
+Steps: 24+14+12+20=70",[1],[3 1],[29  3  1], 1.OA.A.2," 2.NBT.B.6, 1.OA.A.2"," 8.EE.C.8, 2.NBT.B.6, 1.OA.A.2"
+981,"Question: Joe's Bath Shop sells bars of soap in boxes of 5 bars and bottles of soap in boxes of 19 bottles. An employee is surprised to discover that the shop sold the same number of bars and bottles last week. What is the smallest number of each type of soap that the shop could have sold?
+Solution: 95 (bottles)
+Steps: LCM[5,19]=95",[25],[22 25],[ 5 22 25], 6.NS.B.4," 5.NBT.B.6, 6.NS.B.4"," 2.OA.A.1, 5.NBT.B.6, 6.NS.B.4"
+776,"Question: Tom had $19 and he wanted to buy as many folders as he could. If one folder costs $2, how many folders can Tom buy?
+Solution: 9 (folders)
+Steps: 19/2=9 r1",[19],[22 19],[30 22 19], 4.NBT.B.6," 5.NBT.B.6, 4.NBT.B.6"," K.OA.A.2, 5.NBT.B.6, 4.NBT.B.6"
+400,"Question: Before they end the meeting, Tom counted the total number of robots in his collection. He has 6 sets of robots and each set is composed of 7 robots. How many robots does Tom have in his collection?
+Solution: 42 (robots)
+Steps: 6*7=42",[10],[11 10],[ 5 11 10], 3.OA.A.3," 3.OA.A.8, 3.OA.A.3"," 2.OA.A.1, 3.OA.A.8, 3.OA.A.3"
+1734,"Question: Billy was making ice using ice trays. Each tray held nine ice cubes. If he had eight trays, how many cubes could he make?
+Solution: 72 (cubes)
+Steps: 9*8=72",[10],[11 10],[13 11 10], 3.OA.A.3," 3.OA.A.8, 3.OA.A.3"," 3.OA.D.8, 3.OA.A.8, 3.OA.A.3"
+987,"Question: The third graders are having a fair. They have 90 tickets to sell. They sold 38 tickets the first week and 17 tickets the second week. How many tickets do they have left to sell?
+Solution: 35 (tickets)
+Steps: 90-17-38=35",[5],[0 5],[26  0  5], 2.OA.A.1," 1.OA.A.1, 2.OA.A.1"," 6.RP.A.1, 1.OA.A.1, 2.OA.A.1"
+924,"Question: Ralph has a photo album with 50 pages. He has 26 pictures of wild animals. Ralph's friend, Derrick, has 34 pictures of wild animals. How many fewer pictures of wild animals does Ralph have?
+Solution: 8 (pictures of wild animals)
+Steps: 34-26=8",[5],[0 5],[26  0  5], 2.OA.A.1," 1.OA.A.1, 2.OA.A.1"," 6.RP.A.1, 1.OA.A.1, 2.OA.A.1"
+793,"Question: There are 32 students in the class. The teacher divided them into 5 equal groups. How many students are left?
+Solution: 2 (students)
+Steps: 32/5=6 r2",[22],[19 22],[ 6 19 22], 5.NBT.B.6," 4.NBT.B.6, 5.NBT.B.6"," 3.MD.D.8, 4.NBT.B.6, 5.NBT.B.6"
+1005,"Question: Hannah is a professional skater. She practices 8 hours every weekend. She practices 17 more hours than that during the week. How many hours does Hannah practice each week?
+Solution: 33 (hours)
+Steps: 8+(8+17)=33",[5],[26  5],[ 2 26  5], 2.OA.A.1," 6.RP.A.1, 2.OA.A.1"," 2.NBT.B.5, 6.RP.A.1, 2.OA.A.1"
+1436,"Question: A car goes uphill at the rate of 30 km an hour and downhill at the rate of 50 km an hour after 15 hours it has covered 650 km. How long did it go downhill and uphill respectively?
+Solution: 5 (hr); 10 (hr)
+Steps: x:Distance when uphill; y:Distance when downhill; x+y=15; 30x+50y=650",[29],[24 29],[23 24 29], 8.EE.C.8," 6.EE.C.9, 8.EE.C.8"," 6.EE.B.6, 6.EE.C.9, 8.EE.C.8"
+2285,"Question: There are 64 marbles in Phyllis's marble collection. If the marbles are organized into 32 groups, how big is each group?
+Solution: 2 (marbles)
+Steps: 64/32=2",[10],[22 10],[19 22 10], 3.OA.A.3," 5.NBT.B.6, 3.OA.A.3"," 4.NBT.B.6, 5.NBT.B.6, 3.OA.A.3"
+2058,"Question: Mitch owns a business and assigns two of his employees their shifts. He assigns the first employee shifts in blocks of 2 hours, and he assigns the second worker shifts in blocks of 11 hours. If both workers must receive the same number of hours, what is the minimum number of hours each must be assigned?
+Solution: 22 (hours)
+Steps: LCM[2,11]=22",[25],[15 25],[22 15 25], 6.NS.B.4," 4.MD.A.2, 6.NS.B.4"," 5.NBT.B.6, 4.MD.A.2, 6.NS.B.4"
+1524,"Question: Frank has a round tablecloth with a diameter of 10 feet. What is the tablecloth's radius?
+Solution: 5 (feet)
+Steps: 10/2=5",[16],[ 6 16],[ 8  6 16], 4.MD.A.3," 3.MD.D.8, 4.MD.A.3"," 3.NBT.A.3, 3.MD.D.8, 4.MD.A.3"
+1473,"Question: The second angle of a triangle is three times the first, and the third is 12 degrees less than twice the first. Find the measures of the angles.
+Solution: 32 (degrees); 96 (degrees); 52 (degrees)
+Steps: x:The first angle of a triangle; y:The second angle of a triangle; y=3x; 180-(x+y)=2x-12",[29],[27 29],[23 27 29], 8.EE.C.8," 6.RP.A.3, 8.EE.C.8"," 6.EE.B.6, 6.RP.A.3, 8.EE.C.8"
+1993,"Question: For Halloween Debby and her sister combined the candy they received. Debby had 32 pieces of candy while her sister had 42. If they ate 35 pieces the first night, how many pieces do they have left?
+Solution: 39 (pieces)
+Steps: 32+42-35=39",[5],[26  5],[27 26  5], 2.OA.A.1," 6.RP.A.1, 2.OA.A.1"," 6.RP.A.3, 6.RP.A.1, 2.OA.A.1"
+2111,"Question: Adam had 8 boxes of toys. Each box had 6 toys. Later Adam bought 5 more toys. How many toys did he have total?
+Solution: 53 (toys)
+Steps: 8*6+5=53",[10],[ 0 10],[ 5  0 10], 3.OA.A.3," 1.OA.A.1, 3.OA.A.3"," 2.OA.A.1, 1.OA.A.1, 3.OA.A.3"
+1148,"Question: Dalton's Ice Cream Shop sold 27 sundaes with nuts and 2 sundaes without nuts. What is the ratio of the number of sundaes with nuts to the number of sundaes without nuts?
+Solution: 27:02:00
+Steps: 27:2=27:2",[26],[ 0 26],[ 5  0 26], 6.RP.A.1," 1.OA.A.1, 6.RP.A.1"," 2.OA.A.1, 1.OA.A.1, 6.RP.A.1"
+630,"Question: Mrs. Hilt has 40 markers. They are divided equally into 7 packages. Mrs. Hilt wants to know how many markers are in each package?
+Solution: 5 (markers)
+Steps: 40/7=5 r5",[22],[19 22],[25 19 22], 5.NBT.B.6," 4.NBT.B.6, 5.NBT.B.6"," 6.NS.B.4, 4.NBT.B.6, 5.NBT.B.6"
+1998,"Question: Zoe bought two coloring books. One had 44 pictures and the other had 44. After one week she had already colored 20 of the pictures. How many pictures does she still have to color?
+Solution: 68 (pictures)
+Steps: (44+44)-20=68",[5],[26  5],[ 0 26  5], 2.OA.A.1," 6.RP.A.1, 2.OA.A.1"," 1.OA.A.1, 6.RP.A.1, 2.OA.A.1"
+247,"Question: Upon arriving at the school, Buddy immediately went to his teacher where he was introduced to all the third grade students in the school. There were 57 girl students and 66 boy students. How many third graders did Buddy meet in the school?
+Solution: 123 (third graders)
+Steps: 57+66=123",[5],[4 5],[2 4 5], 2.OA.A.1," 2.NBT.B.7, 2.OA.A.1"," 2.NBT.B.5, 2.NBT.B.7, 2.OA.A.1"
+1266,"Question: When Maria got to the fair she had $87. When she left she had $16. What's the difference between the number of dollars when Maria got and left the fair?
+Solution: 71 (dollars)
+Steps: 87-16=71",[5],[0 5],[26  0  5], 2.OA.A.1," 1.OA.A.1, 2.OA.A.1"," 6.RP.A.1, 1.OA.A.1, 2.OA.A.1"
+554,"Question: I see 105 puppies. How many ears do they have?
+Solution: 210 (ears)
+Steps: 105*2=210",[10],[11 10],[22 11 10], 3.OA.A.3," 3.OA.A.8, 3.OA.A.3"," 5.NBT.B.6, 3.OA.A.8, 3.OA.A.3"
+2026,"Question: Two bikers are riding a circular path. The first rider completes a round in 12 minutes. The second rider completes a round in 18 minutes. If they both started at the same place and time and go in the same direction, after how many minutes will they meet again at the starting point?
+Solution: 36 (minutes)
+Steps: LCM[12,18]=36",[25],[15 25],[22 15 25], 6.NS.B.4," 4.MD.A.2, 6.NS.B.4"," 5.NBT.B.6, 4.MD.A.2, 6.NS.B.4"
+599,"Question: Iesha has 344 books. 136 are about school and the rest are about sports. How many books about sports does Iesha have?
+Solution: 208 (books)
+Steps: 344-136=208",[4],[26  4],[ 5 26  4], 2.NBT.B.7," 6.RP.A.1, 2.NBT.B.7"," 2.OA.A.1, 6.RP.A.1, 2.NBT.B.7"
+1098,"Question: A bee flew 840 cm and landed on a flower to collect some pollen. Then the bee flew another 330 cm to get back to her hive. How many meters did the bee travel?
+Solution: 11.7 (meters)
+Steps: 840 (cm) + 330 (cm) = 1170 (cm); 1170/100 (cm/m) = 11.7 (m)",[15],[27 15],[17 27 15], 4.MD.A.2," 6.RP.A.3, 4.MD.A.2"," 4.NBT.B.4, 6.RP.A.3, 4.MD.A.2"
+1313,"Question: Sum of a number and 15 is 96. Find the number.
+Solution: 81
+Steps: x:The number; x+15=96",[23],[29 23],[27 29 23], 6.EE.B.6," 8.EE.C.8, 6.EE.B.6"," 6.RP.A.3, 8.EE.C.8, 6.EE.B.6"
+296,"Question: Jasmine and her mom went to the grocery to buy some food. Her mom gave her $100.00 to spend. Since she loves fruits, she went to the fruits section first. There she bought apples and oranges worth $15.00. From the original $100.00 given by her mom, how much money was left for her to spend?
+Solution: 85 (dollars)
+Steps: 100-15=85",[5],[26  5],[ 4 26  5], 2.OA.A.1," 6.RP.A.1, 2.OA.A.1"," 2.NBT.B.7, 6.RP.A.1, 2.OA.A.1"
+1007,"Question: Amy has 67 balloons. 29 of them are red and 17 are green. The rest of the balloons are blue. How many blue balloons does Amy have?
+Solution: 21 (blue balloons)
+Steps: 67-29-17=21",[5],[0 5],[26  0  5], 2.OA.A.1," 1.OA.A.1, 2.OA.A.1"," 6.RP.A.1, 1.OA.A.1, 2.OA.A.1"
+63,"Question: Jose has 28 chickens and 18 ducks. How many fowls does he have?
+Solution: 46 (fowls)
+Steps: 28+18=46",[5],[0 5],[26  0  5], 2.OA.A.1," 1.OA.A.1, 2.OA.A.1"," 6.RP.A.1, 1.OA.A.1, 2.OA.A.1"
+1340,"Question: The length of the rectangular building is 7 ft more than its width. If the perimeter of the building wall is 98 ft, find its length and width.
+Solution: 28 (ft); 21 (ft)
+Steps: (L+(L-7))*2=98",[29],[ 6 29],[24  6 29], 8.EE.C.8," 3.MD.D.8, 8.EE.C.8"," 6.EE.C.9, 3.MD.D.8, 8.EE.C.8"
