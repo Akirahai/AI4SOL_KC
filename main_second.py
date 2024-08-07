@@ -20,6 +20,7 @@ def parse_args():
     parser.add_argument('--gradient-accumulation-steps', type=int, default=1, help='Gradient accumulation steps')
     parser.add_argument('--eval', type=str, default='test', help='Evaluation on test or valid set')
     parser.add_argument('--top-k', type=int, default=3, help='Top k accuracy')
+    parser.add_argument('--experiment', type=str, default='exp', help='Experiment name')
     
     return parser.parse_args()
     
@@ -65,7 +66,7 @@ if __name__== "__main__":
         
         
     results = []
-    current_time = datetime.datetime.now().strftime("%Y-%m-%d-%H")
+    current_time = args.experiment
 
     
     # if args.models is None or len(args.models) != len(args.seeds):
