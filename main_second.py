@@ -21,6 +21,7 @@ def parse_args():
     parser.add_argument('--eval', type=str, default='test', help='Evaluation on test or valid set')
     parser.add_argument('--top-k', type=int, default=3, help='Top k accuracy')
     parser.add_argument('--experiment', type=str, default='1000_exp', help='Experiment name')
+    parser.add_argument('--samples', type=int, default=100, help='Number of testing samples')
     
     return parser.parse_args()
     
@@ -101,7 +102,7 @@ if __name__== "__main__":
         
         # Load data
         df_train =pd.read_csv(f'data_second_ver/full_train_set_31.csv')
-        df_test =pd.read_csv(f'data_second_ver/full_1000_test_set.csv')
+        df_test =pd.read_csv(f'data_second_ver/full_{args.samples}_test_set.csv')
         # df_valid =pd.read_csv('data/Grade_data_valid_set.csv')
         
         dataset_train = Dataset.from_pandas(df_train[['Question', 'label']])
