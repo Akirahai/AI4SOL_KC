@@ -205,7 +205,6 @@ if __name__== "__main__":
             
         for k in range(1, args.top_k + 1):
             top_k_preds_asdiv = np.argsort(preds_asdiv, axis=1)[:, -k:]
-            print(top_k_preds_asdiv)
             df_test_predictions[f'top_{k}_preds'] = list(top_k_preds_asdiv)
         
         id_to_label = {0: '1.OA.A.1', 1: '1.OA.A.2', 2: '2.NBT.B.5', 3: '2.NBT.B.6', 4: '2.NBT.B.7', 
