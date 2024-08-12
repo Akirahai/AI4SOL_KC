@@ -97,6 +97,9 @@ if __name__== "__main__":
             model.resize_token_embeddings(len(tokenizer))
             tokenizer.pad_token = tokenizer.eos_token
         
+        tokenizer.pad_token = tokenizer.eos_token
+        model.config.pad_token_id = model.config.eos_token_id
+        
         print(f"Training the full 310 data with model {model_name}...")
         
         
