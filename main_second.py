@@ -109,8 +109,18 @@ if __name__== "__main__":
         dataset_test = Dataset.from_pandas(df_test[['Question']])
         # dataset_valid = Dataset.from_pandas(df_valid)
         
-        tokenized_dataset_train = dataset_train.map(lambda x: preprocess_function(x, tokenizer), batched=True)
-        tokenized_dataset_test = dataset_test.map(lambda x: preprocess_function(x, tokenizer), batched=True)
+        # Tokenization
+        max_length = 512  # Set your fixed max length
+        tokenized_dataset_train = dataset_train.map(lambda x: preprocess_function(x, tokenizer, max_length=max_length), batched=True)
+        tokenized_dataset_test = dataset_train.map(lambda x: preprocess_function(x, tokenizer, max_length=max_length), batched=True)
+        
+        # Print token lengths
+        def print_token_lengths(dataset, name):
+            lengths = [len(x['input_ids']) for x in dataset]
+            print(f"Token lengths for {name}: Min: {min(lengths)}, Max: {max(lengths)}, Avg: {np.mean(lengths):.2f}")
+
+        print_token_lengths(tokenized_dataset_train, "Train dataset")
+        print_token_lengths(tokenized_dataset_test, "Test dataset")
     
         # Training setup
         training_args = TrainingArguments(
