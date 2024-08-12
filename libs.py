@@ -71,8 +71,8 @@ def compute_top_k_accuracy(preds, labels, k=1):
     top_k_accuracy = np.any(top_k_preds == np.expand_dims(labels, axis=1), axis=1).mean()
     return top_k_accuracy
 
-def preprocess_function(examples, tokenizer):
-    return tokenizer(examples["Question"], truncation=True, padding = 'max_length', max_length=512)
+def preprocess_function(examples, tokenizer, max_length=512):
+    return tokenizer(examples["Question"], truncation=True, padding = 'max_length', max_length=max_length)
 
 # class LoggingCallback(TrainerCallback):
 #     def __init__(self):
