@@ -113,7 +113,7 @@ if __name__== "__main__":
         # tokenized_dataset_test = dataset_test.map(lambda x: preprocess_function(x, tokenizer), batched=True)
 
         # Tokenization
-        max_length = 128  # Set your fixed max length
+        max_length = 512  # Set your fixed max length
         tokenized_dataset_train = dataset_train.map(lambda x: preprocess_function(x, tokenizer, max_length=max_length), batched=True)
         tokenized_dataset_test = dataset_train.map(lambda x: preprocess_function(x, tokenizer, max_length=max_length), batched=True)
         
