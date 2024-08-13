@@ -97,7 +97,7 @@ if __name__== "__main__":
             model.resize_token_embeddings(len(tokenizer))
             tokenizer.pad_token = tokenizer.eos_token
         
-        if model_name in ['Qwen/Qwen2-1.5B', 'Qwen/Qwen2-Math-1.5B']:
+        if model_name in ['Qwen/Qwen2-1.5B', 'Qwen/Qwen2-Math-1.5B', 'HuggingFaceTB/SmolLM-1.7B']:
             tokenizer.pad_token = tokenizer.eos_token
             model.config.pad_token_id = model.config.eos_token_id
         
