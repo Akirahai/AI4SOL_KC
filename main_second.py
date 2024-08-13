@@ -48,7 +48,7 @@ if __name__== "__main__":
     args.best_metric = 0
     
     if args.use_gpu and torch.cuda.is_available(): 
-        device = torch.device(f'cuda:1')  # Change to your suitable GPU device
+        device = torch.device(f'cuda')  # Change to your suitable GPU device
         print(f"Using GPU: {torch.cuda.get_device_name(device)}")
     else:
         device = torch.device('cpu')
